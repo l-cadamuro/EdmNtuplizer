@@ -175,5 +175,7 @@ void HTauTauNtuplizer::analyze(const edm::Event& event, const edm::EventSetup& e
     else
         edm::LogWarning("MissingProduct") << "L1Upgrade Tau not found. Branch will not be filled" << std::endl; 
 
+    // finally, fill tree
+    myTree->Fill();
 
 }
