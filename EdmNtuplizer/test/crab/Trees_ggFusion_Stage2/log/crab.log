@@ -1,0 +1,2523 @@
+2014-11-03 19:00:27,592 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -cfg crab_Stage2_ggFusion.cfg -create
+
+2014-11-03 19:00:27,592 [INFO] 	Version 2.11.1 running on Mon Nov  3 19:00:27 2014 CET (18:00:27 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-03 19:00:27,593 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-03 19:00:27,594 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_allowed_releases.conf expired, refreshing cache
+2014-11-03 19:00:27,594 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/allowed_releases.conf
+	data: {}
+2014-11-03 19:00:29,837 [DEBUG] 	Input whitelist: 
+2014-11-03 19:00:29,837 [DEBUG] 	Input blacklist: 
+2014-11-03 19:00:29,837 [DEBUG] 	Converted whitelist: 
+2014-11-03 19:00:29,837 [DEBUG] 	Converted blacklist: 
+2014-11-03 19:00:29,838 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-03 19:00:29,838 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_myproxy_server.conf expired, refreshing cache
+2014-11-03 19:00:29,838 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/myproxy_server.conf
+	data: {}
+2014-11-03 19:00:29,862 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 19:00:29,862 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_site_black_list.conf expired, refreshing cache
+2014-11-03 19:00:29,862 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/site_black_list.conf
+	data: {}
+2014-11-03 19:00:29,885 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-03 19:00:43,300 [DEBUG] 	Linux polui03.in2p3.fr 2.6.32-431.20.3.el6.x86_64 #1 SMP Thu Jun 19 14:01:59 CDT 2014 x86_64 x86_64 x86_64 GNU/Linux
+ 
+Used properties:
+Linux polui03.in2p3.fr 2.6.32-431.20.3.el6.x86_64 #1 SMP Thu Jun 19 14:01:59 CDT 2014 x86_64 x86_64 x86_64 GNU/Linux
+ 
+Used properties:
+   CMSSW.allow_nonproductioncmssw : 1
+   CMSSW.datasetpath : /GluGluToHToTauTau_M-125_13TeV-powheg-pythia6/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/GEN-SIM-RAW
+   CMSSW.dbs_url : https://cmsweb.cern.ch/dbs/prod/global/DBSReader
+   CMSSW.events_per_job : 20000
+   CMSSW.output_file : tree_stage2.root
+   CMSSW.pset : ../produceStage2.py
+   CMSSW.total_number_of_events : -1
+   CMSSW.use_dbs3 : 1
+   CRAB.cfg : crab_Stage2_ggFusion.cfg
+   CRAB.create : 
+   CRAB.jobtype : cmssw
+   CRAB.scheduler : remoteGlidein
+   CRAB.use_server : 0
+   USER.copy_data : 1
+   USER.storage_element : T2_FR_GRIF_LLR
+   USER.ui_working_dir : ./Trees_ggFusion_Stage2/
+   USER.user_remote_dir : L1_trees/Stage2Trees_3Nov2014/GluGluToHToTauTau/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/GEN-SIM-RAW/
+End of used properties.
+
+2014-11-03 19:00:43,301 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 19:00:43,302 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-03 19:00:43,302 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-03 19:00:44,542 [DEBUG] 	CMSSW::__init__
+2014-11-03 19:00:44,543 [DEBUG] 	Scram::Scram() version is 2
+2014-11-03 19:00:44,543 [DEBUG] 	Scram::Scram() arch is slc6_amd64_gcc481
+2014-11-03 19:00:44,544 [DEBUG] 	Downloading file [https://cmssdt.cern.ch/SDT/cgi-bin] to [/home/llr/cms/cadamuro/.cms_crab/ReleasesXML?anytype=1].
+2014-11-03 19:00:44,544 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_ReleasesXML?anytype=1 expired, refreshing cache
+2014-11-03 19:00:44,544 [DEBUG] 	getData: 
+	url: /SDT/cgi-bin/ReleasesXML?anytype=1
+	data: {}
+2014-11-03 19:00:45,041 [INFO] 	Contacting Data Discovery Services ...
+2014-11-03 19:00:45,041 [INFO] 	Accessing DBS at: https://cmsweb.cern.ch/dbs/prod/global/DBSReader
+2014-11-03 19:00:46,763 [INFO] 	DBS3 lookup took  1.45 sec
+2014-11-03 19:00:46,778 [INFO] 	Datatype is mc
+2014-11-03 19:00:46,782 [DEBUG] 	Retrieve block locations with
+curl -ks --cert $X509_USER_PROXY --key $X509_USER_PROXY "https://cmsweb.cern.ch/phedex/datasvc/json/prod/BlockReplicaSummary?dataset=/GluGluToHToTauTau_M-125_13TeV-powheg-pythia6/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/GEN-SIM-RAW&complete=y"
+2014-11-03 19:00:46,950 [DEBUG] 	Retrieve PNNs type with
+curl -ks --cert $X509_USER_PROXY --key $X509_USER_PROXY "https://cmsweb.cern.ch/phedex/datasvc/cjson/prod/nodes"
+2014-11-03 19:00:47,097 [INFO] 	Requested dataset: /GluGluToHToTauTau_M-125_13TeV-powheg-pythia6/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/GEN-SIM-RAW has 463081 events in 4 blocks.
+
+2014-11-03 19:00:47,266 [DEBUG] 	Job splitting method: EventBased
+2014-11-03 19:00:47,267 [DEBUG] 	Events in Block File 15398
+2014-11-03 19:00:47,267 [DEBUG] 	Events in Block File 6699
+2014-11-03 19:00:47,270 [DEBUG] 	Events in Block File 11098
+2014-11-03 19:00:47,270 [DEBUG] 	Events in Block File 429886
+2014-11-03 19:00:47,278 [DEBUG] 	
+Job 4 can run over 20000 events.
+Job 4 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 5 can run over 20000 events.
+Job 5 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 6 can run over 20000 events.
+Job 6 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 7 can run over 20000 events.
+Job 7 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 8 can run over 20000 events.
+Job 8 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 9 can run over 20000 events.
+Job 9 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 10 can run over 20000 events.
+Job 10 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 11 can run over 20000 events.
+Job 11 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 12 can run over 20000 events.
+Job 12 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 13 can run over 20000 events.
+Job 13 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 14 can run over 20000 events.
+Job 14 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 15 can run over 20000 events.
+Job 15 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 16 can run over 20000 events.
+Job 16 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 17 can run over 20000 events.
+Job 17 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 18 can run over 20000 events.
+Job 18 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 19 can run over 20000 events.
+Job 19 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 20 can run over 20000 events.
+Job 20 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 21 can run over 20000 events.
+Job 21 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 22 can run over 20000 events.
+Job 22 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 23 can run over 20000 events.
+Job 23 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 24 can run over 20000 events.
+Job 24 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+Job 25 can run over 9886 events.
+Job 25 Destination: ['T2_IT_Bari', 'T2_FR_GRIF_LLR', 'T2_US_Wisconsin']
+
+2014-11-03 19:00:47,278 [INFO] 	25 job(s) can run on 463081 events.
+
+2014-11-03 19:00:47,279 [INFO] 	List of jobs and available destination sites:
+
+Block     1: jobs                    1: sites: T2_FR_GRIF_LLR, T2_IT_Bari, T2_US_Wisconsin
+Block     2: jobs                    2: sites: T2_FR_GRIF_LLR, T2_IT_Bari, T2_US_Wisconsin
+Block     3: jobs                    3: sites: T2_IT_Bari, T2_FR_GRIF_LLR, T2_US_Wisconsin
+Block     4: jobs                 4-25: sites: T2_IT_Bari, T2_FR_GRIF_LLR, T2_US_Wisconsin
+
+2014-11-03 19:00:47,986 [DEBUG] 	PsetManipulator::__init__: PSet file = ../produceStage2.py
+2014-11-03 19:01:01,329 [DEBUG] 	Output from TFileService tree_stage2.root already in output files
+2014-11-03 19:01:03,889 [DEBUG] 	lib /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/lib to be tarred
+2014-11-03 19:01:08,903 [DEBUG] 	data EventFilter/L1TRawToDigi/data to be tarred
+2014-11-03 19:01:09,454 [DEBUG] 	data L1Trigger/L1TGlobal/data to be tarred
+2014-11-03 19:01:09,545 [DEBUG] 	data L1Trigger/L1TCalorimeter/data to be tarred
+2014-11-03 19:01:11,809 [DEBUG] 	Creator: JobType CMSSW created
+2014-11-03 19:01:11,809 [DEBUG] 	Creator: total # of jobs = 25
+2014-11-03 19:01:11,809 [DEBUG] 	Creator constructor finished
+2014-11-03 19:01:12,459 [DEBUG] 	Creator::run() called
+2014-11-03 19:01:12,460 [DEBUG] 	Scram::Scram() version is 2
+2014-11-03 19:01:12,460 [DEBUG] 	Scram::Scram() arch is slc6_amd64_gcc481
+2014-11-03 19:01:14,117 [INFO] 	output files will be staged at T2_FR_GRIF_LLR
+       with LFN's starting with = /store/user/lcadamur/L1_trees/Stage2Trees_3Nov2014/GluGluToHToTauTau/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/GEN-SIM-RAW/
+2014-11-03 19:01:14,146 [INFO] 	Checking remote location
+2014-11-03 19:01:14,146 [DEBUG] 	protocol = srm-lcg
+endpoint = srm://polgrid4.in2p3.fr:8446/srm/managerv2?SFN=/dpm/in2p3.fr/home/cms/trivcat/store/user/lcadamur/L1_trees/Stage2Trees_3Nov2014/GluGluToHToTauTau/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/GEN-SIM-RAW/
+
+2014-11-03 19:01:14,357 [DEBUG] 	Command:	unset LD_LIBRARY_PATH; unset GLITE_ENV_SET; export PATH=/usr/bin:/bin; source /etc/profile; source /opt/exp_soft/cms/Crab/grid-env.sh ; lcg-ls -d -b -D srmv2 srm://polgrid4.in2p3.fr:8446/srm/managerv2?SFN=/dpm/in2p3.fr/home/cms/trivcat/store/user/lcadamur/L1_trees/Stage2Trees_3Nov2014/GluGluToHToTauTau/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/GEN-SIM-RAW/
+2014-11-03 19:01:14,358 [DEBUG] 	ExitCode:	1
+2014-11-03 19:01:14,358 [DEBUG] 	Output:	/dpm/in2p3.fr/home/cms/trivcat/store/user/lcadamur/L1_trees/Stage2Trees_3Nov2014/GluGluToHToTauTau/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/GEN-SIM-RAW/: [SE][Ls][SRM_INVALID_PATH] No such file or directory
+
+2014-11-03 19:01:14,438 [INFO] 	Creating 25 jobs, please wait...
+2014-11-03 19:01:14,439 [DEBUG] 	Creation Time: 1.97906088829
+2014-11-03 19:01:14,439 [INFO] 	Total of 25 jobs created.
+
+2014-11-03 19:01:40,846 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -submit
+
+2014-11-03 19:01:40,847 [INFO] 	Version 2.11.1 running on Mon Nov  3 19:01:40 2014 CET (18:01:40 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-03 19:01:40,847 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-03 19:01:40,987 [DEBUG] 	Input whitelist: 
+2014-11-03 19:01:40,987 [DEBUG] 	Input blacklist: 
+2014-11-03 19:01:40,987 [DEBUG] 	Converted whitelist: 
+2014-11-03 19:01:40,987 [DEBUG] 	Converted blacklist: 
+2014-11-03 19:01:40,988 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-03 19:01:40,989 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 19:01:40,990 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-03 19:01:46,136 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 19:01:46,137 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-03 19:01:46,137 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-03 19:01:46,149 [DEBUG] 	parseRange_ None
+2014-11-03 19:01:46,172 [DEBUG] 	Scram::Scram() version is 2
+2014-11-03 19:01:46,172 [DEBUG] 	Scram::Scram() arch is slc6_amd64_gcc481
+2014-11-03 19:01:46,184 [DEBUG] 	Submitter::run() called
+2014-11-03 19:01:46,196 [DEBUG] 	nsjobs -1
+2014-11-03 19:01:46,196 [DEBUG] 	Total jobs 25
+2014-11-03 19:01:46,209 [DEBUG] 	nj_list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+2014-11-03 19:01:46,808 [DEBUG] 	GRIDNAME: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lcadamur/CN=756121/CN=Luca Cadamuro 
+2014-11-03 19:01:48,055 [DEBUG] 	Submission DashBoard Pre-Submission report: {'ApplicationVersion': 'CMSSW_7_1_0_pre8', 'taskId': 'lcadamur_Trees_ggFusion_Stage2_9gzm41', 'resubmitter': 'user', 'tool': 'crab2', 'vo': 'cms', 'tool_ui': 'polui03.in2p3.fr', 'JSToolVersion': '2.11.1', 'user': 'lcadamur', 'scheduler': 'GLIDEIN', 'taskType': 'analysis', 'CMSUser': 'lcadamur', 'jobId': 'TaskMeta', 'datasetFull': '/GluGluToHToTauTau_M-125_13TeV-powheg-pythia6/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/GEN-SIM-RAW', 'exe': 'cmsRun', 'GridName': '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lcadamur/CN=756121/CN=Luca Cadamuro', 'SubmissionType': 'direct'}
+2014-11-03 19:01:48,056 [INFO] 	Checking available resources...
+2014-11-03 19:01:48,076 [INFO] 	Found  compatible site(s) for job 1
+2014-11-03 19:01:48,076 [INFO] 	Found  compatible site(s) for job 3
+2014-11-03 19:01:48,077 [INFO] 	2 blocks of jobs will be submitted
+2014-11-03 19:01:48,077 [DEBUG] 	Delegating proxy 
+2014-11-03 19:01:48,077 [DEBUG] 	Submitting jobs [1, 2]
+2014-11-03 19:01:48,110 [DEBUG] 	Calling ServerConfig default
+2014-11-03 19:01:48,110 [DEBUG] 	getting serverlist from web
+2014-11-03 19:01:48,110 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/AvailableServerList].
+2014-11-03 19:01:48,111 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_AvailableServerList expired, refreshing cache
+2014-11-03 19:01:48,111 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/AvailableServerList
+	data: {}
+2014-11-03 19:01:48,147 [DEBUG] 	All avaialble servers: [['cern_vocms20', '2.8.4-', 'remoteGlidein'], ['cern_vocms83', '2.8.4-', 'remoteGlidein'], ['unl_hcc-crabserver', '2.8.4-', 'remoteGlidein'], ['ucsd_submit-4', '2.8.4-', 'remoteGlidein'], ['ucsd_submit-4', '2.8.4-', 'remoteGlidein'], ['ucsd_submit-4', '2.8.4-', 'remoteGlidein'], ['ucsd_submit-6', '2.8.4-', 'remoteGlidein'], ['ucsd_submit-6', '2.8.4-', 'remoteGlidein'], ['ucsd_submit-6', '2.8.4-', 'remoteGlidein']]
+2014-11-03 19:01:48,147 [DEBUG] 	All avaialble servers compatible with 2.11.1: ['cern_vocms20', 'cern_vocms83', 'unl_hcc-crabserver', 'ucsd_submit-4', 'ucsd_submit-4', 'ucsd_submit-4', 'ucsd_submit-6', 'ucsd_submit-6', 'ucsd_submit-6']
+2014-11-03 19:01:48,147 [DEBUG] 	Avaialble servers: ['cern_vocms20', 'cern_vocms83', 'unl_hcc-crabserver', 'ucsd_submit-4', 'ucsd_submit-4', 'ucsd_submit-4', 'ucsd_submit-6', 'ucsd_submit-6', 'ucsd_submit-6'] choosen: ucsd_submit-4
+2014-11-03 19:01:48,147 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/server_ucsd_submit-4.conf].
+2014-11-03 19:01:48,147 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_server_ucsd_submit-4.conf expired, refreshing cache
+2014-11-03 19:01:48,147 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/server_ucsd_submit-4.conf
+	data: {}
+2014-11-03 19:01:48,171 [INFO] 	remotehost from Avail.List = submit-4.t2.ucsd.edu
+2014-11-03 19:01:48,199 [INFO] 	list of PSN's for submission: T2_FR_GRIF_LLR,T2_IT_Bari,T2_US_Wisconsin
+2014-11-03 19:01:48,199 [DEBUG] 	Scram::Scram() version is 2
+2014-11-03 19:01:48,199 [DEBUG] 	Scram::Scram() arch is slc6_amd64_gcc481
+2014-11-03 19:01:49,008 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-03 19:01:50,146 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh  -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "sleep 3600"
+2014-11-03 19:01:50,151 [INFO] 	Establishing gsissh ControlPath. Wait 2 sec ...
+2014-11-03 19:01:52,152 [INFO] 	Establishing gsissh ControlPath. Wait 2 sec ...
+2014-11-03 19:01:54,156 [INFO] 	COPY FILES TO REMOTE HOST
+2014-11-03 19:01:54,157 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  mkdir -p lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-03 19:01:54,732 [DEBUG] 	Status,output= 0,
+2014-11-03 19:01:54,733 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/share/default.tgz /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/share/arguments.xml /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/job/CMSSW.sh /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//share//lcadamur_Trees_ggFusion_Stage2_9gzm41_job2.jdl /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-03 19:02:00,239 [DEBUG] 	Status,output= 0,
+2014-11-03 19:02:00,240 [INFO] 	SUBMIT TO REMOTE GLIDEIN FRONTEND
+2014-11-03 19:02:00,240 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu "cd lcadamur_Trees_ggFusion_Stage2_9gzm41;  condor_submit  lcadamur_Trees_ggFusion_Stage2_9gzm41_job2.jdl; echo 'CONDOR_SUBMIT-EXIT-STATUS IS' \$?"
+2014-11-03 19:02:01,158 [DEBUG] 	Status,output= 0,Submitting job(s)..
+2 job(s) submitted to cluster 521117.
+CONDOR_SUBMIT-EXIT-STATUS IS 0
+2014-11-03 19:02:01,159 [DEBUG] 	Returning {u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job1': 'submit-4.t2.ucsd.edu//141103//521117.0', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job2': 'submit-4.t2.ucsd.edu//141103//521117.1'}
+lcadamur_Trees_ggFusion_Stage2_9gzm41
+polui03.in2p3.fr
+2014-11-03 19:02:01,171 [DEBUG] 	WMS : polui03.in2p3.fr
+Collection ID : lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-03 19:02:01,181 [DEBUG] 	Submitted job # 1
+2014-11-03 19:02:01,181 [DEBUG] 	Submitted job # 2
+2014-11-03 19:02:01,197 [DEBUG] 	Updating [[1, 2]] state SubSuccess
+2014-11-03 19:02:02,056 [DEBUG] 	GRIDNAME: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lcadamur/CN=756121/CN=Luca Cadamuro 
+2014-11-03 19:02:03,305 [DEBUG] 	Submitting jobs [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+2014-11-03 19:02:03,349 [INFO] 	serverName from Task DB is submit-4.t2.ucsd.edu
+2014-11-03 19:02:03,374 [INFO] 	list of PSN's for submission: T2_IT_Bari,T2_FR_GRIF_LLR,T2_US_Wisconsin
+2014-11-03 19:02:03,374 [DEBUG] 	Scram::Scram() version is 2
+2014-11-03 19:02:03,375 [DEBUG] 	Scram::Scram() arch is slc6_amd64_gcc481
+2014-11-03 19:02:04,039 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-03 19:02:05,183 [INFO] 	COPY FILES TO REMOTE HOST
+2014-11-03 19:02:05,184 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  mkdir -p lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-03 19:02:05,764 [DEBUG] 	Status,output= 0,
+2014-11-03 19:02:05,765 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/share/default.tgz /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/share/arguments.xml /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/job/CMSSW.sh /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//share//lcadamur_Trees_ggFusion_Stage2_9gzm41_job25.jdl /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-03 19:02:11,756 [DEBUG] 	Status,output= 0,
+2014-11-03 19:02:11,757 [INFO] 	SUBMIT TO REMOTE GLIDEIN FRONTEND
+2014-11-03 19:02:11,757 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu "cd lcadamur_Trees_ggFusion_Stage2_9gzm41;  condor_submit  lcadamur_Trees_ggFusion_Stage2_9gzm41_job25.jdl; echo 'CONDOR_SUBMIT-EXIT-STATUS IS' \$?"
+2014-11-03 19:02:14,193 [DEBUG] 	Status,output= 0,Submitting job(s).......................
+23 job(s) submitted to cluster 521119.
+CONDOR_SUBMIT-EXIT-STATUS IS 0
+2014-11-03 19:02:14,195 [DEBUG] 	Returning {u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job12': 'submit-4.t2.ucsd.edu//141103//521119.9', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job13': 'submit-4.t2.ucsd.edu//141103//521119.10', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job10': 'submit-4.t2.ucsd.edu//141103//521119.7', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job11': 'submit-4.t2.ucsd.edu//141103//521119.8', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job16': 'submit-4.t2.ucsd.edu//141103//521119.13', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job17': 'submit-4.t2.ucsd.edu//141103//521119.14', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job14': 'submit-4.t2.ucsd.edu//141103//521119.11', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job15': 'submit-4.t2.ucsd.edu//141103//521119.12', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job18': 'submit-4.t2.ucsd.edu//141103//521119.15', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job19': 'submit-4.t2.ucsd.edu//141103//521119.16', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job23': 'submit-4.t2.ucsd.edu//141103//521119.20', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job22': 'submit-4.t2.ucsd.edu//141103//521119.19', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job21': 'submit-4.t2.ucsd.edu//141103//521119.18', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job20': 'submit-4.t2.ucsd.edu//141103//521119.17', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job25': 'submit-4.t2.ucsd.edu//141103//521119.22', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job24': 'submit-4.t2.ucsd.edu//141103//521119.21', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job8': 'submit-4.t2.ucsd.edu//141103//521119.5', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job9': 'submit-4.t2.ucsd.edu//141103//521119.6', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job3': 'submit-4.t2.ucsd.edu//141103//521119.0', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job4': 'submit-4.t2.ucsd.edu//141103//521119.1', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job5': 'submit-4.t2.ucsd.edu//141103//521119.2', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job6': 'submit-4.t2.ucsd.edu//141103//521119.3', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job7': 'submit-4.t2.ucsd.edu//141103//521119.4'}
+lcadamur_Trees_ggFusion_Stage2_9gzm41
+polui03.in2p3.fr
+2014-11-03 19:02:14,212 [DEBUG] 	WMS : polui03.in2p3.fr
+Collection ID : lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-03 19:02:14,225 [DEBUG] 	Submitted job # 3
+2014-11-03 19:02:14,225 [DEBUG] 	Submitted job # 4
+2014-11-03 19:02:14,225 [DEBUG] 	Submitted job # 5
+2014-11-03 19:02:14,225 [DEBUG] 	Submitted job # 6
+2014-11-03 19:02:14,225 [DEBUG] 	Submitted job # 7
+2014-11-03 19:02:14,225 [DEBUG] 	Submitted job # 8
+2014-11-03 19:02:14,225 [DEBUG] 	Submitted job # 9
+2014-11-03 19:02:14,225 [DEBUG] 	Submitted job # 10
+2014-11-03 19:02:14,225 [DEBUG] 	Submitted job # 11
+2014-11-03 19:02:14,225 [DEBUG] 	Submitted job # 12
+2014-11-03 19:02:14,225 [DEBUG] 	Submitted job # 13
+2014-11-03 19:02:14,226 [DEBUG] 	Submitted job # 14
+2014-11-03 19:02:14,226 [DEBUG] 	Submitted job # 15
+2014-11-03 19:02:14,226 [DEBUG] 	Submitted job # 16
+2014-11-03 19:02:14,226 [DEBUG] 	Submitted job # 17
+2014-11-03 19:02:14,226 [DEBUG] 	Submitted job # 18
+2014-11-03 19:02:14,226 [DEBUG] 	Submitted job # 19
+2014-11-03 19:02:14,226 [DEBUG] 	Submitted job # 20
+2014-11-03 19:02:14,226 [DEBUG] 	Submitted job # 21
+2014-11-03 19:02:14,226 [DEBUG] 	Submitted job # 22
+2014-11-03 19:02:14,226 [DEBUG] 	Submitted job # 23
+2014-11-03 19:02:14,226 [DEBUG] 	Submitted job # 24
+2014-11-03 19:02:14,226 [DEBUG] 	Submitted job # 25
+2014-11-03 19:02:14,251 [DEBUG] 	Updating [[3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]] state SubSuccess
+2014-11-03 19:02:14,898 [DEBUG] 	GRIDNAME: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lcadamur/CN=756121/CN=Luca Cadamuro 
+2014-11-03 19:02:16,149 [DEBUG] 	Submission Time: 29.9648790359
+2014-11-03 19:02:16,149 [INFO] 	Total of 25 jobs submitted.
+2014-11-03 19:02:22,435 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -status
+
+2014-11-03 19:02:22,435 [INFO] 	Version 2.11.1 running on Mon Nov  3 19:02:22 2014 CET (18:02:22 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-03 19:02:22,435 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-03 19:02:22,559 [DEBUG] 	Input whitelist: 
+2014-11-03 19:02:22,559 [DEBUG] 	Input blacklist: 
+2014-11-03 19:02:22,559 [DEBUG] 	Converted whitelist: 
+2014-11-03 19:02:22,559 [DEBUG] 	Converted blacklist: 
+2014-11-03 19:02:22,560 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-03 19:02:22,561 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 19:02:22,562 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-03 19:02:27,365 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 19:02:27,366 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-03 19:02:27,367 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-03 19:02:27,373 [DEBUG] 	Status::run() called
+2014-11-03 19:02:27,373 [INFO] 	Checking the status of all jobs: please wait
+2014-11-03 19:02:27,440 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-03 19:02:28,587 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-03 19:02:30,011 [DEBUG] 	Status,output= 0,
+2014-11-03 19:02:30,012 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "condor_history -userlog lcadamur_Trees_ggFusion_Stage2_9gzm41/condor.log -xml"
+2014-11-03 19:02:30,983 [INFO] 	
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     N   Submitted         SubSuccess                           
+2     N   Submitted         SubSuccess                           
+3     N   Submitted         SubSuccess                           
+4     N   Submitted         SubSuccess                           
+5     N   Submitted         SubSuccess                           
+6     N   Submitted         SubSuccess                           
+7     N   Submitted         SubSuccess                           
+8     N   Submitted         SubSuccess                           
+9     N   Submitted         SubSuccess                           
+10    N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+11    N   Submitted         SubSuccess                           
+12    N   Submitted         SubSuccess                           
+13    N   Submitted         SubSuccess                           
+14    N   Submitted         SubSuccess                           
+15    N   Submitted         SubSuccess                           
+16    N   Submitted         SubSuccess                           
+17    N   Submitted         SubSuccess                           
+18    N   Submitted         SubSuccess                           
+19    N   Submitted         SubSuccess                           
+20    N   Submitted         SubSuccess                           
+--------------------------------------------------------------------------------
+21    N   Submitted         SubSuccess                           
+22    N   Submitted         SubSuccess                           
+23    N   Submitted         SubSuccess                           
+24    N   Submitted         SubSuccess                           
+25    N   Submitted         SubSuccess                           
+
+2014-11-03 19:02:31,055 [INFO] 	 25 Total Jobs 
+ >>>>>>>>> 25 Jobs Submitted 
+	List of jobs Submitted: 1-25 
+
+2014-11-03 19:02:31,067 [INFO] 	You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=lcadamur_Trees_ggFusion_Stage2_9gzm41
+	Your task name is: lcadamur_Trees_ggFusion_Stage2_9gzm41 
+
+2014-11-03 19:02:31,067 [DEBUG] 	Status Time: 3.69391584396
+2014-11-03 20:33:38,761 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -status
+
+2014-11-03 20:33:38,761 [INFO] 	Version 2.11.1 running on Mon Nov  3 20:33:38 2014 CET (19:33:38 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-03 20:33:38,761 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-03 20:33:38,762 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_allowed_releases.conf expired, refreshing cache
+2014-11-03 20:33:38,762 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/allowed_releases.conf
+	data: {}
+2014-11-03 20:33:39,010 [DEBUG] 	Input whitelist: 
+2014-11-03 20:33:39,010 [DEBUG] 	Input blacklist: 
+2014-11-03 20:33:39,010 [DEBUG] 	Converted whitelist: 
+2014-11-03 20:33:39,011 [DEBUG] 	Converted blacklist: 
+2014-11-03 20:33:39,011 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-03 20:33:39,011 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_myproxy_server.conf expired, refreshing cache
+2014-11-03 20:33:39,011 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/myproxy_server.conf
+	data: {}
+2014-11-03 20:33:39,035 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 20:33:39,035 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_site_black_list.conf expired, refreshing cache
+2014-11-03 20:33:39,035 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/site_black_list.conf
+	data: {}
+2014-11-03 20:33:39,058 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-03 20:33:44,130 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 20:33:44,131 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-03 20:33:44,131 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-03 20:33:44,138 [DEBUG] 	Status::run() called
+2014-11-03 20:33:44,138 [INFO] 	Checking the status of all jobs: please wait
+2014-11-03 20:33:44,223 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-03 20:33:45,363 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh  -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "sleep 3600"
+2014-11-03 20:33:45,367 [INFO] 	Establishing gsissh ControlPath. Wait 2 sec ...
+2014-11-03 20:33:47,369 [INFO] 	Establishing gsissh ControlPath. Wait 2 sec ...
+2014-11-03 20:33:49,372 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-03 20:33:50,488 [DEBUG] 	Status,output= 0,
+2014-11-03 20:33:50,489 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "condor_history -userlog lcadamur_Trees_ggFusion_Stage2_9gzm41/condor.log -xml"
+2014-11-03 20:33:51,646 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu "cd lcadamur_Trees_ggFusion_Stage2_9gzm41; egrep -H WrapperExitCode\|ExeExitCode crab_fjr_*xml|tr '_.\t\"' ' '|awk '{print \$3\" \"\$7\" \"\$9}'"
+2014-11-03 20:33:52,491 [DEBUG] 	Status,output= 0
+10 0 WrapperExitCode
+10 0 ExeExitCode
+11 0 WrapperExitCode
+11 0 ExeExitCode
+13 0 WrapperExitCode
+13 0 ExeExitCode
+14 0 WrapperExitCode
+14 0 ExeExitCode
+15 0 WrapperExitCode
+15 0 ExeExitCode
+16 60307 WrapperExitCode
+16 0 ExeExitCode
+17 0 WrapperExitCode
+17 0 ExeExitCode
+18 60307 WrapperExitCode
+18 0 ExeExitCode
+1 0 WrapperExitCode
+1 0 ExeExitCode
+20 0 WrapperExitCode
+20 0 ExeExitCode
+22 60307 WrapperExitCode
+22 0 ExeExitCode
+23 0 WrapperExitCode
+23 0 ExeExitCode
+24 0 WrapperExitCode
+24 0 ExeExitCode
+25 0 WrapperExitCode
+25 0 ExeExitCode
+2 60307 WrapperExitCode
+2 0 ExeExitCode
+3 0 WrapperExitCode
+3 0 ExeExitCode
+4 60307 WrapperExitCode
+4 0 ExeExitCode
+5 0 WrapperExitCode
+5 0 ExeExitCode
+6 0 WrapperExitCode
+6 0 ExeExitCode
+7 60307 WrapperExitCode
+7 0 ExeExitCode
+9 0 WrapperExitCode
+9 0 ExeExitCode
+2014-11-03 20:33:52,586 [INFO] 	
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     N   Done              Terminated    0          0           cmsgrid02.hep.wisc.edu
+2     N   Done              Terminated    0          60307       cmsgrid01.hep.wisc.edu
+3     N   Done              Terminated    0          0           cmsgrid02.hep.wisc.edu
+4     N   Done              Terminated    0          60307       cmsgrid01.hep.wisc.edu
+5     N   Done              Terminated    0          0           cmsgrid02.hep.wisc.edu
+6     N   Done              Terminated    0          0           cmsgrid02.hep.wisc.edu
+7     N   Done              Terminated    0          60307       cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+8     N   Running           SubSuccess                           cmsgrid01.hep.wisc.edu
+9     N   Done              Terminated    0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+10    N   Done              Terminated    0          0           cmsgrid02.hep.wisc.edu
+--------------------------------------------------------------------------------
+11    N   Done              Terminated    0          0           cmsgrid01.hep.wisc.edu
+12    N   Running           SubSuccess                           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+13    N   Done              Terminated    0          0           cmsgrid01.hep.wisc.edu
+14    N   Done              Terminated    0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+15    N   Done              Terminated    0          0           cmsgrid01.hep.wisc.edu
+16    N   Done              Terminated    0          60307       cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+17    N   Done              Terminated    0          0           cmsgrid01.hep.wisc.edu
+18    N   Done              Terminated    0          60307       cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+19    N   Running           SubSuccess                           cmsgrid01.hep.wisc.edu
+20    N   Done              Terminated    0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+--------------------------------------------------------------------------------
+21    N   Running           SubSuccess                           cmsgrid01.hep.wisc.edu
+22    N   Done              Terminated    0          60307       cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+23    N   Done              Terminated    0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+24    N   Done              Terminated    0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+25    N   Done              Terminated    0          0           cmsgrid02.hep.wisc.edu
+
+2014-11-03 20:33:52,618 [INFO] 	ExitCodes Summary
+ >>>>>>>>> 15 Jobs with Wrapper Exit Code : 0 
+	 List of jobs: 1,3,5-6,9-11,13-15,17,20,23-25 
+	See https://twiki.cern.ch/twiki/bin/view/CMSPublic/JobExitCodes for Exit Code meaning
+
+2014-11-03 20:33:52,666 [INFO] 	ExitCodes Summary
+ >>>>>>>>> 6 Jobs with Wrapper Exit Code : 60307 
+	 List of jobs: 2,4,7,16,18,22 
+	See https://twiki.cern.ch/twiki/bin/view/CMSPublic/JobExitCodes for Exit Code meaning
+
+2014-11-03 20:33:52,666 [INFO] 	 25 Total Jobs 
+ >>>>>>>>> 4 Jobs Running 
+	List of jobs Running: 8,12,19,21 
+ >>>>>>>>> 21 Jobs Done
+	Jobs terminated: retrieve them with: crab -getoutput <List of jobs>
+	List of jobs: 1-7,9-11,13-18,20,22-25 
+
+2014-11-03 20:33:52,678 [INFO] 	You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=lcadamur_Trees_ggFusion_Stage2_9gzm41
+	Your task name is: lcadamur_Trees_ggFusion_Stage2_9gzm41 
+
+2014-11-03 20:33:52,678 [DEBUG] 	Status Time: 8.5401070118
+2014-11-03 20:34:23,046 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -getoutput
+
+2014-11-03 20:34:23,046 [INFO] 	Version 2.11.1 running on Mon Nov  3 20:34:23 2014 CET (19:34:23 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-03 20:34:23,046 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-03 20:34:23,172 [DEBUG] 	Input whitelist: 
+2014-11-03 20:34:23,173 [DEBUG] 	Input blacklist: 
+2014-11-03 20:34:23,173 [DEBUG] 	Converted whitelist: 
+2014-11-03 20:34:23,173 [DEBUG] 	Converted blacklist: 
+2014-11-03 20:34:23,173 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-03 20:34:23,175 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 20:34:23,176 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-03 20:34:28,328 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 20:34:28,329 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-03 20:34:28,329 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-03 20:34:28,335 [DEBUG] 	GetOutput::run() called
+2014-11-03 20:34:28,362 [INFO] 	Only 21 jobs will be retrieved  from 25 requested.
+	(for details: crab -status)
+2014-11-03 20:34:28,371 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/ is not in AFS.
+Volume Name                    Quota       Used %Used   Partition
+ while checking AFS quota. Treat as check OK
+2014-11-03 20:34:28,380 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/ is not in AFS.
+Volume Name                  kbytes      used     avail %used
+ while checking partition. Treat as check OK
+2014-11-03 20:34:28,532 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-03 20:34:29,687 [INFO] 	Preparing to rsync 2 files
+2014-11-03 20:34:32,065 [INFO] 	Results of Jobs # 1 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:32,314 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/ is not in AFS.
+Volume Name                    Quota       Used %Used   Partition
+ while checking AFS quota. Treat as check OK
+2014-11-03 20:34:32,323 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/ is not in AFS.
+Volume Name                  kbytes      used     avail %used
+ while checking partition. Treat as check OK
+2014-11-03 20:34:32,385 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-03 20:34:33,528 [INFO] 	Preparing to rsync 40 files
+2014-11-03 20:34:37,037 [INFO] 	Results of Jobs # 2 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:37,432 [INFO] 	Results of Jobs # 3 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:37,574 [INFO] 	Results of Jobs # 4 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:37,690 [INFO] 	Results of Jobs # 5 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:37,806 [INFO] 	Results of Jobs # 6 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:37,929 [INFO] 	Results of Jobs # 7 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:38,045 [INFO] 	Results of Jobs # 9 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:38,221 [INFO] 	Results of Jobs # 10 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:38,339 [INFO] 	Results of Jobs # 11 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:38,456 [INFO] 	Results of Jobs # 13 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:38,569 [INFO] 	Results of Jobs # 14 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:38,679 [INFO] 	Results of Jobs # 15 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:38,941 [INFO] 	Results of Jobs # 16 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:39,059 [INFO] 	Results of Jobs # 17 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:39,172 [INFO] 	Results of Jobs # 18 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:39,288 [INFO] 	Results of Jobs # 20 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:39,411 [INFO] 	Results of Jobs # 22 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:39,552 [INFO] 	Results of Jobs # 23 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:39,664 [INFO] 	Results of Jobs # 24 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:39,776 [INFO] 	Results of Jobs # 25 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 20:34:39,855 [DEBUG] 	GetOutput Time: 11.5190351009
+2014-11-03 20:36:07,970 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -resubmit 2,4,7,16,18,22
+
+2014-11-03 20:36:07,970 [INFO] 	Version 2.11.1 running on Mon Nov  3 20:36:07 2014 CET (19:36:07 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-03 20:36:07,970 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-03 20:36:08,112 [DEBUG] 	Input whitelist: 
+2014-11-03 20:36:08,112 [DEBUG] 	Input blacklist: 
+2014-11-03 20:36:08,113 [DEBUG] 	Converted whitelist: 
+2014-11-03 20:36:08,113 [DEBUG] 	Converted blacklist: 
+2014-11-03 20:36:08,113 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-03 20:36:08,114 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 20:36:08,115 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-03 20:36:13,343 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 20:36:13,344 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-03 20:36:13,344 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-03 20:36:13,344 [DEBUG] 	parseRange_ 2,4,7,16,18,22
+2014-11-03 20:36:13,426 [INFO] 	Jobs [2, 4, 7, 16, 18, 22] will be resubmitted
+2014-11-03 20:36:13,427 [DEBUG] 	Scram::Scram() version is 2
+2014-11-03 20:36:13,427 [DEBUG] 	Scram::Scram() arch is slc6_amd64_gcc481
+2014-11-03 20:36:13,427 [DEBUG] 	Submitter::run() called
+2014-11-03 20:36:13,440 [DEBUG] 	nsjobs -1
+2014-11-03 20:36:13,440 [DEBUG] 	Total jobs 25
+2014-11-03 20:36:13,445 [DEBUG] 	nj_list [2, 4, 7, 16, 18, 22]
+2014-11-03 20:36:14,043 [DEBUG] 	GRIDNAME: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lcadamur/CN=756121/CN=Luca Cadamuro 
+2014-11-03 20:36:15,306 [DEBUG] 	Submission DashBoard Pre-Submission report: {'ApplicationVersion': 'CMSSW_7_1_0_pre8', 'taskId': 'lcadamur_Trees_ggFusion_Stage2_9gzm41', 'resubmitter': 'user', 'tool': 'crab2', 'vo': 'cms', 'tool_ui': 'polui03.in2p3.fr', 'JSToolVersion': '2.11.1', 'user': 'lcadamur', 'scheduler': 'GLIDEIN', 'taskType': 'analysis', 'CMSUser': 'lcadamur', 'jobId': 'TaskMeta', 'datasetFull': '/GluGluToHToTauTau_M-125_13TeV-powheg-pythia6/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/GEN-SIM-RAW', 'exe': 'cmsRun', 'GridName': '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lcadamur/CN=756121/CN=Luca Cadamuro', 'SubmissionType': 'direct'}
+2014-11-03 20:36:15,306 [INFO] 	Checking available resources...
+2014-11-03 20:36:15,326 [INFO] 	Found  compatible site(s) for job 2
+2014-11-03 20:36:15,326 [INFO] 	Found  compatible site(s) for job 4
+2014-11-03 20:36:15,327 [INFO] 	2 blocks of jobs will be submitted
+2014-11-03 20:36:15,327 [DEBUG] 	Delegating proxy 
+2014-11-03 20:36:15,327 [DEBUG] 	Submitting jobs [2]
+2014-11-03 20:36:15,352 [INFO] 	serverName from Task DB is submit-4.t2.ucsd.edu
+2014-11-03 20:36:15,383 [INFO] 	list of PSN's for submission: T2_FR_GRIF_LLR,T2_IT_Bari,T2_US_Wisconsin
+2014-11-03 20:36:15,384 [DEBUG] 	Scram::Scram() version is 2
+2014-11-03 20:36:15,384 [DEBUG] 	Scram::Scram() arch is slc6_amd64_gcc481
+2014-11-03 20:36:16,083 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-03 20:36:17,229 [INFO] 	COPY FILES TO REMOTE HOST
+2014-11-03 20:36:17,229 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  mkdir -p lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-03 20:36:17,825 [DEBUG] 	Status,output= 0,
+2014-11-03 20:36:17,825 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/share/default.tgz /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/share/arguments.xml /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/job/CMSSW.sh /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//share//lcadamur_Trees_ggFusion_Stage2_9gzm41_job2.jdl /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-03 20:36:23,630 [DEBUG] 	Status,output= 0,
+2014-11-03 20:36:23,631 [INFO] 	SUBMIT TO REMOTE GLIDEIN FRONTEND
+2014-11-03 20:36:23,631 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu "cd lcadamur_Trees_ggFusion_Stage2_9gzm41;  condor_submit  lcadamur_Trees_ggFusion_Stage2_9gzm41_job2.jdl; echo 'CONDOR_SUBMIT-EXIT-STATUS IS' \$?"
+2014-11-03 20:36:24,884 [DEBUG] 	Status,output= 0,Submitting job(s).
+1 job(s) submitted to cluster 521154.
+CONDOR_SUBMIT-EXIT-STATUS IS 0
+2014-11-03 20:36:24,886 [DEBUG] 	Returning {u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job2': 'submit-4.t2.ucsd.edu//141103//521154.0'}
+lcadamur_Trees_ggFusion_Stage2_9gzm41
+polui03.in2p3.fr
+2014-11-03 20:36:24,903 [DEBUG] 	WMS : polui03.in2p3.fr
+Collection ID : lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-03 20:36:24,910 [DEBUG] 	Submitted job # 2
+2014-11-03 20:36:24,926 [DEBUG] 	Updating [[2]] state SubSuccess
+2014-11-03 20:36:25,533 [DEBUG] 	GRIDNAME: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lcadamur/CN=756121/CN=Luca Cadamuro 
+2014-11-03 20:36:26,775 [DEBUG] 	Submitting jobs [4, 7, 16, 18, 22]
+2014-11-03 20:36:26,810 [INFO] 	serverName from Task DB is submit-4.t2.ucsd.edu
+2014-11-03 20:36:26,842 [INFO] 	list of PSN's for submission: T2_IT_Bari,T2_FR_GRIF_LLR,T2_US_Wisconsin
+2014-11-03 20:36:26,842 [DEBUG] 	Scram::Scram() version is 2
+2014-11-03 20:36:26,842 [DEBUG] 	Scram::Scram() arch is slc6_amd64_gcc481
+2014-11-03 20:36:27,510 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-03 20:36:28,682 [INFO] 	COPY FILES TO REMOTE HOST
+2014-11-03 20:36:28,683 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  mkdir -p lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-03 20:36:29,273 [DEBUG] 	Status,output= 0,
+2014-11-03 20:36:29,274 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/share/default.tgz /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/share/arguments.xml /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/job/CMSSW.sh /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//share//lcadamur_Trees_ggFusion_Stage2_9gzm41_job22.jdl /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-03 20:36:35,246 [DEBUG] 	Status,output= 0,
+2014-11-03 20:36:35,246 [INFO] 	SUBMIT TO REMOTE GLIDEIN FRONTEND
+2014-11-03 20:36:35,247 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu "cd lcadamur_Trees_ggFusion_Stage2_9gzm41;  condor_submit  lcadamur_Trees_ggFusion_Stage2_9gzm41_job22.jdl; echo 'CONDOR_SUBMIT-EXIT-STATUS IS' \$?"
+2014-11-03 20:36:36,200 [DEBUG] 	Status,output= 0,Submitting job(s).....
+5 job(s) submitted to cluster 521155.
+CONDOR_SUBMIT-EXIT-STATUS IS 0
+2014-11-03 20:36:36,200 [DEBUG] 	Returning {u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job16': 'submit-4.t2.ucsd.edu//141103//521155.2', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job18': 'submit-4.t2.ucsd.edu//141103//521155.3', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job4': 'submit-4.t2.ucsd.edu//141103//521155.0', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job22': 'submit-4.t2.ucsd.edu//141103//521155.4', u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job7': 'submit-4.t2.ucsd.edu//141103//521155.1'}
+lcadamur_Trees_ggFusion_Stage2_9gzm41
+polui03.in2p3.fr
+2014-11-03 20:36:36,225 [DEBUG] 	WMS : polui03.in2p3.fr
+Collection ID : lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-03 20:36:36,233 [DEBUG] 	Submitted job # 4
+2014-11-03 20:36:36,233 [DEBUG] 	Submitted job # 7
+2014-11-03 20:36:36,233 [DEBUG] 	Submitted job # 16
+2014-11-03 20:36:36,233 [DEBUG] 	Submitted job # 18
+2014-11-03 20:36:36,234 [DEBUG] 	Submitted job # 22
+2014-11-03 20:36:36,248 [DEBUG] 	Updating [[4, 7, 16, 18, 22]] state SubSuccess
+2014-11-03 20:36:36,854 [DEBUG] 	GRIDNAME: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lcadamur/CN=756121/CN=Luca Cadamuro 
+2014-11-03 20:36:38,352 [DEBUG] 	Submission Time: 24.9251348972
+2014-11-03 20:36:38,353 [INFO] 	Total of 6 jobs submitted.
+2014-11-03 20:36:47,430 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -status
+
+2014-11-03 20:36:47,430 [INFO] 	Version 2.11.1 running on Mon Nov  3 20:36:47 2014 CET (19:36:47 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-03 20:36:47,430 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-03 20:36:47,556 [DEBUG] 	Input whitelist: 
+2014-11-03 20:36:47,558 [DEBUG] 	Input blacklist: 
+2014-11-03 20:36:47,558 [DEBUG] 	Converted whitelist: 
+2014-11-03 20:36:47,558 [DEBUG] 	Converted blacklist: 
+2014-11-03 20:36:47,558 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-03 20:36:47,560 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 20:36:47,560 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-03 20:36:52,748 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 20:36:52,750 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-03 20:36:52,750 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-03 20:36:52,756 [DEBUG] 	Status::run() called
+2014-11-03 20:36:52,756 [INFO] 	Checking the status of all jobs: please wait
+2014-11-03 20:36:52,807 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-03 20:36:53,961 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-03 20:36:55,009 [DEBUG] 	Status,output= 0,
+2014-11-03 20:36:55,010 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "condor_history -userlog lcadamur_Trees_ggFusion_Stage2_9gzm41/condor.log -xml"
+2014-11-03 20:36:56,237 [INFO] 	
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+2     N   Submitted         SubSuccess                           
+3     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+4     N   Submitted         SubSuccess                           
+5     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+6     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+7     N   Submitted         SubSuccess                           
+8     N   Running           SubSuccess                           cmsgrid01.hep.wisc.edu
+9     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+10    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+--------------------------------------------------------------------------------
+11    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+12    N   Running           SubSuccess                           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+13    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+14    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+15    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+16    N   Submitted         SubSuccess                           
+17    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+18    N   Submitted         SubSuccess                           
+19    N   Running           SubSuccess                           cmsgrid01.hep.wisc.edu
+20    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+--------------------------------------------------------------------------------
+21    N   Running           SubSuccess                           cmsgrid01.hep.wisc.edu
+22    N   Submitted         SubSuccess                           
+23    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+24    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+25    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+
+2014-11-03 20:36:56,273 [INFO] 	ExitCodes Summary
+ >>>>>>>>> 15 Jobs with Wrapper Exit Code : 0 
+	 List of jobs: 1,3,5-6,9-11,13-15,17,20,23-25 
+	See https://twiki.cern.ch/twiki/bin/view/CMSPublic/JobExitCodes for Exit Code meaning
+
+2014-11-03 20:36:56,331 [INFO] 	 25 Total Jobs 
+ >>>>>>>>> 6 Jobs Submitted 
+	List of jobs Submitted: 2,4,7,16,18,22 
+ >>>>>>>>> 4 Jobs Running 
+	List of jobs Running: 8,12,19,21 
+ >>>>>>>>> 15 Jobs Retrieved 
+	List of jobs Retrieved: 1,3,5-6,9-11,13-15,17,20,23-25 
+
+2014-11-03 20:36:56,345 [INFO] 	You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=lcadamur_Trees_ggFusion_Stage2_9gzm41
+	Your task name is: lcadamur_Trees_ggFusion_Stage2_9gzm41 
+
+2014-11-03 20:36:56,346 [DEBUG] 	Status Time: 3.58992099762
+2014-11-03 22:57:19,196 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -status
+
+2014-11-03 22:57:19,196 [INFO] 	Version 2.11.1 running on Mon Nov  3 22:57:19 2014 CET (21:57:19 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-03 22:57:19,197 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-03 22:57:19,197 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_allowed_releases.conf expired, refreshing cache
+2014-11-03 22:57:19,197 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/allowed_releases.conf
+	data: {}
+2014-11-03 22:57:19,464 [DEBUG] 	Input whitelist: 
+2014-11-03 22:57:19,464 [DEBUG] 	Input blacklist: 
+2014-11-03 22:57:19,464 [DEBUG] 	Converted whitelist: 
+2014-11-03 22:57:19,464 [DEBUG] 	Converted blacklist: 
+2014-11-03 22:57:19,465 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-03 22:57:19,465 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_myproxy_server.conf expired, refreshing cache
+2014-11-03 22:57:19,465 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/myproxy_server.conf
+	data: {}
+2014-11-03 22:57:19,498 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 22:57:19,498 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_site_black_list.conf expired, refreshing cache
+2014-11-03 22:57:19,498 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/site_black_list.conf
+	data: {}
+2014-11-03 22:57:19,521 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-03 22:57:24,532 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 22:57:24,533 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-03 22:57:24,534 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-03 22:57:24,540 [DEBUG] 	Status::run() called
+2014-11-03 22:57:24,540 [INFO] 	Checking the status of all jobs: please wait
+2014-11-03 22:57:24,627 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-03 22:57:25,894 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh  -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "sleep 3600"
+2014-11-03 22:57:25,898 [INFO] 	Establishing gsissh ControlPath. Wait 2 sec ...
+2014-11-03 22:57:27,899 [INFO] 	Establishing gsissh ControlPath. Wait 2 sec ...
+2014-11-03 22:57:29,901 [INFO] 	Establishing gsissh ControlPath. Wait 2 sec ...
+2014-11-03 22:57:31,903 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-03 22:57:33,054 [DEBUG] 	Status,output= 0,
+2014-11-03 22:57:33,055 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "condor_history -userlog lcadamur_Trees_ggFusion_Stage2_9gzm41/condor.log -xml"
+2014-11-03 22:57:34,372 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu "cd lcadamur_Trees_ggFusion_Stage2_9gzm41; egrep -H WrapperExitCode\|ExeExitCode crab_fjr_*xml|tr '_.\t\"' ' '|awk '{print \$3\" \"\$7\" \"\$9}'"
+2014-11-03 22:57:35,479 [DEBUG] 	Status,output= 0
+10 0 WrapperExitCode
+10 0 ExeExitCode
+11 0 WrapperExitCode
+11 0 ExeExitCode
+13 0 WrapperExitCode
+13 0 ExeExitCode
+14 0 WrapperExitCode
+14 0 ExeExitCode
+15 0 WrapperExitCode
+15 0 ExeExitCode
+16 0 WrapperExitCode
+16 0 ExeExitCode
+17 0 WrapperExitCode
+17 0 ExeExitCode
+1 0 WrapperExitCode
+1 0 ExeExitCode
+20 0 WrapperExitCode
+20 0 ExeExitCode
+21 0 WrapperExitCode
+21 0 ExeExitCode
+22 0 WrapperExitCode
+22 0 ExeExitCode
+23 0 WrapperExitCode
+23 0 ExeExitCode
+24 0 WrapperExitCode
+24 0 ExeExitCode
+25 0 WrapperExitCode
+25 0 ExeExitCode
+2 0 WrapperExitCode
+2 0 ExeExitCode
+3 0 WrapperExitCode
+3 0 ExeExitCode
+4 0 WrapperExitCode
+4 0 ExeExitCode
+5 0 WrapperExitCode
+5 0 ExeExitCode
+6 0 WrapperExitCode
+6 0 ExeExitCode
+7 0 WrapperExitCode
+7 0 ExeExitCode
+8 0 WrapperExitCode
+8 0 ExeExitCode
+9 0 WrapperExitCode
+9 0 ExeExitCode
+2014-11-03 22:57:35,577 [INFO] 	
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+2     N   Done              Terminated    0          0           cream-ce-2.ba.infn.it
+3     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+4     N   Done              Terminated    0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+5     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+6     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+7     N   Done              Terminated    0          0           cream-ce-2.ba.infn.it
+8     N   Done              Terminated    0          0           cmsgrid01.hep.wisc.edu
+9     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+10    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+--------------------------------------------------------------------------------
+11    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+12    N   Running           SubSuccess                           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+13    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+14    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+15    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+16    N   Done              Terminated    0          0           cream-ce-2.ba.infn.it
+17    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+18    N   Running           SubSuccess                           cmsgrid01.hep.wisc.edu
+19    N   Running           SubSuccess                           cmsgrid01.hep.wisc.edu
+20    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+--------------------------------------------------------------------------------
+21    N   Done              Terminated    0          0           cmsgrid01.hep.wisc.edu
+22    N   Done              Terminated    0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+23    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+24    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+25    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+
+2014-11-03 22:57:35,611 [INFO] 	ExitCodes Summary
+ >>>>>>>>> 22 Jobs with Wrapper Exit Code : 0 
+	 List of jobs: 1,3,5-6,8-11,13-15,17,20-21,23-25,2,4,7,16,22 
+	See https://twiki.cern.ch/twiki/bin/view/CMSPublic/JobExitCodes for Exit Code meaning
+
+2014-11-03 22:57:35,656 [INFO] 	 25 Total Jobs 
+ >>>>>>>>> 3 Jobs Running 
+	List of jobs Running: 12,19,18 
+ >>>>>>>>> 15 Jobs Retrieved 
+	List of jobs Retrieved: 1,3,5-6,9-11,13-15,17,20,23-25 
+ >>>>>>>>> 7 Jobs Done
+	Jobs terminated: retrieve them with: crab -getoutput <List of jobs>
+	List of jobs: 8,21,2,4,7,16,22 
+
+2014-11-03 22:57:35,667 [INFO] 	You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=lcadamur_Trees_ggFusion_Stage2_9gzm41
+	Your task name is: lcadamur_Trees_ggFusion_Stage2_9gzm41 
+
+2014-11-03 22:57:35,668 [DEBUG] 	Status Time: 11.127477169
+2014-11-03 22:58:04,476 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -getoutput
+
+2014-11-03 22:58:04,477 [INFO] 	Version 2.11.1 running on Mon Nov  3 22:58:04 2014 CET (21:58:04 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-03 22:58:04,477 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-03 22:58:04,605 [DEBUG] 	Input whitelist: 
+2014-11-03 22:58:04,605 [DEBUG] 	Input blacklist: 
+2014-11-03 22:58:04,605 [DEBUG] 	Converted whitelist: 
+2014-11-03 22:58:04,606 [DEBUG] 	Converted blacklist: 
+2014-11-03 22:58:04,606 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-03 22:58:04,607 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 22:58:04,608 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-03 22:58:09,736 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 22:58:09,737 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-03 22:58:09,737 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-03 22:58:09,743 [DEBUG] 	GetOutput::run() called
+2014-11-03 22:58:09,759 [INFO] 	Only 7 jobs will be retrieved  from 25 requested.
+	(for details: crab -status)
+2014-11-03 22:58:09,768 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/ is not in AFS.
+Volume Name                    Quota       Used %Used   Partition
+ while checking AFS quota. Treat as check OK
+2014-11-03 22:58:09,777 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/ is not in AFS.
+Volume Name                  kbytes      used     avail %used
+ while checking partition. Treat as check OK
+2014-11-03 22:58:09,924 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-03 22:58:11,083 [INFO] 	Preparing to rsync 2 files
+2014-11-03 22:58:13,590 [DEBUG] 	
+2014-11-03 22:58:13,600 [DEBUG] 	
+2014-11-03 22:58:13,610 [DEBUG] 	
+2014-11-03 22:58:13,619 [DEBUG] 	
+2014-11-03 22:58:13,720 [INFO] 	Results of Jobs # 2 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 22:58:14,223 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/ is not in AFS.
+Volume Name                    Quota       Used %Used   Partition
+ while checking AFS quota. Treat as check OK
+2014-11-03 22:58:14,232 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/ is not in AFS.
+Volume Name                  kbytes      used     avail %used
+ while checking partition. Treat as check OK
+2014-11-03 22:58:14,289 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-03 22:58:15,499 [INFO] 	Preparing to rsync 12 files
+2014-11-03 22:58:18,726 [DEBUG] 	
+2014-11-03 22:58:18,737 [DEBUG] 	
+2014-11-03 22:58:18,748 [DEBUG] 	
+2014-11-03 22:58:18,758 [DEBUG] 	
+2014-11-03 22:58:18,821 [INFO] 	Results of Jobs # 4 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 22:58:18,913 [DEBUG] 	
+2014-11-03 22:58:18,924 [DEBUG] 	
+2014-11-03 22:58:18,934 [DEBUG] 	
+2014-11-03 22:58:18,945 [DEBUG] 	
+2014-11-03 22:58:18,994 [INFO] 	Results of Jobs # 7 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 22:58:19,108 [INFO] 	Results of Jobs # 8 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 22:58:19,210 [DEBUG] 	
+2014-11-03 22:58:19,220 [DEBUG] 	
+2014-11-03 22:58:19,230 [DEBUG] 	
+2014-11-03 22:58:19,241 [DEBUG] 	
+2014-11-03 22:58:19,294 [INFO] 	Results of Jobs # 16 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 22:58:19,409 [INFO] 	Results of Jobs # 21 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 22:58:19,512 [DEBUG] 	
+2014-11-03 22:58:19,523 [DEBUG] 	
+2014-11-03 22:58:19,534 [DEBUG] 	
+2014-11-03 22:58:19,544 [DEBUG] 	
+2014-11-03 22:58:19,588 [INFO] 	Results of Jobs # 22 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-03 22:58:19,696 [DEBUG] 	GetOutput Time: 9.95297002792
+2014-11-03 23:03:19,151 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -status
+
+2014-11-03 23:03:19,151 [INFO] 	Version 2.11.1 running on Mon Nov  3 23:03:19 2014 CET (22:03:19 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-03 23:03:19,151 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-03 23:03:19,295 [DEBUG] 	Input whitelist: 
+2014-11-03 23:03:19,295 [DEBUG] 	Input blacklist: 
+2014-11-03 23:03:19,295 [DEBUG] 	Converted whitelist: 
+2014-11-03 23:03:19,295 [DEBUG] 	Converted blacklist: 
+2014-11-03 23:03:19,296 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-03 23:03:19,297 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 23:03:19,297 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-03 23:03:24,334 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-03 23:03:24,335 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-03 23:03:24,335 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-03 23:03:24,340 [DEBUG] 	Status::run() called
+2014-11-03 23:03:24,340 [INFO] 	Checking the status of all jobs: please wait
+2014-11-03 23:03:24,407 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-03 23:03:25,585 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-03 23:03:26,728 [DEBUG] 	Status,output= 0,
+2014-11-03 23:03:26,729 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "condor_history -userlog lcadamur_Trees_ggFusion_Stage2_9gzm41/condor.log -xml"
+2014-11-03 23:03:27,984 [INFO] 	
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+2     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+3     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+4     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+5     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+6     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+7     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+8     Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+9     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+10    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+--------------------------------------------------------------------------------
+11    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+12    N   Running           SubSuccess                           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+13    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+14    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+15    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+16    Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+17    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+18    N   Running           SubSuccess                           cmsgrid01.hep.wisc.edu
+19    N   Running           SubSuccess                           cmsgrid01.hep.wisc.edu
+20    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+--------------------------------------------------------------------------------
+21    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+22    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+23    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+24    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+25    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+
+2014-11-03 23:03:28,022 [INFO] 	ExitCodes Summary
+ >>>>>>>>> 22 Jobs with Wrapper Exit Code : 0 
+	 List of jobs: 1,3,5-6,8-11,13-15,17,20-21,23-25,2,4,7,16,22 
+	See https://twiki.cern.ch/twiki/bin/view/CMSPublic/JobExitCodes for Exit Code meaning
+
+2014-11-03 23:03:28,074 [INFO] 	 25 Total Jobs 
+ >>>>>>>>> 3 Jobs Running 
+	List of jobs Running: 12,19,18 
+ >>>>>>>>> 22 Jobs Retrieved 
+	List of jobs Retrieved: 1,3,5-6,8-11,13-15,17,20-21,23-25,2,4,7,16,22 
+
+2014-11-03 23:03:28,085 [INFO] 	You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=lcadamur_Trees_ggFusion_Stage2_9gzm41
+	Your task name is: lcadamur_Trees_ggFusion_Stage2_9gzm41 
+
+2014-11-03 23:03:28,085 [DEBUG] 	Status Time: 3.74494194984
+2014-11-04 00:23:00,503 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2 -status
+
+2014-11-04 00:23:00,503 [INFO] 	Version 2.11.1 running on Tue Nov  4 00:23:00 2014 CET (23:23:00 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-04 00:23:00,509 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-04 00:23:00,509 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_allowed_releases.conf expired, refreshing cache
+2014-11-04 00:23:00,510 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/allowed_releases.conf
+	data: {}
+2014-11-04 00:23:00,789 [DEBUG] 	Input whitelist: 
+2014-11-04 00:23:00,789 [DEBUG] 	Input blacklist: 
+2014-11-04 00:23:00,789 [DEBUG] 	Converted whitelist: 
+2014-11-04 00:23:00,790 [DEBUG] 	Converted blacklist: 
+2014-11-04 00:23:00,790 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-04 00:23:00,790 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_myproxy_server.conf expired, refreshing cache
+2014-11-04 00:23:00,790 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/myproxy_server.conf
+	data: {}
+2014-11-04 00:23:00,824 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 00:23:00,825 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_site_black_list.conf expired, refreshing cache
+2014-11-04 00:23:00,825 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/site_black_list.conf
+	data: {}
+2014-11-04 00:23:00,849 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-04 00:23:12,774 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 00:23:12,776 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-04 00:23:12,776 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-04 00:23:12,782 [DEBUG] 	Status::run() called
+2014-11-04 00:23:12,782 [INFO] 	Checking the status of all jobs: please wait
+2014-11-04 00:23:12,867 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-04 00:23:14,023 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh  -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "sleep 3600"
+2014-11-04 00:23:14,032 [INFO] 	Establishing gsissh ControlPath. Wait 2 sec ...
+2014-11-04 00:23:16,033 [INFO] 	Establishing gsissh ControlPath. Wait 2 sec ...
+2014-11-04 00:23:18,036 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-04 00:23:19,104 [DEBUG] 	Status,output= 0,
+2014-11-04 00:23:19,105 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "condor_history -userlog lcadamur_Trees_ggFusion_Stage2_9gzm41/condor.log -xml"
+2014-11-04 00:23:20,289 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu "cd lcadamur_Trees_ggFusion_Stage2_9gzm41; egrep -H WrapperExitCode\|ExeExitCode crab_fjr_*xml|tr '_.\t\"' ' '|awk '{print \$3\" \"\$7\" \"\$9}'"
+2014-11-04 00:23:21,061 [DEBUG] 	Status,output= 0
+10 0 WrapperExitCode
+10 0 ExeExitCode
+11 0 WrapperExitCode
+11 0 ExeExitCode
+13 0 WrapperExitCode
+13 0 ExeExitCode
+14 0 WrapperExitCode
+14 0 ExeExitCode
+15 0 WrapperExitCode
+15 0 ExeExitCode
+16 0 WrapperExitCode
+16 0 ExeExitCode
+17 0 WrapperExitCode
+17 0 ExeExitCode
+19 0 WrapperExitCode
+19 0 ExeExitCode
+1 0 WrapperExitCode
+1 0 ExeExitCode
+20 0 WrapperExitCode
+20 0 ExeExitCode
+21 0 WrapperExitCode
+21 0 ExeExitCode
+22 0 WrapperExitCode
+22 0 ExeExitCode
+23 0 WrapperExitCode
+23 0 ExeExitCode
+24 0 WrapperExitCode
+24 0 ExeExitCode
+25 0 WrapperExitCode
+25 0 ExeExitCode
+2 0 WrapperExitCode
+2 0 ExeExitCode
+3 0 WrapperExitCode
+3 0 ExeExitCode
+4 0 WrapperExitCode
+4 0 ExeExitCode
+5 0 WrapperExitCode
+5 0 ExeExitCode
+6 0 WrapperExitCode
+6 0 ExeExitCode
+7 0 WrapperExitCode
+7 0 ExeExitCode
+8 0 WrapperExitCode
+8 0 ExeExitCode
+9 0 WrapperExitCode
+9 0 ExeExitCode
+2014-11-04 00:23:21,270 [INFO] 	
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+2     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+3     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+4     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+5     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+6     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+7     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+8     Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+9     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+10    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+--------------------------------------------------------------------------------
+11    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+12    N   Running           SubSuccess                           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+13    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+14    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+15    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+16    Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+17    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+18    N   Running           SubSuccess                           cmsgrid01.hep.wisc.edu
+19    N   Done              Terminated    0          0           cmsgrid01.hep.wisc.edu
+20    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+--------------------------------------------------------------------------------
+21    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+22    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+23    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+24    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+25    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+
+2014-11-04 00:23:21,387 [INFO] 	ExitCodes Summary
+ >>>>>>>>> 23 Jobs with Wrapper Exit Code : 0 
+	 List of jobs: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,22 
+	See https://twiki.cern.ch/twiki/bin/view/CMSPublic/JobExitCodes for Exit Code meaning
+
+2014-11-04 00:23:21,744 [INFO] 	 25 Total Jobs 
+ >>>>>>>>> 2 Jobs Running 
+	List of jobs Running: 12,18 
+ >>>>>>>>> 22 Jobs Retrieved 
+	List of jobs Retrieved: 1,3,5-6,8-11,13-15,17,20-21,23-25,2,4,7,16,22 
+ >>>>>>>>> 1 Jobs Done
+	Jobs terminated: retrieve them with: crab -getoutput <List of jobs>
+	List of jobs: 19 
+
+2014-11-04 00:23:21,758 [INFO] 	You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=lcadamur_Trees_ggFusion_Stage2_9gzm41
+	Your task name is: lcadamur_Trees_ggFusion_Stage2_9gzm41 
+
+2014-11-04 00:23:21,758 [DEBUG] 	Status Time: 8.97564888
+2014-11-04 00:23:34,841 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2 -getoutput
+
+2014-11-04 00:23:34,841 [INFO] 	Version 2.11.1 running on Tue Nov  4 00:23:34 2014 CET (23:23:34 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-04 00:23:34,841 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-04 00:23:34,967 [DEBUG] 	Input whitelist: 
+2014-11-04 00:23:34,968 [DEBUG] 	Input blacklist: 
+2014-11-04 00:23:34,968 [DEBUG] 	Converted whitelist: 
+2014-11-04 00:23:34,968 [DEBUG] 	Converted blacklist: 
+2014-11-04 00:23:34,968 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-04 00:23:34,970 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 00:23:34,971 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-04 00:23:39,865 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 00:23:39,866 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-04 00:23:39,866 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-04 00:23:39,872 [DEBUG] 	GetOutput::run() called
+2014-11-04 00:23:39,893 [INFO] 	Only 1 jobs will be retrieved  from 25 requested.
+	(for details: crab -status)
+2014-11-04 00:23:39,902 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/res/ is not in AFS.
+Volume Name                    Quota       Used %Used   Partition
+ while checking AFS quota. Treat as check OK
+2014-11-04 00:23:39,911 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/res/ is not in AFS.
+Volume Name                  kbytes      used     avail %used
+ while checking partition. Treat as check OK
+2014-11-04 00:23:40,119 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-04 00:23:41,392 [INFO] 	Preparing to rsync 2 files
+2014-11-04 00:23:43,505 [INFO] 	Results of Jobs # 19 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/res/
+2014-11-04 00:23:43,746 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/res/ is not in AFS.
+Volume Name                    Quota       Used %Used   Partition
+ while checking AFS quota. Treat as check OK
+2014-11-04 00:23:43,755 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/res/ is not in AFS.
+Volume Name                  kbytes      used     avail %used
+ while checking partition. Treat as check OK
+2014-11-04 00:23:43,822 [DEBUG] 	GetOutput Time: 3.9491648674
+2014-11-04 00:24:46,965 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2 -status
+
+2014-11-04 00:24:46,965 [INFO] 	Version 2.11.1 running on Tue Nov  4 00:24:46 2014 CET (23:24:46 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-04 00:24:46,965 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-04 00:24:47,105 [DEBUG] 	Input whitelist: 
+2014-11-04 00:24:47,106 [DEBUG] 	Input blacklist: 
+2014-11-04 00:24:47,106 [DEBUG] 	Converted whitelist: 
+2014-11-04 00:24:47,106 [DEBUG] 	Converted blacklist: 
+2014-11-04 00:24:47,106 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-04 00:24:47,107 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 00:24:47,108 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-04 00:24:52,362 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 00:24:52,363 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-04 00:24:52,363 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-04 00:24:52,369 [DEBUG] 	Status::run() called
+2014-11-04 00:24:52,369 [INFO] 	Checking the status of all jobs: please wait
+2014-11-04 00:24:52,437 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-04 00:24:53,581 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-04 00:24:54,631 [DEBUG] 	Status,output= 0,
+2014-11-04 00:24:54,632 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "condor_history -userlog lcadamur_Trees_ggFusion_Stage2_9gzm41/condor.log -xml"
+2014-11-04 00:24:56,006 [INFO] 	
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+2     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+3     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+4     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+5     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+6     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+7     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+8     Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+9     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+10    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+--------------------------------------------------------------------------------
+11    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+12    N   Running           SubSuccess                           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+13    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+14    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+15    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+16    Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+17    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+18    N   Running           SubSuccess                           cmsgrid01.hep.wisc.edu
+19    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+20    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+--------------------------------------------------------------------------------
+21    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+22    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+23    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+24    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+25    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+
+2014-11-04 00:24:56,042 [INFO] 	ExitCodes Summary
+ >>>>>>>>> 23 Jobs with Wrapper Exit Code : 0 
+	 List of jobs: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,22 
+	See https://twiki.cern.ch/twiki/bin/view/CMSPublic/JobExitCodes for Exit Code meaning
+
+2014-11-04 00:24:56,098 [INFO] 	 25 Total Jobs 
+ >>>>>>>>> 2 Jobs Running 
+	List of jobs Running: 12,18 
+ >>>>>>>>> 23 Jobs Retrieved 
+	List of jobs Retrieved: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,22 
+
+2014-11-04 00:24:56,109 [INFO] 	You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=lcadamur_Trees_ggFusion_Stage2_9gzm41
+	Your task name is: lcadamur_Trees_ggFusion_Stage2_9gzm41 
+
+2014-11-04 00:24:56,109 [DEBUG] 	Status Time: 3.74037384987
+2014-11-04 00:57:11,523 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2 -status
+
+2014-11-04 00:57:11,523 [INFO] 	Version 2.11.1 running on Tue Nov  4 00:57:11 2014 CET (23:57:11 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-04 00:57:11,524 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-04 00:57:11,525 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_allowed_releases.conf expired, refreshing cache
+2014-11-04 00:57:11,525 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/allowed_releases.conf
+	data: {}
+2014-11-04 00:57:11,721 [DEBUG] 	Input whitelist: 
+2014-11-04 00:57:11,722 [DEBUG] 	Input blacklist: 
+2014-11-04 00:57:11,722 [DEBUG] 	Converted whitelist: 
+2014-11-04 00:57:11,722 [DEBUG] 	Converted blacklist: 
+2014-11-04 00:57:11,722 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-04 00:57:11,723 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_myproxy_server.conf expired, refreshing cache
+2014-11-04 00:57:11,723 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/myproxy_server.conf
+	data: {}
+2014-11-04 00:57:11,750 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 00:57:11,751 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_site_black_list.conf expired, refreshing cache
+2014-11-04 00:57:11,751 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/site_black_list.conf
+	data: {}
+2014-11-04 00:57:11,774 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-04 00:57:16,915 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 00:57:16,917 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-04 00:57:16,917 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-04 00:57:16,922 [DEBUG] 	Status::run() called
+2014-11-04 00:57:16,922 [INFO] 	Checking the status of all jobs: please wait
+2014-11-04 00:57:16,986 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-04 00:57:18,133 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh  -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "sleep 3600"
+2014-11-04 00:57:18,137 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-04 00:57:19,235 [DEBUG] 	Status,output= 0,
+2014-11-04 00:57:19,235 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "condor_history -userlog lcadamur_Trees_ggFusion_Stage2_9gzm41/condor.log -xml"
+2014-11-04 00:57:20,773 [INFO] 	
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+2     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+3     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+4     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+5     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+6     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+7     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+8     Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+9     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+10    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+--------------------------------------------------------------------------------
+11    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+12    N   Running           SubSuccess                           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+13    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+14    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+15    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+16    Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+17    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+18    N   Running           SubSuccess                           cmsgrid01.hep.wisc.edu
+19    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+20    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+--------------------------------------------------------------------------------
+21    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+22    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+23    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+24    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+25    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+
+2014-11-04 00:57:20,808 [INFO] 	ExitCodes Summary
+ >>>>>>>>> 23 Jobs with Wrapper Exit Code : 0 
+	 List of jobs: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,22 
+	See https://twiki.cern.ch/twiki/bin/view/CMSPublic/JobExitCodes for Exit Code meaning
+
+2014-11-04 00:57:20,857 [INFO] 	 25 Total Jobs 
+ >>>>>>>>> 2 Jobs Running 
+	List of jobs Running: 12,18 
+ >>>>>>>>> 23 Jobs Retrieved 
+	List of jobs Retrieved: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,22 
+
+2014-11-04 00:57:20,872 [INFO] 	You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=lcadamur_Trees_ggFusion_Stage2_9gzm41
+	Your task name is: lcadamur_Trees_ggFusion_Stage2_9gzm41 
+
+2014-11-04 00:57:20,872 [DEBUG] 	Status Time: 3.94999098778
+2014-11-04 10:21:09,992 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -status
+
+2014-11-04 10:21:09,992 [INFO] 	Version 2.11.1 running on Tue Nov  4 10:21:09 2014 CET (09:21:09 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-04 10:21:09,992 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-04 10:21:09,993 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_allowed_releases.conf expired, refreshing cache
+2014-11-04 10:21:09,993 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/allowed_releases.conf
+	data: {}
+2014-11-04 10:21:10,265 [DEBUG] 	Input whitelist: 
+2014-11-04 10:21:10,266 [DEBUG] 	Input blacklist: 
+2014-11-04 10:21:10,266 [DEBUG] 	Converted whitelist: 
+2014-11-04 10:21:10,266 [DEBUG] 	Converted blacklist: 
+2014-11-04 10:21:10,266 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-04 10:21:10,267 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_myproxy_server.conf expired, refreshing cache
+2014-11-04 10:21:10,267 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/myproxy_server.conf
+	data: {}
+2014-11-04 10:21:10,292 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 10:21:10,292 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_site_black_list.conf expired, refreshing cache
+2014-11-04 10:21:10,292 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/site_black_list.conf
+	data: {}
+2014-11-04 10:21:10,316 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-04 10:21:23,536 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 10:21:23,538 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-04 10:21:23,538 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-04 10:21:23,544 [DEBUG] 	Status::run() called
+2014-11-04 10:21:23,544 [INFO] 	Checking the status of all jobs: please wait
+2014-11-04 10:21:23,626 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-04 10:21:24,933 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh  -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "sleep 3600"
+2014-11-04 10:21:24,937 [INFO] 	Establishing gsissh ControlPath. Wait 2 sec ...
+2014-11-04 10:21:26,939 [INFO] 	Establishing gsissh ControlPath. Wait 2 sec ...
+2014-11-04 10:21:28,941 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-04 10:21:30,010 [DEBUG] 	Status,output= 0,
+2014-11-04 10:21:30,010 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "condor_history -userlog lcadamur_Trees_ggFusion_Stage2_9gzm41/condor.log -xml"
+2014-11-04 10:21:31,235 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu "cd lcadamur_Trees_ggFusion_Stage2_9gzm41; egrep -H WrapperExitCode\|ExeExitCode crab_fjr_*xml|tr '_.\t\"' ' '|awk '{print \$3\" \"\$7\" \"\$9}'"
+2014-11-04 10:21:31,927 [DEBUG] 	Status,output= 0
+10 0 WrapperExitCode
+10 0 ExeExitCode
+11 0 WrapperExitCode
+11 0 ExeExitCode
+13 0 WrapperExitCode
+13 0 ExeExitCode
+14 0 WrapperExitCode
+14 0 ExeExitCode
+15 0 WrapperExitCode
+15 0 ExeExitCode
+16 0 WrapperExitCode
+16 0 ExeExitCode
+17 0 WrapperExitCode
+17 0 ExeExitCode
+18 0 WrapperExitCode
+18 0 ExeExitCode
+19 0 WrapperExitCode
+19 0 ExeExitCode
+1 0 WrapperExitCode
+1 0 ExeExitCode
+20 0 WrapperExitCode
+20 0 ExeExitCode
+21 0 WrapperExitCode
+21 0 ExeExitCode
+22 0 WrapperExitCode
+22 0 ExeExitCode
+23 0 WrapperExitCode
+23 0 ExeExitCode
+24 0 WrapperExitCode
+24 0 ExeExitCode
+25 0 WrapperExitCode
+25 0 ExeExitCode
+2 0 WrapperExitCode
+2 0 ExeExitCode
+3 0 WrapperExitCode
+3 0 ExeExitCode
+4 0 WrapperExitCode
+4 0 ExeExitCode
+5 0 WrapperExitCode
+5 0 ExeExitCode
+6 0 WrapperExitCode
+6 0 ExeExitCode
+7 0 WrapperExitCode
+7 0 ExeExitCode
+8 0 WrapperExitCode
+8 0 ExeExitCode
+9 0 WrapperExitCode
+9 0 ExeExitCode
+2014-11-04 10:21:32,047 [INFO] 	
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+2     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+3     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+4     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+5     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+6     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+7     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+8     Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+9     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+10    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+--------------------------------------------------------------------------------
+11    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+12    N   Running           SubSuccess                           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+13    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+14    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+15    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+16    Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+17    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+18    N   Done              Terminated    0          0           cmsgrid02.hep.wisc.edu
+19    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+20    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+--------------------------------------------------------------------------------
+21    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+22    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+23    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+24    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+25    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+
+2014-11-04 10:21:32,084 [INFO] 	ExitCodes Summary
+ >>>>>>>>> 24 Jobs with Wrapper Exit Code : 0 
+	 List of jobs: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,18,22 
+	See https://twiki.cern.ch/twiki/bin/view/CMSPublic/JobExitCodes for Exit Code meaning
+
+2014-11-04 10:21:32,130 [INFO] 	 25 Total Jobs 
+ >>>>>>>>> 1 Jobs Running 
+	List of jobs Running: 12 
+ >>>>>>>>> 23 Jobs Retrieved 
+	List of jobs Retrieved: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,22 
+ >>>>>>>>> 1 Jobs Done
+	Jobs terminated: retrieve them with: crab -getoutput <List of jobs>
+	List of jobs: 18 
+
+2014-11-04 10:21:32,141 [INFO] 	You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=lcadamur_Trees_ggFusion_Stage2_9gzm41
+	Your task name is: lcadamur_Trees_ggFusion_Stage2_9gzm41 
+
+2014-11-04 10:21:32,141 [DEBUG] 	Status Time: 8.59744596481
+2014-11-04 10:21:53,163 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -getoutput
+
+2014-11-04 10:21:53,164 [INFO] 	Version 2.11.1 running on Tue Nov  4 10:21:53 2014 CET (09:21:53 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-04 10:21:53,164 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-04 10:21:53,293 [DEBUG] 	Input whitelist: 
+2014-11-04 10:21:53,294 [DEBUG] 	Input blacklist: 
+2014-11-04 10:21:53,294 [DEBUG] 	Converted whitelist: 
+2014-11-04 10:21:53,294 [DEBUG] 	Converted blacklist: 
+2014-11-04 10:21:53,294 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-04 10:21:53,295 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 10:21:53,296 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-04 10:21:58,221 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 10:21:58,222 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-04 10:21:58,223 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-04 10:21:58,229 [DEBUG] 	GetOutput::run() called
+2014-11-04 10:21:58,245 [INFO] 	Only 1 jobs will be retrieved  from 25 requested.
+	(for details: crab -status)
+2014-11-04 10:21:58,255 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/ is not in AFS.
+Volume Name                    Quota       Used %Used   Partition
+ while checking AFS quota. Treat as check OK
+2014-11-04 10:21:58,264 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/ is not in AFS.
+Volume Name                  kbytes      used     avail %used
+ while checking partition. Treat as check OK
+2014-11-04 10:21:58,406 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-04 10:21:59,597 [INFO] 	Preparing to rsync 2 files
+2014-11-04 10:22:01,895 [DEBUG] 	
+2014-11-04 10:22:01,905 [DEBUG] 	
+2014-11-04 10:22:01,915 [DEBUG] 	
+2014-11-04 10:22:01,924 [DEBUG] 	
+2014-11-04 10:22:01,969 [INFO] 	Results of Jobs # 18 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-04 10:22:02,193 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/ is not in AFS.
+Volume Name                    Quota       Used %Used   Partition
+ while checking AFS quota. Treat as check OK
+2014-11-04 10:22:02,201 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/ is not in AFS.
+Volume Name                  kbytes      used     avail %used
+ while checking partition. Treat as check OK
+2014-11-04 10:22:02,250 [DEBUG] 	GetOutput Time: 4.02121186256
+2014-11-04 10:48:15,877 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -status
+
+2014-11-04 10:48:15,877 [INFO] 	Version 2.11.1 running on Tue Nov  4 10:48:15 2014 CET (09:48:15 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-04 10:48:15,877 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-04 10:48:16,091 [DEBUG] 	Input whitelist: 
+2014-11-04 10:48:16,091 [DEBUG] 	Input blacklist: 
+2014-11-04 10:48:16,091 [DEBUG] 	Converted whitelist: 
+2014-11-04 10:48:16,091 [DEBUG] 	Converted blacklist: 
+2014-11-04 10:48:16,091 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-04 10:48:16,092 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 10:48:16,093 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-04 10:48:21,218 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 10:48:21,219 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-04 10:48:21,220 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-04 10:48:21,226 [DEBUG] 	Status::run() called
+2014-11-04 10:48:21,226 [INFO] 	Checking the status of all jobs: please wait
+2014-11-04 10:48:21,325 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-04 10:48:22,521 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-04 10:48:23,587 [DEBUG] 	Status,output= 0,
+2014-11-04 10:48:23,588 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "condor_history -userlog lcadamur_Trees_ggFusion_Stage2_9gzm41/condor.log -xml"
+2014-11-04 10:48:25,052 [INFO] 	
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+2     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+3     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+4     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+5     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+6     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+7     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+8     Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+9     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+10    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+--------------------------------------------------------------------------------
+11    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+12    N   Running           SubSuccess                           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+13    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+14    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+15    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+16    Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+17    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+18    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+19    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+20    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+--------------------------------------------------------------------------------
+21    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+22    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+23    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+24    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+25    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+
+2014-11-04 10:48:25,090 [INFO] 	ExitCodes Summary
+ >>>>>>>>> 24 Jobs with Wrapper Exit Code : 0 
+	 List of jobs: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,18,22 
+	See https://twiki.cern.ch/twiki/bin/view/CMSPublic/JobExitCodes for Exit Code meaning
+
+2014-11-04 10:48:25,138 [INFO] 	 25 Total Jobs 
+ >>>>>>>>> 1 Jobs Running 
+	List of jobs Running: 12 
+ >>>>>>>>> 24 Jobs Retrieved 
+	List of jobs Retrieved: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,18,22 
+
+2014-11-04 10:48:25,150 [INFO] 	You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=lcadamur_Trees_ggFusion_Stage2_9gzm41
+	Your task name is: lcadamur_Trees_ggFusion_Stage2_9gzm41 
+
+2014-11-04 10:48:25,150 [DEBUG] 	Status Time: 3.92390298843
+2014-11-04 11:11:44,944 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2 -status
+
+2014-11-04 11:11:44,944 [INFO] 	Version 2.11.1 running on Tue Nov  4 11:11:44 2014 CET (10:11:44 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-04 11:11:44,945 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-04 11:11:44,945 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_allowed_releases.conf expired, refreshing cache
+2014-11-04 11:11:44,946 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/allowed_releases.conf
+	data: {}
+2014-11-04 11:11:45,195 [DEBUG] 	Input whitelist: 
+2014-11-04 11:11:45,196 [DEBUG] 	Input blacklist: 
+2014-11-04 11:11:45,196 [DEBUG] 	Converted whitelist: 
+2014-11-04 11:11:45,196 [DEBUG] 	Converted blacklist: 
+2014-11-04 11:11:45,196 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-04 11:11:45,197 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_myproxy_server.conf expired, refreshing cache
+2014-11-04 11:11:45,197 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/myproxy_server.conf
+	data: {}
+2014-11-04 11:11:45,226 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 11:11:45,226 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_site_black_list.conf expired, refreshing cache
+2014-11-04 11:11:45,226 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/site_black_list.conf
+	data: {}
+2014-11-04 11:11:45,250 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-04 11:11:55,559 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 11:11:55,561 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-04 11:11:55,562 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-04 11:11:55,568 [DEBUG] 	Status::run() called
+2014-11-04 11:11:55,568 [INFO] 	Checking the status of all jobs: please wait
+2014-11-04 11:11:55,649 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-04 11:11:56,794 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh  -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "sleep 3600"
+2014-11-04 11:11:56,798 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-04 11:11:57,863 [DEBUG] 	Status,output= 0,
+2014-11-04 11:11:57,864 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "condor_history -userlog lcadamur_Trees_ggFusion_Stage2_9gzm41/condor.log -xml"
+2014-11-04 11:11:59,354 [INFO] 	
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+2     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+3     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+4     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+5     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+6     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+7     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+8     Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+9     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+10    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+--------------------------------------------------------------------------------
+11    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+12    N   Running           SubSuccess                           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+13    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+14    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+15    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+16    Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+17    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+18    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+19    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+20    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+--------------------------------------------------------------------------------
+21    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+22    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+23    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+24    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+25    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+
+2014-11-04 11:11:59,388 [INFO] 	ExitCodes Summary
+ >>>>>>>>> 24 Jobs with Wrapper Exit Code : 0 
+	 List of jobs: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,18,22 
+	See https://twiki.cern.ch/twiki/bin/view/CMSPublic/JobExitCodes for Exit Code meaning
+
+2014-11-04 11:11:59,433 [INFO] 	 25 Total Jobs 
+ >>>>>>>>> 1 Jobs Running 
+	List of jobs Running: 12 
+ >>>>>>>>> 24 Jobs Retrieved 
+	List of jobs Retrieved: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,18,22 
+
+2014-11-04 11:11:59,444 [INFO] 	You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=lcadamur_Trees_ggFusion_Stage2_9gzm41
+	Your task name is: lcadamur_Trees_ggFusion_Stage2_9gzm41 
+
+2014-11-04 11:11:59,444 [DEBUG] 	Status Time: 3.8766579628
+2014-11-04 14:39:12,448 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -status
+
+2014-11-04 14:39:12,448 [INFO] 	Version 2.11.1 running on Tue Nov  4 14:39:12 2014 CET (13:39:12 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-04 14:39:12,448 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-04 14:39:12,449 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_allowed_releases.conf expired, refreshing cache
+2014-11-04 14:39:12,449 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/allowed_releases.conf
+	data: {}
+2014-11-04 14:39:12,697 [DEBUG] 	Input whitelist: 
+2014-11-04 14:39:12,697 [DEBUG] 	Input blacklist: 
+2014-11-04 14:39:12,697 [DEBUG] 	Converted whitelist: 
+2014-11-04 14:39:12,698 [DEBUG] 	Converted blacklist: 
+2014-11-04 14:39:12,698 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-04 14:39:12,698 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_myproxy_server.conf expired, refreshing cache
+2014-11-04 14:39:12,699 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/myproxy_server.conf
+	data: {}
+2014-11-04 14:39:12,728 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 14:39:12,729 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_site_black_list.conf expired, refreshing cache
+2014-11-04 14:39:12,729 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/site_black_list.conf
+	data: {}
+2014-11-04 14:39:12,755 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-04 14:39:22,840 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 14:39:22,841 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-04 14:39:22,841 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-04 14:39:22,848 [DEBUG] 	Status::run() called
+2014-11-04 14:39:22,848 [INFO] 	Checking the status of all jobs: please wait
+2014-11-04 14:39:22,931 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-04 14:39:24,098 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh  -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "sleep 3600"
+2014-11-04 14:39:24,102 [INFO] 	Establishing gsissh ControlPath. Wait 2 sec ...
+2014-11-04 14:39:26,104 [INFO] 	Establishing gsissh ControlPath. Wait 2 sec ...
+2014-11-04 14:39:28,107 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-04 14:39:29,099 [DEBUG] 	Status,output= 0,
+2014-11-04 14:39:29,100 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "condor_history -userlog lcadamur_Trees_ggFusion_Stage2_9gzm41/condor.log -xml"
+2014-11-04 14:39:30,345 [INFO] 	
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+2     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+3     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+4     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+5     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+6     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+7     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+8     Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+9     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+10    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+--------------------------------------------------------------------------------
+11    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+12    N   Running           SubSuccess                           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+13    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+14    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+15    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+16    Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+17    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+18    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+19    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+20    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+--------------------------------------------------------------------------------
+21    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+22    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+23    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+24    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+25    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+
+2014-11-04 14:39:30,399 [INFO] 	ExitCodes Summary
+ >>>>>>>>> 24 Jobs with Wrapper Exit Code : 0 
+	 List of jobs: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,18,22 
+	See https://twiki.cern.ch/twiki/bin/view/CMSPublic/JobExitCodes for Exit Code meaning
+
+2014-11-04 14:39:30,452 [INFO] 	 25 Total Jobs 
+ >>>>>>>>> 1 Jobs Running 
+	List of jobs Running: 12 
+ >>>>>>>>> 24 Jobs Retrieved 
+	List of jobs Retrieved: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,18,22 
+
+2014-11-04 14:39:30,463 [INFO] 	You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=lcadamur_Trees_ggFusion_Stage2_9gzm41
+	Your task name is: lcadamur_Trees_ggFusion_Stage2_9gzm41 
+
+2014-11-04 14:39:30,464 [DEBUG] 	Status Time: 7.61577486992
+2014-11-04 14:48:43,113 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -status
+
+2014-11-04 14:48:43,113 [INFO] 	Version 2.11.1 running on Tue Nov  4 14:48:43 2014 CET (13:48:43 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-04 14:48:43,114 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-04 14:48:43,255 [DEBUG] 	Input whitelist: 
+2014-11-04 14:48:43,256 [DEBUG] 	Input blacklist: 
+2014-11-04 14:48:43,256 [DEBUG] 	Converted whitelist: 
+2014-11-04 14:48:43,256 [DEBUG] 	Converted blacklist: 
+2014-11-04 14:48:43,256 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-04 14:48:43,257 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 14:48:43,258 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-04 14:48:48,376 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 14:48:48,377 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-04 14:48:48,377 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-04 14:48:48,383 [DEBUG] 	Status::run() called
+2014-11-04 14:48:48,383 [INFO] 	Checking the status of all jobs: please wait
+2014-11-04 14:48:48,439 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-04 14:48:49,588 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-04 14:48:50,577 [DEBUG] 	Status,output= 0,
+2014-11-04 14:48:50,578 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "condor_history -userlog lcadamur_Trees_ggFusion_Stage2_9gzm41/condor.log -xml"
+2014-11-04 14:48:51,946 [INFO] 	
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+2     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+3     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+4     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+5     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+6     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+7     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+8     Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+9     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+10    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+--------------------------------------------------------------------------------
+11    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+12    N   Running           SubSuccess                           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+13    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+14    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+15    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+16    Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+17    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+18    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+19    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+20    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+--------------------------------------------------------------------------------
+21    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+22    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+23    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+24    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+25    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+
+2014-11-04 14:48:51,982 [INFO] 	ExitCodes Summary
+ >>>>>>>>> 24 Jobs with Wrapper Exit Code : 0 
+	 List of jobs: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,18,22 
+	See https://twiki.cern.ch/twiki/bin/view/CMSPublic/JobExitCodes for Exit Code meaning
+
+2014-11-04 14:48:52,028 [INFO] 	 25 Total Jobs 
+ >>>>>>>>> 1 Jobs Running 
+	List of jobs Running: 12 
+ >>>>>>>>> 24 Jobs Retrieved 
+	List of jobs Retrieved: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,18,22 
+
+2014-11-04 14:48:52,039 [INFO] 	You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=lcadamur_Trees_ggFusion_Stage2_9gzm41
+	Your task name is: lcadamur_Trees_ggFusion_Stage2_9gzm41 
+
+2014-11-04 14:48:52,039 [DEBUG] 	Status Time: 3.65654993057
+2014-11-04 14:48:59,149 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -kill 12
+
+2014-11-04 14:48:59,149 [INFO] 	Version 2.11.1 running on Tue Nov  4 14:48:59 2014 CET (13:48:59 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-04 14:48:59,149 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-04 14:48:59,275 [DEBUG] 	Input whitelist: 
+2014-11-04 14:48:59,276 [DEBUG] 	Input blacklist: 
+2014-11-04 14:48:59,276 [DEBUG] 	Converted whitelist: 
+2014-11-04 14:48:59,276 [DEBUG] 	Converted blacklist: 
+2014-11-04 14:48:59,276 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-04 14:48:59,277 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 14:48:59,278 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-04 14:49:04,147 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 14:49:04,148 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-04 14:49:04,149 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-04 14:49:04,149 [DEBUG] 	parseRange_ 12
+2014-11-04 14:49:04,151 [DEBUG] 	Killer::run() called
+2014-11-04 14:49:04,179 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-04 14:49:05,350 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "condor_rm  521119.9"
+2014-11-04 14:49:06,029 [INFO] 	Jobs killed [12]
+2014-11-04 14:49:10,582 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -status
+
+2014-11-04 14:49:10,582 [INFO] 	Version 2.11.1 running on Tue Nov  4 14:49:10 2014 CET (13:49:10 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-04 14:49:10,583 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-04 14:49:10,704 [DEBUG] 	Input whitelist: 
+2014-11-04 14:49:10,705 [DEBUG] 	Input blacklist: 
+2014-11-04 14:49:10,705 [DEBUG] 	Converted whitelist: 
+2014-11-04 14:49:10,705 [DEBUG] 	Converted blacklist: 
+2014-11-04 14:49:10,705 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-04 14:49:10,706 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 14:49:10,707 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-04 14:49:15,807 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 14:49:15,808 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-04 14:49:15,808 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-04 14:49:15,813 [DEBUG] 	Status::run() called
+2014-11-04 14:49:15,813 [INFO] 	Checking the status of all jobs: please wait
+2014-11-04 14:49:15,889 [INFO] 	
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+2     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+3     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+4     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+5     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+6     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+7     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+8     Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+9     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+10    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+--------------------------------------------------------------------------------
+11    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+12    Y   Cancelled by user KillSuccess                          cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+13    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+14    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+15    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+16    Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+17    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+18    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+19    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+20    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+--------------------------------------------------------------------------------
+21    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+22    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+23    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+24    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+25    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+
+2014-11-04 14:49:15,926 [INFO] 	ExitCodes Summary
+ >>>>>>>>> 24 Jobs with Wrapper Exit Code : 0 
+	 List of jobs: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,18,22 
+	See https://twiki.cern.ch/twiki/bin/view/CMSPublic/JobExitCodes for Exit Code meaning
+
+2014-11-04 14:49:15,972 [INFO] 	 25 Total Jobs 
+ >>>>>>>>> 24 Jobs Retrieved 
+	List of jobs Retrieved: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,18,22 
+ >>>>>>>>> 1 Jobs Cancelled by user 
+	List of jobs Cancelled by user: 12 
+
+2014-11-04 14:49:15,983 [INFO] 	You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=lcadamur_Trees_ggFusion_Stage2_9gzm41
+	Your task name is: lcadamur_Trees_ggFusion_Stage2_9gzm41 
+
+2014-11-04 14:49:15,984 [DEBUG] 	Status Time: 0.170729875565
+2014-11-04 14:49:24,822 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -getoutput
+
+2014-11-04 14:49:24,823 [INFO] 	Version 2.11.1 running on Tue Nov  4 14:49:24 2014 CET (13:49:24 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-04 14:49:24,823 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-04 14:49:24,950 [DEBUG] 	Input whitelist: 
+2014-11-04 14:49:24,950 [DEBUG] 	Input blacklist: 
+2014-11-04 14:49:24,950 [DEBUG] 	Converted whitelist: 
+2014-11-04 14:49:24,950 [DEBUG] 	Converted blacklist: 
+2014-11-04 14:49:24,951 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-04 14:49:24,952 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 14:49:24,952 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-04 14:49:29,992 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 14:49:29,993 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-04 14:49:29,994 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-04 14:49:30,000 [DEBUG] 	GetOutput::run() called
+2014-11-04 14:49:30,015 [DEBUG] 	ERROR: Jobs 1-25 are not in Done status. It is not possible yet to retrieve the output. 
+
+
+2014-11-04 14:49:40,817 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -resubmit 12
+
+2014-11-04 14:49:40,818 [INFO] 	Version 2.11.1 running on Tue Nov  4 14:49:40 2014 CET (13:49:40 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-04 14:49:40,818 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-04 14:49:40,938 [DEBUG] 	Input whitelist: 
+2014-11-04 14:49:40,939 [DEBUG] 	Input blacklist: 
+2014-11-04 14:49:40,939 [DEBUG] 	Converted whitelist: 
+2014-11-04 14:49:40,939 [DEBUG] 	Converted blacklist: 
+2014-11-04 14:49:40,939 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-04 14:49:40,940 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 14:49:40,941 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-04 14:49:45,593 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 14:49:45,595 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-04 14:49:45,595 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-04 14:49:45,595 [DEBUG] 	parseRange_ 12
+2014-11-04 14:49:45,644 [INFO] 	Jobs [12] will be resubmitted
+2014-11-04 14:49:45,645 [DEBUG] 	Scram::Scram() version is 2
+2014-11-04 14:49:45,645 [DEBUG] 	Scram::Scram() arch is slc6_amd64_gcc481
+2014-11-04 14:49:45,645 [DEBUG] 	Submitter::run() called
+2014-11-04 14:49:45,660 [DEBUG] 	nsjobs -1
+2014-11-04 14:49:45,660 [DEBUG] 	Total jobs 25
+2014-11-04 14:49:45,664 [DEBUG] 	nj_list [12]
+2014-11-04 14:49:46,264 [DEBUG] 	GRIDNAME: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lcadamur/CN=756121/CN=Luca Cadamuro 
+2014-11-04 14:49:46,846 [DEBUG] 	/home/llr/cms/cadamuro/.cms_sitedbcache/0_GET_people.json expired, refreshing cache
+2014-11-04 14:49:46,847 [DEBUG] 	getData: 
+	url: /sitedb/data/prod/people
+	data: {}
+2014-11-04 14:49:48,147 [DEBUG] 	Submission DashBoard Pre-Submission report: {'ApplicationVersion': 'CMSSW_7_1_0_pre8', 'taskId': 'lcadamur_Trees_ggFusion_Stage2_9gzm41', 'resubmitter': 'user', 'tool': 'crab2', 'vo': 'cms', 'tool_ui': 'polui03.in2p3.fr', 'JSToolVersion': '2.11.1', 'user': 'lcadamur', 'scheduler': 'GLIDEIN', 'taskType': 'analysis', 'CMSUser': 'lcadamur', 'jobId': 'TaskMeta', 'datasetFull': '/GluGluToHToTauTau_M-125_13TeV-powheg-pythia6/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/GEN-SIM-RAW', 'exe': 'cmsRun', 'GridName': '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lcadamur/CN=756121/CN=Luca Cadamuro', 'SubmissionType': 'direct'}
+2014-11-04 14:49:48,148 [INFO] 	Checking available resources...
+2014-11-04 14:49:48,168 [INFO] 	Found  compatible site(s) for job 12
+2014-11-04 14:49:48,169 [INFO] 	1 blocks of jobs will be submitted
+2014-11-04 14:49:48,169 [DEBUG] 	Delegating proxy 
+2014-11-04 14:49:48,169 [DEBUG] 	Submitting jobs [12]
+2014-11-04 14:49:48,194 [INFO] 	serverName from Task DB is submit-4.t2.ucsd.edu
+2014-11-04 14:49:48,227 [INFO] 	list of PSN's for submission: T2_IT_Bari,T2_FR_GRIF_LLR,T2_US_Wisconsin
+2014-11-04 14:49:48,227 [DEBUG] 	Scram::Scram() version is 2
+2014-11-04 14:49:48,228 [DEBUG] 	Scram::Scram() arch is slc6_amd64_gcc481
+2014-11-04 14:49:48,922 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-04 14:49:50,074 [INFO] 	COPY FILES TO REMOTE HOST
+2014-11-04 14:49:50,075 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  mkdir -p lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-04 14:49:50,638 [DEBUG] 	Status,output= 0,
+2014-11-04 14:49:50,639 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/share/default.tgz /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/share/arguments.xml /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/job/CMSSW.sh /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//share//lcadamur_Trees_ggFusion_Stage2_9gzm41_job12.jdl /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-04 14:49:56,549 [DEBUG] 	Status,output= 0,
+2014-11-04 14:49:56,549 [INFO] 	SUBMIT TO REMOTE GLIDEIN FRONTEND
+2014-11-04 14:49:56,550 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu "cd lcadamur_Trees_ggFusion_Stage2_9gzm41;  condor_submit  lcadamur_Trees_ggFusion_Stage2_9gzm41_job12.jdl; echo 'CONDOR_SUBMIT-EXIT-STATUS IS' \$?"
+2014-11-04 14:49:58,822 [DEBUG] 	Status,output= 0,Submitting job(s).
+1 job(s) submitted to cluster 521489.
+CONDOR_SUBMIT-EXIT-STATUS IS 0
+2014-11-04 14:49:58,824 [DEBUG] 	Returning {u'lcadamur_Trees_ggFusion_Stage2_9gzm41_job12': 'submit-4.t2.ucsd.edu//141104//521489.0'}
+lcadamur_Trees_ggFusion_Stage2_9gzm41
+polui03.in2p3.fr
+2014-11-04 14:49:58,839 [DEBUG] 	WMS : polui03.in2p3.fr
+Collection ID : lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-04 14:49:58,845 [DEBUG] 	Submitted job # 12
+2014-11-04 14:49:58,855 [DEBUG] 	Updating [[12]] state SubSuccess
+2014-11-04 14:49:59,459 [DEBUG] 	GRIDNAME: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=lcadamur/CN=756121/CN=Luca Cadamuro 
+2014-11-04 14:50:00,703 [DEBUG] 	Submission Time: 15.0575790405
+2014-11-04 14:50:00,704 [INFO] 	Total of 1 jobs submitted.
+2014-11-04 14:50:06,581 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -status
+
+2014-11-04 14:50:06,581 [INFO] 	Version 2.11.1 running on Tue Nov  4 14:50:06 2014 CET (13:50:06 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-04 14:50:06,581 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-04 14:50:06,714 [DEBUG] 	Input whitelist: 
+2014-11-04 14:50:06,714 [DEBUG] 	Input blacklist: 
+2014-11-04 14:50:06,714 [DEBUG] 	Converted whitelist: 
+2014-11-04 14:50:06,714 [DEBUG] 	Converted blacklist: 
+2014-11-04 14:50:06,714 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-04 14:50:06,715 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 14:50:06,716 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-04 14:50:11,807 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 14:50:11,808 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-04 14:50:11,808 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-04 14:50:11,813 [DEBUG] 	Status::run() called
+2014-11-04 14:50:11,813 [INFO] 	Checking the status of all jobs: please wait
+2014-11-04 14:50:11,861 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-04 14:50:13,016 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-04 14:50:13,998 [DEBUG] 	Status,output= 0,
+2014-11-04 14:50:13,999 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "condor_history -userlog lcadamur_Trees_ggFusion_Stage2_9gzm41/condor.log -xml"
+2014-11-04 14:50:15,334 [INFO] 	
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+2     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+3     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+4     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+5     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+6     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+7     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+8     Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+9     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+10    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+--------------------------------------------------------------------------------
+11    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+12    N   Submitted         SubSuccess                           
+13    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+14    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+15    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+16    Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+17    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+18    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+19    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+20    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+--------------------------------------------------------------------------------
+21    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+22    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+23    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+24    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+25    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+
+2014-11-04 14:50:15,370 [INFO] 	ExitCodes Summary
+ >>>>>>>>> 24 Jobs with Wrapper Exit Code : 0 
+	 List of jobs: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,18,22 
+	See https://twiki.cern.ch/twiki/bin/view/CMSPublic/JobExitCodes for Exit Code meaning
+
+2014-11-04 14:50:15,414 [INFO] 	 25 Total Jobs 
+ >>>>>>>>> 1 Jobs Submitted 
+	List of jobs Submitted: 12 
+ >>>>>>>>> 24 Jobs Retrieved 
+	List of jobs Retrieved: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,18,22 
+
+2014-11-04 14:50:15,425 [INFO] 	You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=lcadamur_Trees_ggFusion_Stage2_9gzm41
+	Your task name is: lcadamur_Trees_ggFusion_Stage2_9gzm41 
+
+2014-11-04 14:50:15,425 [DEBUG] 	Status Time: 3.61169910431
+2014-11-04 14:53:42,876 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -status
+
+2014-11-04 14:53:42,876 [INFO] 	Version 2.11.1 running on Tue Nov  4 14:53:42 2014 CET (13:53:42 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-04 14:53:42,876 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-04 14:53:43,018 [DEBUG] 	Input whitelist: 
+2014-11-04 14:53:43,019 [DEBUG] 	Input blacklist: 
+2014-11-04 14:53:43,019 [DEBUG] 	Converted whitelist: 
+2014-11-04 14:53:43,019 [DEBUG] 	Converted blacklist: 
+2014-11-04 14:53:43,019 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-04 14:53:43,020 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 14:53:43,021 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-04 14:53:48,077 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 14:53:48,078 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-04 14:53:48,078 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-04 14:53:48,083 [DEBUG] 	Status::run() called
+2014-11-04 14:53:48,083 [INFO] 	Checking the status of all jobs: please wait
+2014-11-04 14:53:48,138 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-04 14:53:49,285 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-04 14:53:50,276 [DEBUG] 	Status,output= 0,
+2014-11-04 14:53:50,277 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "condor_history -userlog lcadamur_Trees_ggFusion_Stage2_9gzm41/condor.log -xml"
+2014-11-04 14:53:51,589 [INFO] 	
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+2     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+3     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+4     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+5     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+6     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+7     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+8     Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+9     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+10    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+--------------------------------------------------------------------------------
+11    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+12    N   Running           SubSuccess                           cmsgrid02.hep.wisc.edu
+13    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+14    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+15    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+16    Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+17    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+18    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+19    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+20    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+--------------------------------------------------------------------------------
+21    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+22    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+23    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+24    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+25    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+
+2014-11-04 14:53:51,631 [INFO] 	ExitCodes Summary
+ >>>>>>>>> 24 Jobs with Wrapper Exit Code : 0 
+	 List of jobs: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,18,22 
+	See https://twiki.cern.ch/twiki/bin/view/CMSPublic/JobExitCodes for Exit Code meaning
+
+2014-11-04 14:53:51,678 [INFO] 	 25 Total Jobs 
+ >>>>>>>>> 1 Jobs Running 
+	List of jobs Running: 12 
+ >>>>>>>>> 24 Jobs Retrieved 
+	List of jobs Retrieved: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,18,22 
+
+2014-11-04 14:53:51,694 [INFO] 	You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=lcadamur_Trees_ggFusion_Stage2_9gzm41
+	Your task name is: lcadamur_Trees_ggFusion_Stage2_9gzm41 
+
+2014-11-04 14:53:51,694 [DEBUG] 	Status Time: 3.61057400703
+2014-11-04 16:43:05,307 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -status
+
+2014-11-04 16:43:05,307 [INFO] 	Version 2.11.1 running on Tue Nov  4 16:43:05 2014 CET (15:43:05 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-04 16:43:05,308 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-04 16:43:05,309 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_allowed_releases.conf expired, refreshing cache
+2014-11-04 16:43:05,309 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/allowed_releases.conf
+	data: {}
+2014-11-04 16:43:05,552 [DEBUG] 	Input whitelist: 
+2014-11-04 16:43:05,553 [DEBUG] 	Input blacklist: 
+2014-11-04 16:43:05,553 [DEBUG] 	Converted whitelist: 
+2014-11-04 16:43:05,553 [DEBUG] 	Converted blacklist: 
+2014-11-04 16:43:05,554 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-04 16:43:05,554 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_myproxy_server.conf expired, refreshing cache
+2014-11-04 16:43:05,555 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/myproxy_server.conf
+	data: {}
+2014-11-04 16:43:05,578 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 16:43:05,579 [DEBUG] 	/home/llr/cms/cadamuro/.cms_crab/0_GET_site_black_list.conf expired, refreshing cache
+2014-11-04 16:43:05,579 [DEBUG] 	getData: 
+	url: /cms/LCG/crab/config/site_black_list.conf
+	data: {}
+2014-11-04 16:43:05,602 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-04 16:43:10,956 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 16:43:10,957 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-04 16:43:10,957 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-04 16:43:10,963 [DEBUG] 	Status::run() called
+2014-11-04 16:43:10,964 [INFO] 	Checking the status of all jobs: please wait
+2014-11-04 16:43:11,040 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-04 16:43:12,180 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh  -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "sleep 3600"
+2014-11-04 16:43:12,184 [INFO] 	Establishing gsissh ControlPath. Wait 2 sec ...
+2014-11-04 16:43:14,185 [INFO] 	Establishing gsissh ControlPath. Wait 2 sec ...
+2014-11-04 16:43:16,187 [DEBUG] 	Execute command :
+gsiscp -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no /tmp/x509up_u857 submit-4.t2.ucsd.edu:lcadamur_Trees_ggFusion_Stage2_9gzm41
+2014-11-04 16:43:17,250 [DEBUG] 	Status,output= 0,
+2014-11-04 16:43:17,251 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu  "condor_history -userlog lcadamur_Trees_ggFusion_Stage2_9gzm41/condor.log -xml"
+2014-11-04 16:43:18,680 [DEBUG] 	Execute command :
+eval `scram unsetenv -sh`;  gsissh -o ControlMaster=auto -o ControlPath=/tmp/cadamuro/.ssh/ssh-link--1518853091-submit-4.t2.ucsd.edu -o BatchMode=yes -o StrictHostKeyChecking=no -o ForwardX11=no submit-4.t2.ucsd.edu "cd lcadamur_Trees_ggFusion_Stage2_9gzm41; egrep -H WrapperExitCode\|ExeExitCode crab_fjr_*xml|tr '_.\t\"' ' '|awk '{print \$3\" \"\$7\" \"\$9}'"
+2014-11-04 16:43:19,419 [DEBUG] 	Status,output= 0
+10 0 WrapperExitCode
+10 0 ExeExitCode
+11 0 WrapperExitCode
+11 0 ExeExitCode
+12 0 WrapperExitCode
+12 0 ExeExitCode
+13 0 WrapperExitCode
+13 0 ExeExitCode
+14 0 WrapperExitCode
+14 0 ExeExitCode
+15 0 WrapperExitCode
+15 0 ExeExitCode
+16 0 WrapperExitCode
+16 0 ExeExitCode
+17 0 WrapperExitCode
+17 0 ExeExitCode
+18 0 WrapperExitCode
+18 0 ExeExitCode
+19 0 WrapperExitCode
+19 0 ExeExitCode
+1 0 WrapperExitCode
+1 0 ExeExitCode
+20 0 WrapperExitCode
+20 0 ExeExitCode
+21 0 WrapperExitCode
+21 0 ExeExitCode
+22 0 WrapperExitCode
+22 0 ExeExitCode
+23 0 WrapperExitCode
+23 0 ExeExitCode
+24 0 WrapperExitCode
+24 0 ExeExitCode
+25 0 WrapperExitCode
+25 0 ExeExitCode
+2 0 WrapperExitCode
+2 0 ExeExitCode
+3 0 WrapperExitCode
+3 0 ExeExitCode
+4 0 WrapperExitCode
+4 0 ExeExitCode
+5 0 WrapperExitCode
+5 0 ExeExitCode
+6 0 WrapperExitCode
+6 0 ExeExitCode
+7 0 WrapperExitCode
+7 0 ExeExitCode
+8 0 WrapperExitCode
+8 0 ExeExitCode
+9 0 WrapperExitCode
+9 0 ExeExitCode
+2014-11-04 16:43:19,523 [INFO] 	
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+2     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+3     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+4     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+5     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+6     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+7     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+8     Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+9     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+10    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+--------------------------------------------------------------------------------
+11    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+12    N   Done              Terminated    0          0           cmsgrid02.hep.wisc.edu
+13    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+14    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+15    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+16    Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+17    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+18    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+19    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+20    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+--------------------------------------------------------------------------------
+21    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+22    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+23    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+24    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+25    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+
+2014-11-04 16:43:19,557 [INFO] 	ExitCodes Summary
+ >>>>>>>>> 25 Jobs with Wrapper Exit Code : 0 
+	 List of jobs: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,18,22,12 
+	See https://twiki.cern.ch/twiki/bin/view/CMSPublic/JobExitCodes for Exit Code meaning
+
+2014-11-04 16:43:19,557 [INFO] 	 25 Total Jobs 
+
+2014-11-04 16:43:19,568 [INFO] 	You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=lcadamur_Trees_ggFusion_Stage2_9gzm41
+	Your task name is: lcadamur_Trees_ggFusion_Stage2_9gzm41 
+
+2014-11-04 16:43:19,568 [DEBUG] 	Status Time: 8.60485100746
+2014-11-04 16:54:52,892 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -status
+
+2014-11-04 16:54:52,893 [INFO] 	Version 2.11.1 running on Tue Nov  4 16:54:52 2014 CET (15:54:52 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-04 16:54:52,893 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-04 16:54:53,104 [DEBUG] 	Input whitelist: 
+2014-11-04 16:54:53,104 [DEBUG] 	Input blacklist: 
+2014-11-04 16:54:53,104 [DEBUG] 	Converted whitelist: 
+2014-11-04 16:54:53,104 [DEBUG] 	Converted blacklist: 
+2014-11-04 16:54:53,105 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-04 16:54:53,106 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 16:54:53,106 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-04 16:54:58,352 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 16:54:58,353 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-04 16:54:58,353 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-04 16:54:58,360 [DEBUG] 	Status::run() called
+2014-11-04 16:54:58,360 [INFO] 	Checking the status of all jobs: please wait
+2014-11-04 16:54:58,471 [INFO] 	
+ID    END STATUS            ACTION       ExeExitCode JobExitCode E_HOST
+----- --- ----------------- ------------  ---------- ----------- ---------
+1     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+2     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+3     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+4     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+5     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+6     Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+7     Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+8     Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+9     Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+10    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+--------------------------------------------------------------------------------
+11    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+12    Y   Done              Terminated    0          0           cmsgrid02.hep.wisc.edu
+13    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+14    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+15    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+16    Y   Retrieved         Cleared       0          0           cream-ce-2.ba.infn.it
+17    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+18    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+19    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+20    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+--------------------------------------------------------------------------------
+21    Y   Retrieved         Cleared       0          0           cmsgrid01.hep.wisc.edu
+22    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+23    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+24    Y   Retrieved         Cleared       0          0           cmsgrid03.hep.wisc.edu cmsgrid03.hep.wisc.edu
+25    Y   Retrieved         Cleared       0          0           cmsgrid02.hep.wisc.edu
+
+2014-11-04 16:54:58,506 [INFO] 	ExitCodes Summary
+ >>>>>>>>> 25 Jobs with Wrapper Exit Code : 0 
+	 List of jobs: 1,3,5-6,8-11,13-15,17,19-21,23-25,2,4,7,16,18,22,12 
+	See https://twiki.cern.ch/twiki/bin/view/CMSPublic/JobExitCodes for Exit Code meaning
+
+2014-11-04 16:54:58,506 [INFO] 	 25 Total Jobs 
+
+2014-11-04 16:54:58,518 [INFO] 	You can also follow the status of this task on :
+	CMS Dashboard: http://dashb-cms-job-task.cern.ch/taskmon.html#task=lcadamur_Trees_ggFusion_Stage2_9gzm41
+	Your task name is: lcadamur_Trees_ggFusion_Stage2_9gzm41 
+
+2014-11-04 16:54:58,519 [DEBUG] 	Status Time: 0.1595890522
+2014-11-04 16:55:06,117 [DEBUG] 	/opt/exp_soft/cms/Crab/CRAB_2_11_1/python/crab.py -c Trees_ggFusion_Stage2/ -getoutput
+
+2014-11-04 16:55:06,117 [INFO] 	Version 2.11.1 running on Tue Nov  4 16:55:06 2014 CET (15:55:06 UTC)
+
+crab. Working options:
+	scheduler           remoteGlidein
+	job type            CMSSW
+	server              OFF
+	working directory   /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2/
+
+2014-11-04 16:55:06,117 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/allowed_releases.conf].
+2014-11-04 16:55:06,242 [DEBUG] 	Input whitelist: 
+2014-11-04 16:55:06,243 [DEBUG] 	Input blacklist: 
+2014-11-04 16:55:06,243 [DEBUG] 	Converted whitelist: 
+2014-11-04 16:55:06,243 [DEBUG] 	Converted blacklist: 
+2014-11-04 16:55:06,243 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/myproxy_server.conf].
+2014-11-04 16:55:06,244 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 16:55:06,245 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+ 
+2014-11-04 16:55:11,459 [DEBUG] 	Downloading file [http://cmsdoc.cern.ch/cms/LCG/crab/config/] to [/home/llr/cms/cadamuro/.cms_crab/site_black_list.conf].
+2014-11-04 16:55:11,460 [DEBUG] 	Enforced black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2 
+2014-11-04 16:55:11,461 [INFO] 	PSN black list: TAPE,srm-cms.cern.ch,cmssrm.fnal.gov,T1_FR,T1_RU,T1_TW,cmseos.fnal.gov,cmsdca2.fnal.gov,T2_PK_NCP,T3_US_Vanderbilt_EC2
+2014-11-04 16:55:11,466 [DEBUG] 	GetOutput::run() called
+2014-11-04 16:55:11,482 [INFO] 	Only 1 jobs will be retrieved  from 25 requested.
+	(for details: crab -status)
+2014-11-04 16:55:11,491 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/ is not in AFS.
+Volume Name                    Quota       Used %Used   Partition
+ while checking AFS quota. Treat as check OK
+2014-11-04 16:55:11,500 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/ is not in AFS.
+Volume Name                  kbytes      used     avail %used
+ while checking partition. Treat as check OK
+2014-11-04 16:55:11,774 [INFO] 	contacting remote host submit-4.t2.ucsd.edu
+2014-11-04 16:55:12,976 [INFO] 	Preparing to rsync 2 files
+2014-11-04 16:55:15,105 [DEBUG] 	
+2014-11-04 16:55:15,137 [INFO] 	Results of Jobs # 12 are in /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/
+2014-11-04 16:55:15,381 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/ is not in AFS.
+Volume Name                    Quota       Used %Used   Partition
+ while checking AFS quota. Treat as check OK
+2014-11-04 16:55:15,389 [DEBUG] 	fs: Invalid argument; it is possible that /grid_mnt/vol__vol_U__u/llr/cms/cadamuro/Level1_Stage2/CMSSW_7_1_0_pre8/src/Ntuplizer/L1TriggerNtuplizer/test/crab/Trees_ggFusion_Stage2//res/ is not in AFS.
+Volume Name                  kbytes      used     avail %used
+ while checking partition. Treat as check OK
+2014-11-04 16:55:15,442 [DEBUG] 	GetOutput Time: 3.97510290146

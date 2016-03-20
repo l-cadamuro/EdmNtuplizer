@@ -1,0 +1,27 @@
+<FrameworkJobReport Status="Failed">
+	<ExitCode Value="50117"/>
+	<FrameworkError ExitStatus="8021" Type="Fatal Exception">
+		An exception of category 'FileReadError' occurred while
+						   [0] Constructing the EventProcessor
+						   [1] Constructing input source of type PoolSource
+						   [2] Reading branch EventAuxiliary
+						   Additional Info:
+						      [a] Fatal Root Error: @SUB=TBranchElement::GetBasket
+						File: ///mnt/hadoop/store/mc/Fall13dr/Neutrino_Pt-2to20_gun/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00002/5229A72C-C47A-E311-A3D6-00304867920C.root at byte:0, branch:EventAuxiliary, entry:0, badread=1, nerrors=1, basketnumber=0
+	</FrameworkError>
+	<FrameworkError ExitStatus="8021" Type="WrapperExitCode"/>
+	<FrameworkError ExitStatus="8021" Type="ExeExitCode"/>
+	<TimingService/>
+	<ReadBranches/>
+	<GeneratorInfo/>
+	<PerformanceReport>
+		<CPU/>
+		<Memory/>
+		<PerformanceSummary Metric="CrabTiming">
+			<Metric Name="ExeTime" Value="62"/>
+			<Metric Name="WrapperTime" Value="600"/>
+			<Metric Name="CpuTime" Value="&quot;11.60 1.07 20%&quot;"/>
+			<Metric Name="StageoutTime" Value="-2"/>
+		</PerformanceSummary>
+	</PerformanceReport>
+</FrameworkJobReport>

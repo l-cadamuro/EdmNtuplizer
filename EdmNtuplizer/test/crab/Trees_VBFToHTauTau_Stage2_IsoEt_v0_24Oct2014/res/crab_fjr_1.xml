@@ -1,0 +1,1679 @@
+<FrameworkJobReport Status="Success">
+	<ExitCode Value="50117"/>
+	<InputFile>
+		<EventsRead>1596</EventsRead>
+		<Runs>{1: [376, 377, 572, 573, 633, 919, 1821, 1840, 2333, 2334, 2532, 2560, 2800, 2801, 2849, 2850]}</Runs>
+		<ModuleLabel>source</ModuleLabel>
+		<FileType>EDM</FileType>
+		<LFN>/store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/FA57A797-EF71-E311-92D1-00A0D1EE968C.root</LFN>
+		<PFN>root://cmsxrootd.hep.wisc.edu//store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/FA57A797-EF71-E311-92D1-00A0D1EE968C.root</PFN>
+		<MergedBySize>False</MergedBySize>
+		<Catalog/>
+		<Checksums>{}</Checksums>
+		<GUID>FA57A797-EF71-E311-92D1-00A0D1EE968C</GUID>
+		<State Value="closed"/>
+		<Runs>
+			<Run ID="1">
+				<LumiSection ID="376"/>
+				<LumiSection ID="377"/>
+				<LumiSection ID="572"/>
+				<LumiSection ID="573"/>
+				<LumiSection ID="633"/>
+				<LumiSection ID="919"/>
+				<LumiSection ID="1821"/>
+				<LumiSection ID="1840"/>
+				<LumiSection ID="2333"/>
+				<LumiSection ID="2334"/>
+				<LumiSection ID="2532"/>
+				<LumiSection ID="2560"/>
+				<LumiSection ID="2800"/>
+				<LumiSection ID="2801"/>
+				<LumiSection ID="2849"/>
+				<LumiSection ID="2850"/>
+			</Run>
+		</Runs>
+		<Branches>
+			<Branch>CSCDetIdCSCComparatorDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCComparatorDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCStripDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCStripDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCWireDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCWireDigi_HLT.</Branch>
+			<Branch>CrossingFramePlaybackInfoExtended_mix__HLT.</Branch>
+			<Branch>DTLayerIdDTDigiSimLinkMuonDigiCollection_simMuonDTDigis__HLT.</Branch>
+			<Branch>EBSrFlagsSorted_simEcalDigis_ebSrFlags_HLT.</Branch>
+			<Branch>EESrFlagsSorted_simEcalDigis_eeSrFlags_HLT.</Branch>
+			<Branch>FEDRawDataCollection_rawDataCollector__HLT.</Branch>
+			<Branch>GenEventInfoProduct_generator__SIM.</Branch>
+			<Branch>HBHEDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HFDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HODataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HBHEUpgradeDigiCollection_HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HFUpgradeDigiCollection_HLT.</Branch>
+			<Branch>L1GlobalTriggerObjectMapRecord_hltL1GtObjectMap__HLT.</Branch>
+			<Branch>LHEEventProduct_source__LHEFile.</Branch>
+			<Branch>PCaloHits_g4SimHits_CaloHitsTk_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorBU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorFI_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorPL_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorTU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ChamberHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEB_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEE_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsES_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalTBH4BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_FibreHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalTB06BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_WedgeHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ZDCHITS_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_BSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_FP420SI_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonCSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonDTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonGEMHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonRPCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_PLTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsRP_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT1_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT2Gem_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBLowTof_SIM.</Branch>
+			<Branch>PileupSummaryInfos_addPileupInfo__HLT.</Branch>
+			<Branch>RPCDetIdRPCDigiMuonDigiCollection_simMuonRPCDigis__HLT.</Branch>
+			<Branch>RPCDigiSimLinkedmDetSetVector_simMuonRPCDigis_RPCDigiSimLink_HLT.</Branch>
+			<Branch>SimTracks_g4SimHits__SIM.</Branch>
+			<Branch>SimVertexs_g4SimHits__SIM.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCStripDigiSimLinks_HLT.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCWireDigiSimLinks_HLT.</Branch>
+			<Branch>ZDCDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>edmHepMCProduct_generator__SIM.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__HLT.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__SIM.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__HLT.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__SIM.</Branch>
+			<Branch>ints_genParticles__SIM.</Branch>
+			<Branch>recoGenJets_ak5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_ak8GenJets__SIM.</Branch>
+			<Branch>recoGenJets_iterativeCone5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt4GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt6GenJets__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCalo__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCaloAndNonPrompt__SIM.</Branch>
+			<Branch>recoGenMETs_genMetTrue__SIM.</Branch>
+			<Branch>recoGenParticles_genParticles__SIM.</Branch>
+			<Branch>triggerTriggerEvent_hltTriggerSummaryAOD__HLT.</Branch>
+		</Branches>
+	</InputFile>
+	<InputFile>
+		<EventsRead>2193</EventsRead>
+		<Runs>{1: [223, 224, 994, 995, 1760, 1761, 1868, 1869, 2193, 2589, 2803, 3302, 3303, 3311, 3312, 3497, 3498, 3525, 3550, 4389, 4430, 4431]}</Runs>
+		<ModuleLabel>source</ModuleLabel>
+		<FileType>EDM</FileType>
+		<LFN>/store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/A21A6633-9471-E311-8D16-848F69FD4E41.root</LFN>
+		<PFN>root://cmsxrootd.hep.wisc.edu//store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/A21A6633-9471-E311-8D16-848F69FD4E41.root</PFN>
+		<MergedBySize>False</MergedBySize>
+		<Catalog/>
+		<Checksums>{}</Checksums>
+		<GUID>A21A6633-9471-E311-8D16-848F69FD4E41</GUID>
+		<State Value="closed"/>
+		<Runs>
+			<Run ID="1">
+				<LumiSection ID="223"/>
+				<LumiSection ID="224"/>
+				<LumiSection ID="994"/>
+				<LumiSection ID="995"/>
+				<LumiSection ID="1760"/>
+				<LumiSection ID="1761"/>
+				<LumiSection ID="1868"/>
+				<LumiSection ID="1869"/>
+				<LumiSection ID="2193"/>
+				<LumiSection ID="2589"/>
+				<LumiSection ID="2803"/>
+				<LumiSection ID="3302"/>
+				<LumiSection ID="3303"/>
+				<LumiSection ID="3311"/>
+				<LumiSection ID="3312"/>
+				<LumiSection ID="3497"/>
+				<LumiSection ID="3498"/>
+				<LumiSection ID="3525"/>
+				<LumiSection ID="3550"/>
+				<LumiSection ID="4389"/>
+				<LumiSection ID="4430"/>
+				<LumiSection ID="4431"/>
+			</Run>
+		</Runs>
+		<Branches>
+			<Branch>CSCDetIdCSCComparatorDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCComparatorDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCStripDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCStripDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCWireDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCWireDigi_HLT.</Branch>
+			<Branch>CrossingFramePlaybackInfoExtended_mix__HLT.</Branch>
+			<Branch>DTLayerIdDTDigiSimLinkMuonDigiCollection_simMuonDTDigis__HLT.</Branch>
+			<Branch>EBSrFlagsSorted_simEcalDigis_ebSrFlags_HLT.</Branch>
+			<Branch>EESrFlagsSorted_simEcalDigis_eeSrFlags_HLT.</Branch>
+			<Branch>FEDRawDataCollection_rawDataCollector__HLT.</Branch>
+			<Branch>GenEventInfoProduct_generator__SIM.</Branch>
+			<Branch>HBHEDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HFDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HODataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HBHEUpgradeDigiCollection_HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HFUpgradeDigiCollection_HLT.</Branch>
+			<Branch>L1GlobalTriggerObjectMapRecord_hltL1GtObjectMap__HLT.</Branch>
+			<Branch>LHEEventProduct_source__LHEFile.</Branch>
+			<Branch>PCaloHits_g4SimHits_CaloHitsTk_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorBU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorFI_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorPL_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorTU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ChamberHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEB_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEE_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsES_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalTBH4BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_FibreHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalTB06BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_WedgeHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ZDCHITS_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_BSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_FP420SI_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonCSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonDTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonGEMHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonRPCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_PLTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsRP_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT1_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT2Gem_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBLowTof_SIM.</Branch>
+			<Branch>PileupSummaryInfos_addPileupInfo__HLT.</Branch>
+			<Branch>RPCDetIdRPCDigiMuonDigiCollection_simMuonRPCDigis__HLT.</Branch>
+			<Branch>RPCDigiSimLinkedmDetSetVector_simMuonRPCDigis_RPCDigiSimLink_HLT.</Branch>
+			<Branch>SimTracks_g4SimHits__SIM.</Branch>
+			<Branch>SimVertexs_g4SimHits__SIM.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCStripDigiSimLinks_HLT.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCWireDigiSimLinks_HLT.</Branch>
+			<Branch>ZDCDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>edmHepMCProduct_generator__SIM.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__HLT.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__SIM.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__HLT.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__SIM.</Branch>
+			<Branch>ints_genParticles__SIM.</Branch>
+			<Branch>recoGenJets_ak5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_ak8GenJets__SIM.</Branch>
+			<Branch>recoGenJets_iterativeCone5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt4GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt6GenJets__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCalo__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCaloAndNonPrompt__SIM.</Branch>
+			<Branch>recoGenMETs_genMetTrue__SIM.</Branch>
+			<Branch>recoGenParticles_genParticles__SIM.</Branch>
+			<Branch>triggerTriggerEvent_hltTriggerSummaryAOD__HLT.</Branch>
+		</Branches>
+	</InputFile>
+	<InputFile>
+		<EventsRead>1098</EventsRead>
+		<Runs>{1: [3427, 3428, 4625, 4626, 4635, 4669, 4670, 4675, 4676, 4985, 4986]}</Runs>
+		<ModuleLabel>source</ModuleLabel>
+		<FileType>EDM</FileType>
+		<LFN>/store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/2A032E69-9471-E311-B4CA-7845C4FC39C2.root</LFN>
+		<PFN>root://cmsxrootd.hep.wisc.edu//store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/2A032E69-9471-E311-B4CA-7845C4FC39C2.root</PFN>
+		<MergedBySize>False</MergedBySize>
+		<Catalog/>
+		<Checksums>{}</Checksums>
+		<GUID>2A032E69-9471-E311-B4CA-7845C4FC39C2</GUID>
+		<State Value="closed"/>
+		<Runs>
+			<Run ID="1">
+				<LumiSection ID="3427"/>
+				<LumiSection ID="3428"/>
+				<LumiSection ID="4625"/>
+				<LumiSection ID="4626"/>
+				<LumiSection ID="4635"/>
+				<LumiSection ID="4669"/>
+				<LumiSection ID="4670"/>
+				<LumiSection ID="4675"/>
+				<LumiSection ID="4676"/>
+				<LumiSection ID="4985"/>
+				<LumiSection ID="4986"/>
+			</Run>
+		</Runs>
+		<Branches>
+			<Branch>CSCDetIdCSCComparatorDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCComparatorDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCStripDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCStripDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCWireDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCWireDigi_HLT.</Branch>
+			<Branch>CrossingFramePlaybackInfoExtended_mix__HLT.</Branch>
+			<Branch>DTLayerIdDTDigiSimLinkMuonDigiCollection_simMuonDTDigis__HLT.</Branch>
+			<Branch>EBSrFlagsSorted_simEcalDigis_ebSrFlags_HLT.</Branch>
+			<Branch>EESrFlagsSorted_simEcalDigis_eeSrFlags_HLT.</Branch>
+			<Branch>FEDRawDataCollection_rawDataCollector__HLT.</Branch>
+			<Branch>GenEventInfoProduct_generator__SIM.</Branch>
+			<Branch>HBHEDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HFDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HODataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HBHEUpgradeDigiCollection_HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HFUpgradeDigiCollection_HLT.</Branch>
+			<Branch>L1GlobalTriggerObjectMapRecord_hltL1GtObjectMap__HLT.</Branch>
+			<Branch>LHEEventProduct_source__LHEFile.</Branch>
+			<Branch>PCaloHits_g4SimHits_CaloHitsTk_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorBU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorFI_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorPL_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorTU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ChamberHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEB_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEE_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsES_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalTBH4BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_FibreHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalTB06BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_WedgeHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ZDCHITS_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_BSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_FP420SI_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonCSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonDTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonGEMHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonRPCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_PLTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsRP_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT1_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT2Gem_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBLowTof_SIM.</Branch>
+			<Branch>PileupSummaryInfos_addPileupInfo__HLT.</Branch>
+			<Branch>RPCDetIdRPCDigiMuonDigiCollection_simMuonRPCDigis__HLT.</Branch>
+			<Branch>RPCDigiSimLinkedmDetSetVector_simMuonRPCDigis_RPCDigiSimLink_HLT.</Branch>
+			<Branch>SimTracks_g4SimHits__SIM.</Branch>
+			<Branch>SimVertexs_g4SimHits__SIM.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCStripDigiSimLinks_HLT.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCWireDigiSimLinks_HLT.</Branch>
+			<Branch>ZDCDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>edmHepMCProduct_generator__SIM.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__HLT.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__SIM.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__HLT.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__SIM.</Branch>
+			<Branch>ints_genParticles__SIM.</Branch>
+			<Branch>recoGenJets_ak5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_ak8GenJets__SIM.</Branch>
+			<Branch>recoGenJets_iterativeCone5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt4GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt6GenJets__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCalo__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCaloAndNonPrompt__SIM.</Branch>
+			<Branch>recoGenMETs_genMetTrue__SIM.</Branch>
+			<Branch>recoGenParticles_genParticles__SIM.</Branch>
+			<Branch>triggerTriggerEvent_hltTriggerSummaryAOD__HLT.</Branch>
+		</Branches>
+	</InputFile>
+	<InputFile>
+		<EventsRead>1199</EventsRead>
+		<Runs>{1: [2912, 2913, 3286, 3287, 4463, 4464, 4678, 4679, 4710, 4714, 4816, 4817]}</Runs>
+		<ModuleLabel>source</ModuleLabel>
+		<FileType>EDM</FileType>
+		<LFN>/store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/1E32623A-9471-E311-A7FD-7845C4FC3998.root</LFN>
+		<PFN>root://cmsxrootd.hep.wisc.edu//store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/1E32623A-9471-E311-A7FD-7845C4FC3998.root</PFN>
+		<MergedBySize>False</MergedBySize>
+		<Catalog/>
+		<Checksums>{}</Checksums>
+		<GUID>1E32623A-9471-E311-A7FD-7845C4FC3998</GUID>
+		<State Value="closed"/>
+		<Runs>
+			<Run ID="1">
+				<LumiSection ID="2912"/>
+				<LumiSection ID="2913"/>
+				<LumiSection ID="3286"/>
+				<LumiSection ID="3287"/>
+				<LumiSection ID="4463"/>
+				<LumiSection ID="4464"/>
+				<LumiSection ID="4678"/>
+				<LumiSection ID="4679"/>
+				<LumiSection ID="4710"/>
+				<LumiSection ID="4714"/>
+				<LumiSection ID="4816"/>
+				<LumiSection ID="4817"/>
+			</Run>
+		</Runs>
+		<Branches>
+			<Branch>CSCDetIdCSCComparatorDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCComparatorDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCStripDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCStripDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCWireDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCWireDigi_HLT.</Branch>
+			<Branch>CrossingFramePlaybackInfoExtended_mix__HLT.</Branch>
+			<Branch>DTLayerIdDTDigiSimLinkMuonDigiCollection_simMuonDTDigis__HLT.</Branch>
+			<Branch>EBSrFlagsSorted_simEcalDigis_ebSrFlags_HLT.</Branch>
+			<Branch>EESrFlagsSorted_simEcalDigis_eeSrFlags_HLT.</Branch>
+			<Branch>FEDRawDataCollection_rawDataCollector__HLT.</Branch>
+			<Branch>GenEventInfoProduct_generator__SIM.</Branch>
+			<Branch>HBHEDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HFDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HODataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HBHEUpgradeDigiCollection_HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HFUpgradeDigiCollection_HLT.</Branch>
+			<Branch>L1GlobalTriggerObjectMapRecord_hltL1GtObjectMap__HLT.</Branch>
+			<Branch>LHEEventProduct_source__LHEFile.</Branch>
+			<Branch>PCaloHits_g4SimHits_CaloHitsTk_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorBU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorFI_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorPL_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorTU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ChamberHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEB_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEE_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsES_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalTBH4BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_FibreHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalTB06BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_WedgeHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ZDCHITS_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_BSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_FP420SI_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonCSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonDTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonGEMHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonRPCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_PLTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsRP_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT1_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT2Gem_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBLowTof_SIM.</Branch>
+			<Branch>PileupSummaryInfos_addPileupInfo__HLT.</Branch>
+			<Branch>RPCDetIdRPCDigiMuonDigiCollection_simMuonRPCDigis__HLT.</Branch>
+			<Branch>RPCDigiSimLinkedmDetSetVector_simMuonRPCDigis_RPCDigiSimLink_HLT.</Branch>
+			<Branch>SimTracks_g4SimHits__SIM.</Branch>
+			<Branch>SimVertexs_g4SimHits__SIM.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCStripDigiSimLinks_HLT.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCWireDigiSimLinks_HLT.</Branch>
+			<Branch>ZDCDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>edmHepMCProduct_generator__SIM.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__HLT.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__SIM.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__HLT.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__SIM.</Branch>
+			<Branch>ints_genParticles__SIM.</Branch>
+			<Branch>recoGenJets_ak5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_ak8GenJets__SIM.</Branch>
+			<Branch>recoGenJets_iterativeCone5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt4GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt6GenJets__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCalo__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCaloAndNonPrompt__SIM.</Branch>
+			<Branch>recoGenMETs_genMetTrue__SIM.</Branch>
+			<Branch>recoGenParticles_genParticles__SIM.</Branch>
+			<Branch>triggerTriggerEvent_hltTriggerSummaryAOD__HLT.</Branch>
+		</Branches>
+	</InputFile>
+	<InputFile>
+		<EventsRead>2193</EventsRead>
+		<Runs>{1: [996, 1189, 1247, 1248, 2503, 2504, 2511, 2521, 3276, 3298, 3306, 3307, 3403, 3404, 3501, 3502, 4439, 4440, 4600, 4601, 4708, 4709]}</Runs>
+		<ModuleLabel>source</ModuleLabel>
+		<FileType>EDM</FileType>
+		<LFN>/store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/D6680D1E-9471-E311-B69B-848F69FD28AD.root</LFN>
+		<PFN>root://cmsxrootd.hep.wisc.edu//store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/D6680D1E-9471-E311-B69B-848F69FD28AD.root</PFN>
+		<MergedBySize>False</MergedBySize>
+		<Catalog/>
+		<Checksums>{}</Checksums>
+		<GUID>D6680D1E-9471-E311-B69B-848F69FD28AD</GUID>
+		<State Value="closed"/>
+		<Runs>
+			<Run ID="1">
+				<LumiSection ID="996"/>
+				<LumiSection ID="1189"/>
+				<LumiSection ID="1247"/>
+				<LumiSection ID="1248"/>
+				<LumiSection ID="2503"/>
+				<LumiSection ID="2504"/>
+				<LumiSection ID="2511"/>
+				<LumiSection ID="2521"/>
+				<LumiSection ID="3276"/>
+				<LumiSection ID="3298"/>
+				<LumiSection ID="3306"/>
+				<LumiSection ID="3307"/>
+				<LumiSection ID="3403"/>
+				<LumiSection ID="3404"/>
+				<LumiSection ID="3501"/>
+				<LumiSection ID="3502"/>
+				<LumiSection ID="4439"/>
+				<LumiSection ID="4440"/>
+				<LumiSection ID="4600"/>
+				<LumiSection ID="4601"/>
+				<LumiSection ID="4708"/>
+				<LumiSection ID="4709"/>
+			</Run>
+		</Runs>
+		<Branches>
+			<Branch>CSCDetIdCSCComparatorDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCComparatorDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCStripDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCStripDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCWireDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCWireDigi_HLT.</Branch>
+			<Branch>CrossingFramePlaybackInfoExtended_mix__HLT.</Branch>
+			<Branch>DTLayerIdDTDigiSimLinkMuonDigiCollection_simMuonDTDigis__HLT.</Branch>
+			<Branch>EBSrFlagsSorted_simEcalDigis_ebSrFlags_HLT.</Branch>
+			<Branch>EESrFlagsSorted_simEcalDigis_eeSrFlags_HLT.</Branch>
+			<Branch>FEDRawDataCollection_rawDataCollector__HLT.</Branch>
+			<Branch>GenEventInfoProduct_generator__SIM.</Branch>
+			<Branch>HBHEDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HFDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HODataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HBHEUpgradeDigiCollection_HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HFUpgradeDigiCollection_HLT.</Branch>
+			<Branch>L1GlobalTriggerObjectMapRecord_hltL1GtObjectMap__HLT.</Branch>
+			<Branch>LHEEventProduct_source__LHEFile.</Branch>
+			<Branch>PCaloHits_g4SimHits_CaloHitsTk_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorBU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorFI_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorPL_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorTU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ChamberHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEB_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEE_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsES_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalTBH4BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_FibreHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalTB06BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_WedgeHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ZDCHITS_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_BSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_FP420SI_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonCSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonDTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonGEMHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonRPCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_PLTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsRP_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT1_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT2Gem_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBLowTof_SIM.</Branch>
+			<Branch>PileupSummaryInfos_addPileupInfo__HLT.</Branch>
+			<Branch>RPCDetIdRPCDigiMuonDigiCollection_simMuonRPCDigis__HLT.</Branch>
+			<Branch>RPCDigiSimLinkedmDetSetVector_simMuonRPCDigis_RPCDigiSimLink_HLT.</Branch>
+			<Branch>SimTracks_g4SimHits__SIM.</Branch>
+			<Branch>SimVertexs_g4SimHits__SIM.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCStripDigiSimLinks_HLT.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCWireDigiSimLinks_HLT.</Branch>
+			<Branch>ZDCDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>edmHepMCProduct_generator__SIM.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__HLT.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__SIM.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__HLT.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__SIM.</Branch>
+			<Branch>ints_genParticles__SIM.</Branch>
+			<Branch>recoGenJets_ak5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_ak8GenJets__SIM.</Branch>
+			<Branch>recoGenJets_iterativeCone5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt4GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt6GenJets__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCalo__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCaloAndNonPrompt__SIM.</Branch>
+			<Branch>recoGenMETs_genMetTrue__SIM.</Branch>
+			<Branch>recoGenParticles_genParticles__SIM.</Branch>
+			<Branch>triggerTriggerEvent_hltTriggerSummaryAOD__HLT.</Branch>
+		</Branches>
+	</InputFile>
+	<InputFile>
+		<EventsRead>1997</EventsRead>
+		<Runs>{1: [1402, 1403, 1404, 1432, 1433, 1465, 2517, 2518, 3399, 3406, 3844, 3845, 4084, 4085, 4251, 4438, 4693, 4694, 4969, 4970]}</Runs>
+		<ModuleLabel>source</ModuleLabel>
+		<FileType>EDM</FileType>
+		<LFN>/store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/F84293F4-9071-E311-8DBF-848F69FD3E2A.root</LFN>
+		<PFN>root://cmsxrootd.hep.wisc.edu//store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/F84293F4-9071-E311-8DBF-848F69FD3E2A.root</PFN>
+		<MergedBySize>False</MergedBySize>
+		<Catalog/>
+		<Checksums>{}</Checksums>
+		<GUID>F84293F4-9071-E311-8DBF-848F69FD3E2A</GUID>
+		<State Value="closed"/>
+		<Runs>
+			<Run ID="1">
+				<LumiSection ID="1402"/>
+				<LumiSection ID="1403"/>
+				<LumiSection ID="1404"/>
+				<LumiSection ID="1432"/>
+				<LumiSection ID="1433"/>
+				<LumiSection ID="1465"/>
+				<LumiSection ID="2517"/>
+				<LumiSection ID="2518"/>
+				<LumiSection ID="3399"/>
+				<LumiSection ID="3406"/>
+				<LumiSection ID="3844"/>
+				<LumiSection ID="3845"/>
+				<LumiSection ID="4084"/>
+				<LumiSection ID="4085"/>
+				<LumiSection ID="4251"/>
+				<LumiSection ID="4438"/>
+				<LumiSection ID="4693"/>
+				<LumiSection ID="4694"/>
+				<LumiSection ID="4969"/>
+				<LumiSection ID="4970"/>
+			</Run>
+		</Runs>
+		<Branches>
+			<Branch>CSCDetIdCSCComparatorDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCComparatorDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCStripDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCStripDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCWireDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCWireDigi_HLT.</Branch>
+			<Branch>CrossingFramePlaybackInfoExtended_mix__HLT.</Branch>
+			<Branch>DTLayerIdDTDigiSimLinkMuonDigiCollection_simMuonDTDigis__HLT.</Branch>
+			<Branch>EBSrFlagsSorted_simEcalDigis_ebSrFlags_HLT.</Branch>
+			<Branch>EESrFlagsSorted_simEcalDigis_eeSrFlags_HLT.</Branch>
+			<Branch>FEDRawDataCollection_rawDataCollector__HLT.</Branch>
+			<Branch>GenEventInfoProduct_generator__SIM.</Branch>
+			<Branch>HBHEDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HFDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HODataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HBHEUpgradeDigiCollection_HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HFUpgradeDigiCollection_HLT.</Branch>
+			<Branch>L1GlobalTriggerObjectMapRecord_hltL1GtObjectMap__HLT.</Branch>
+			<Branch>LHEEventProduct_source__LHEFile.</Branch>
+			<Branch>PCaloHits_g4SimHits_CaloHitsTk_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorBU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorFI_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorPL_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorTU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ChamberHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEB_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEE_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsES_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalTBH4BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_FibreHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalTB06BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_WedgeHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ZDCHITS_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_BSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_FP420SI_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonCSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonDTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonGEMHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonRPCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_PLTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsRP_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT1_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT2Gem_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBLowTof_SIM.</Branch>
+			<Branch>PileupSummaryInfos_addPileupInfo__HLT.</Branch>
+			<Branch>RPCDetIdRPCDigiMuonDigiCollection_simMuonRPCDigis__HLT.</Branch>
+			<Branch>RPCDigiSimLinkedmDetSetVector_simMuonRPCDigis_RPCDigiSimLink_HLT.</Branch>
+			<Branch>SimTracks_g4SimHits__SIM.</Branch>
+			<Branch>SimVertexs_g4SimHits__SIM.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCStripDigiSimLinks_HLT.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCWireDigiSimLinks_HLT.</Branch>
+			<Branch>ZDCDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>edmHepMCProduct_generator__SIM.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__HLT.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__SIM.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__HLT.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__SIM.</Branch>
+			<Branch>ints_genParticles__SIM.</Branch>
+			<Branch>recoGenJets_ak5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_ak8GenJets__SIM.</Branch>
+			<Branch>recoGenJets_iterativeCone5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt4GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt6GenJets__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCalo__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCaloAndNonPrompt__SIM.</Branch>
+			<Branch>recoGenMETs_genMetTrue__SIM.</Branch>
+			<Branch>recoGenParticles_genParticles__SIM.</Branch>
+			<Branch>triggerTriggerEvent_hltTriggerSummaryAOD__HLT.</Branch>
+		</Branches>
+	</InputFile>
+	<InputFile>
+		<EventsRead>2199</EventsRead>
+		<Runs>{1: [1271, 1272, 1370, 1371, 1494, 1510, 1523, 1524, 1853, 1854, 2289, 2353, 2648, 2649, 2966, 2967, 3100, 3101, 3280, 3281, 3434, 3435]}</Runs>
+		<ModuleLabel>source</ModuleLabel>
+		<FileType>EDM</FileType>
+		<LFN>/store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/343D5D96-8F71-E311-8F09-00266CFAEA48.root</LFN>
+		<PFN>root://cmsxrootd.hep.wisc.edu//store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/343D5D96-8F71-E311-8F09-00266CFAEA48.root</PFN>
+		<MergedBySize>False</MergedBySize>
+		<Catalog/>
+		<Checksums>{}</Checksums>
+		<GUID>343D5D96-8F71-E311-8F09-00266CFAEA48</GUID>
+		<State Value="closed"/>
+		<Runs>
+			<Run ID="1">
+				<LumiSection ID="1271"/>
+				<LumiSection ID="1272"/>
+				<LumiSection ID="1370"/>
+				<LumiSection ID="1371"/>
+				<LumiSection ID="1494"/>
+				<LumiSection ID="1510"/>
+				<LumiSection ID="1523"/>
+				<LumiSection ID="1524"/>
+				<LumiSection ID="1853"/>
+				<LumiSection ID="1854"/>
+				<LumiSection ID="2289"/>
+				<LumiSection ID="2353"/>
+				<LumiSection ID="2648"/>
+				<LumiSection ID="2649"/>
+				<LumiSection ID="2966"/>
+				<LumiSection ID="2967"/>
+				<LumiSection ID="3100"/>
+				<LumiSection ID="3101"/>
+				<LumiSection ID="3280"/>
+				<LumiSection ID="3281"/>
+				<LumiSection ID="3434"/>
+				<LumiSection ID="3435"/>
+			</Run>
+		</Runs>
+		<Branches>
+			<Branch>CSCDetIdCSCComparatorDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCComparatorDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCStripDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCStripDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCWireDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCWireDigi_HLT.</Branch>
+			<Branch>CrossingFramePlaybackInfoExtended_mix__HLT.</Branch>
+			<Branch>DTLayerIdDTDigiSimLinkMuonDigiCollection_simMuonDTDigis__HLT.</Branch>
+			<Branch>EBSrFlagsSorted_simEcalDigis_ebSrFlags_HLT.</Branch>
+			<Branch>EESrFlagsSorted_simEcalDigis_eeSrFlags_HLT.</Branch>
+			<Branch>FEDRawDataCollection_rawDataCollector__HLT.</Branch>
+			<Branch>GenEventInfoProduct_generator__SIM.</Branch>
+			<Branch>HBHEDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HFDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HODataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HBHEUpgradeDigiCollection_HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HFUpgradeDigiCollection_HLT.</Branch>
+			<Branch>L1GlobalTriggerObjectMapRecord_hltL1GtObjectMap__HLT.</Branch>
+			<Branch>LHEEventProduct_source__LHEFile.</Branch>
+			<Branch>PCaloHits_g4SimHits_CaloHitsTk_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorBU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorFI_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorPL_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorTU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ChamberHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEB_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEE_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsES_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalTBH4BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_FibreHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalTB06BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_WedgeHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ZDCHITS_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_BSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_FP420SI_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonCSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonDTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonGEMHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonRPCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_PLTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsRP_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT1_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT2Gem_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBLowTof_SIM.</Branch>
+			<Branch>PileupSummaryInfos_addPileupInfo__HLT.</Branch>
+			<Branch>RPCDetIdRPCDigiMuonDigiCollection_simMuonRPCDigis__HLT.</Branch>
+			<Branch>RPCDigiSimLinkedmDetSetVector_simMuonRPCDigis_RPCDigiSimLink_HLT.</Branch>
+			<Branch>SimTracks_g4SimHits__SIM.</Branch>
+			<Branch>SimVertexs_g4SimHits__SIM.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCStripDigiSimLinks_HLT.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCWireDigiSimLinks_HLT.</Branch>
+			<Branch>ZDCDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>edmHepMCProduct_generator__SIM.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__HLT.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__SIM.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__HLT.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__SIM.</Branch>
+			<Branch>ints_genParticles__SIM.</Branch>
+			<Branch>recoGenJets_ak5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_ak8GenJets__SIM.</Branch>
+			<Branch>recoGenJets_iterativeCone5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt4GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt6GenJets__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCalo__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCaloAndNonPrompt__SIM.</Branch>
+			<Branch>recoGenMETs_genMetTrue__SIM.</Branch>
+			<Branch>recoGenParticles_genParticles__SIM.</Branch>
+			<Branch>triggerTriggerEvent_hltTriggerSummaryAOD__HLT.</Branch>
+		</Branches>
+	</InputFile>
+	<InputFile>
+		<EventsRead>1297</EventsRead>
+		<Runs>{1: [1514, 1515, 3284, 3285, 3336, 3337, 3471, 4148, 4149, 4491, 4589, 4590, 4671]}</Runs>
+		<ModuleLabel>source</ModuleLabel>
+		<FileType>EDM</FileType>
+		<LFN>/store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/E20B94C4-8F71-E311-B04A-7845C4FC39AD.root</LFN>
+		<PFN>root://cmsxrootd.hep.wisc.edu//store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/E20B94C4-8F71-E311-B04A-7845C4FC39AD.root</PFN>
+		<MergedBySize>False</MergedBySize>
+		<Catalog/>
+		<Checksums>{}</Checksums>
+		<GUID>E20B94C4-8F71-E311-B04A-7845C4FC39AD</GUID>
+		<State Value="closed"/>
+		<Runs>
+			<Run ID="1">
+				<LumiSection ID="1514"/>
+				<LumiSection ID="1515"/>
+				<LumiSection ID="3284"/>
+				<LumiSection ID="3285"/>
+				<LumiSection ID="3336"/>
+				<LumiSection ID="3337"/>
+				<LumiSection ID="3471"/>
+				<LumiSection ID="4148"/>
+				<LumiSection ID="4149"/>
+				<LumiSection ID="4491"/>
+				<LumiSection ID="4589"/>
+				<LumiSection ID="4590"/>
+				<LumiSection ID="4671"/>
+			</Run>
+		</Runs>
+		<Branches>
+			<Branch>CSCDetIdCSCComparatorDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCComparatorDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCStripDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCStripDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCWireDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCWireDigi_HLT.</Branch>
+			<Branch>CrossingFramePlaybackInfoExtended_mix__HLT.</Branch>
+			<Branch>DTLayerIdDTDigiSimLinkMuonDigiCollection_simMuonDTDigis__HLT.</Branch>
+			<Branch>EBSrFlagsSorted_simEcalDigis_ebSrFlags_HLT.</Branch>
+			<Branch>EESrFlagsSorted_simEcalDigis_eeSrFlags_HLT.</Branch>
+			<Branch>FEDRawDataCollection_rawDataCollector__HLT.</Branch>
+			<Branch>GenEventInfoProduct_generator__SIM.</Branch>
+			<Branch>HBHEDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HFDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HODataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HBHEUpgradeDigiCollection_HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HFUpgradeDigiCollection_HLT.</Branch>
+			<Branch>L1GlobalTriggerObjectMapRecord_hltL1GtObjectMap__HLT.</Branch>
+			<Branch>LHEEventProduct_source__LHEFile.</Branch>
+			<Branch>PCaloHits_g4SimHits_CaloHitsTk_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorBU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorFI_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorPL_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorTU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ChamberHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEB_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEE_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsES_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalTBH4BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_FibreHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalTB06BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_WedgeHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ZDCHITS_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_BSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_FP420SI_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonCSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonDTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonGEMHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonRPCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_PLTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsRP_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT1_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT2Gem_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBLowTof_SIM.</Branch>
+			<Branch>PileupSummaryInfos_addPileupInfo__HLT.</Branch>
+			<Branch>RPCDetIdRPCDigiMuonDigiCollection_simMuonRPCDigis__HLT.</Branch>
+			<Branch>RPCDigiSimLinkedmDetSetVector_simMuonRPCDigis_RPCDigiSimLink_HLT.</Branch>
+			<Branch>SimTracks_g4SimHits__SIM.</Branch>
+			<Branch>SimVertexs_g4SimHits__SIM.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCStripDigiSimLinks_HLT.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCWireDigiSimLinks_HLT.</Branch>
+			<Branch>ZDCDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>edmHepMCProduct_generator__SIM.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__HLT.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__SIM.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__HLT.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__SIM.</Branch>
+			<Branch>ints_genParticles__SIM.</Branch>
+			<Branch>recoGenJets_ak5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_ak8GenJets__SIM.</Branch>
+			<Branch>recoGenJets_iterativeCone5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt4GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt6GenJets__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCalo__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCaloAndNonPrompt__SIM.</Branch>
+			<Branch>recoGenMETs_genMetTrue__SIM.</Branch>
+			<Branch>recoGenParticles_genParticles__SIM.</Branch>
+			<Branch>triggerTriggerEvent_hltTriggerSummaryAOD__HLT.</Branch>
+		</Branches>
+	</InputFile>
+	<InputFile>
+		<EventsRead>1498</EventsRead>
+		<Runs>{1: [453, 853, 1285, 1286, 3315, 3325, 3356, 3357, 3395, 3396, 3429, 3439, 3492, 4460, 4461]}</Runs>
+		<ModuleLabel>source</ModuleLabel>
+		<FileType>EDM</FileType>
+		<LFN>/store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/5E0DD710-8D71-E311-8D3F-848F69FD25BC.root</LFN>
+		<PFN>root://cmsxrootd.hep.wisc.edu//store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/5E0DD710-8D71-E311-8D3F-848F69FD25BC.root</PFN>
+		<MergedBySize>False</MergedBySize>
+		<Catalog/>
+		<Checksums>{}</Checksums>
+		<GUID>5E0DD710-8D71-E311-8D3F-848F69FD25BC</GUID>
+		<State Value="closed"/>
+		<Runs>
+			<Run ID="1">
+				<LumiSection ID="453"/>
+				<LumiSection ID="853"/>
+				<LumiSection ID="1285"/>
+				<LumiSection ID="1286"/>
+				<LumiSection ID="3315"/>
+				<LumiSection ID="3325"/>
+				<LumiSection ID="3356"/>
+				<LumiSection ID="3357"/>
+				<LumiSection ID="3395"/>
+				<LumiSection ID="3396"/>
+				<LumiSection ID="3429"/>
+				<LumiSection ID="3439"/>
+				<LumiSection ID="3492"/>
+				<LumiSection ID="4460"/>
+				<LumiSection ID="4461"/>
+			</Run>
+		</Runs>
+		<Branches>
+			<Branch>CSCDetIdCSCComparatorDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCComparatorDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCStripDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCStripDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCWireDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCWireDigi_HLT.</Branch>
+			<Branch>CrossingFramePlaybackInfoExtended_mix__HLT.</Branch>
+			<Branch>DTLayerIdDTDigiSimLinkMuonDigiCollection_simMuonDTDigis__HLT.</Branch>
+			<Branch>EBSrFlagsSorted_simEcalDigis_ebSrFlags_HLT.</Branch>
+			<Branch>EESrFlagsSorted_simEcalDigis_eeSrFlags_HLT.</Branch>
+			<Branch>FEDRawDataCollection_rawDataCollector__HLT.</Branch>
+			<Branch>GenEventInfoProduct_generator__SIM.</Branch>
+			<Branch>HBHEDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HFDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HODataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HBHEUpgradeDigiCollection_HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HFUpgradeDigiCollection_HLT.</Branch>
+			<Branch>L1GlobalTriggerObjectMapRecord_hltL1GtObjectMap__HLT.</Branch>
+			<Branch>LHEEventProduct_source__LHEFile.</Branch>
+			<Branch>PCaloHits_g4SimHits_CaloHitsTk_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorBU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorFI_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorPL_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorTU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ChamberHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEB_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEE_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsES_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalTBH4BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_FibreHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalTB06BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_WedgeHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ZDCHITS_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_BSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_FP420SI_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonCSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonDTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonGEMHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonRPCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_PLTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsRP_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT1_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT2Gem_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBLowTof_SIM.</Branch>
+			<Branch>PileupSummaryInfos_addPileupInfo__HLT.</Branch>
+			<Branch>RPCDetIdRPCDigiMuonDigiCollection_simMuonRPCDigis__HLT.</Branch>
+			<Branch>RPCDigiSimLinkedmDetSetVector_simMuonRPCDigis_RPCDigiSimLink_HLT.</Branch>
+			<Branch>SimTracks_g4SimHits__SIM.</Branch>
+			<Branch>SimVertexs_g4SimHits__SIM.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCStripDigiSimLinks_HLT.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCWireDigiSimLinks_HLT.</Branch>
+			<Branch>ZDCDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>edmHepMCProduct_generator__SIM.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__HLT.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__SIM.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__HLT.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__SIM.</Branch>
+			<Branch>ints_genParticles__SIM.</Branch>
+			<Branch>recoGenJets_ak5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_ak8GenJets__SIM.</Branch>
+			<Branch>recoGenJets_iterativeCone5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt4GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt6GenJets__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCalo__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCaloAndNonPrompt__SIM.</Branch>
+			<Branch>recoGenMETs_genMetTrue__SIM.</Branch>
+			<Branch>recoGenParticles_genParticles__SIM.</Branch>
+			<Branch>triggerTriggerEvent_hltTriggerSummaryAOD__HLT.</Branch>
+		</Branches>
+	</InputFile>
+	<InputFile>
+		<EventsRead>1199</EventsRead>
+		<Runs>{1: [10, 11, 1533, 1759, 2613, 2647, 3246, 3247, 3363, 3382, 3446, 3447]}</Runs>
+		<ModuleLabel>source</ModuleLabel>
+		<FileType>EDM</FileType>
+		<LFN>/store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/1C6F2A35-8C71-E311-9F52-7845C4FC39FB.root</LFN>
+		<PFN>root://cmsxrootd.hep.wisc.edu//store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/1C6F2A35-8C71-E311-9F52-7845C4FC39FB.root</PFN>
+		<MergedBySize>False</MergedBySize>
+		<Catalog/>
+		<Checksums>{}</Checksums>
+		<GUID>1C6F2A35-8C71-E311-9F52-7845C4FC39FB</GUID>
+		<State Value="closed"/>
+		<Runs>
+			<Run ID="1">
+				<LumiSection ID="10"/>
+				<LumiSection ID="11"/>
+				<LumiSection ID="1533"/>
+				<LumiSection ID="1759"/>
+				<LumiSection ID="2613"/>
+				<LumiSection ID="2647"/>
+				<LumiSection ID="3246"/>
+				<LumiSection ID="3247"/>
+				<LumiSection ID="3363"/>
+				<LumiSection ID="3382"/>
+				<LumiSection ID="3446"/>
+				<LumiSection ID="3447"/>
+			</Run>
+		</Runs>
+		<Branches>
+			<Branch>CSCDetIdCSCComparatorDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCComparatorDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCStripDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCStripDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCWireDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCWireDigi_HLT.</Branch>
+			<Branch>CrossingFramePlaybackInfoExtended_mix__HLT.</Branch>
+			<Branch>DTLayerIdDTDigiSimLinkMuonDigiCollection_simMuonDTDigis__HLT.</Branch>
+			<Branch>EBSrFlagsSorted_simEcalDigis_ebSrFlags_HLT.</Branch>
+			<Branch>EESrFlagsSorted_simEcalDigis_eeSrFlags_HLT.</Branch>
+			<Branch>FEDRawDataCollection_rawDataCollector__HLT.</Branch>
+			<Branch>GenEventInfoProduct_generator__SIM.</Branch>
+			<Branch>HBHEDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HFDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HODataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HBHEUpgradeDigiCollection_HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HFUpgradeDigiCollection_HLT.</Branch>
+			<Branch>L1GlobalTriggerObjectMapRecord_hltL1GtObjectMap__HLT.</Branch>
+			<Branch>LHEEventProduct_source__LHEFile.</Branch>
+			<Branch>PCaloHits_g4SimHits_CaloHitsTk_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorBU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorFI_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorPL_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorTU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ChamberHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEB_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEE_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsES_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalTBH4BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_FibreHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalTB06BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_WedgeHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ZDCHITS_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_BSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_FP420SI_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonCSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonDTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonGEMHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonRPCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_PLTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsRP_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT1_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT2Gem_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBLowTof_SIM.</Branch>
+			<Branch>PileupSummaryInfos_addPileupInfo__HLT.</Branch>
+			<Branch>RPCDetIdRPCDigiMuonDigiCollection_simMuonRPCDigis__HLT.</Branch>
+			<Branch>RPCDigiSimLinkedmDetSetVector_simMuonRPCDigis_RPCDigiSimLink_HLT.</Branch>
+			<Branch>SimTracks_g4SimHits__SIM.</Branch>
+			<Branch>SimVertexs_g4SimHits__SIM.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCStripDigiSimLinks_HLT.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCWireDigiSimLinks_HLT.</Branch>
+			<Branch>ZDCDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>edmHepMCProduct_generator__SIM.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__HLT.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__SIM.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__HLT.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__SIM.</Branch>
+			<Branch>ints_genParticles__SIM.</Branch>
+			<Branch>recoGenJets_ak5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_ak8GenJets__SIM.</Branch>
+			<Branch>recoGenJets_iterativeCone5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt4GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt6GenJets__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCalo__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCaloAndNonPrompt__SIM.</Branch>
+			<Branch>recoGenMETs_genMetTrue__SIM.</Branch>
+			<Branch>recoGenParticles_genParticles__SIM.</Branch>
+			<Branch>triggerTriggerEvent_hltTriggerSummaryAOD__HLT.</Branch>
+		</Branches>
+	</InputFile>
+	<InputFile>
+		<EventsRead>1197</EventsRead>
+		<Runs>{1: [6, 1375, 1376, 1881, 3253, 3386, 3387, 3416, 3417, 3442, 3443, 4746]}</Runs>
+		<ModuleLabel>source</ModuleLabel>
+		<FileType>EDM</FileType>
+		<LFN>/store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/72390220-8B71-E311-8719-7845C4FC35EA.root</LFN>
+		<PFN>root://cmsxrootd.hep.wisc.edu//store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/72390220-8B71-E311-8719-7845C4FC35EA.root</PFN>
+		<MergedBySize>False</MergedBySize>
+		<Catalog/>
+		<Checksums>{}</Checksums>
+		<GUID>72390220-8B71-E311-8719-7845C4FC35EA</GUID>
+		<State Value="closed"/>
+		<Runs>
+			<Run ID="1">
+				<LumiSection ID="6"/>
+				<LumiSection ID="1375"/>
+				<LumiSection ID="1376"/>
+				<LumiSection ID="1881"/>
+				<LumiSection ID="3253"/>
+				<LumiSection ID="3386"/>
+				<LumiSection ID="3387"/>
+				<LumiSection ID="3416"/>
+				<LumiSection ID="3417"/>
+				<LumiSection ID="3442"/>
+				<LumiSection ID="3443"/>
+				<LumiSection ID="4746"/>
+			</Run>
+		</Runs>
+		<Branches>
+			<Branch>CSCDetIdCSCComparatorDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCComparatorDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCStripDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCStripDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCWireDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCWireDigi_HLT.</Branch>
+			<Branch>CrossingFramePlaybackInfoExtended_mix__HLT.</Branch>
+			<Branch>DTLayerIdDTDigiSimLinkMuonDigiCollection_simMuonDTDigis__HLT.</Branch>
+			<Branch>EBSrFlagsSorted_simEcalDigis_ebSrFlags_HLT.</Branch>
+			<Branch>EESrFlagsSorted_simEcalDigis_eeSrFlags_HLT.</Branch>
+			<Branch>FEDRawDataCollection_rawDataCollector__HLT.</Branch>
+			<Branch>GenEventInfoProduct_generator__SIM.</Branch>
+			<Branch>HBHEDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HFDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HODataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HBHEUpgradeDigiCollection_HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HFUpgradeDigiCollection_HLT.</Branch>
+			<Branch>L1GlobalTriggerObjectMapRecord_hltL1GtObjectMap__HLT.</Branch>
+			<Branch>LHEEventProduct_source__LHEFile.</Branch>
+			<Branch>PCaloHits_g4SimHits_CaloHitsTk_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorBU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorFI_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorPL_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorTU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ChamberHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEB_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEE_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsES_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalTBH4BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_FibreHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalTB06BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_WedgeHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ZDCHITS_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_BSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_FP420SI_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonCSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonDTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonGEMHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonRPCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_PLTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsRP_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT1_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT2Gem_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBLowTof_SIM.</Branch>
+			<Branch>PileupSummaryInfos_addPileupInfo__HLT.</Branch>
+			<Branch>RPCDetIdRPCDigiMuonDigiCollection_simMuonRPCDigis__HLT.</Branch>
+			<Branch>RPCDigiSimLinkedmDetSetVector_simMuonRPCDigis_RPCDigiSimLink_HLT.</Branch>
+			<Branch>SimTracks_g4SimHits__SIM.</Branch>
+			<Branch>SimVertexs_g4SimHits__SIM.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCStripDigiSimLinks_HLT.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCWireDigiSimLinks_HLT.</Branch>
+			<Branch>ZDCDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>edmHepMCProduct_generator__SIM.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__HLT.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__SIM.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__HLT.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__SIM.</Branch>
+			<Branch>ints_genParticles__SIM.</Branch>
+			<Branch>recoGenJets_ak5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_ak8GenJets__SIM.</Branch>
+			<Branch>recoGenJets_iterativeCone5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt4GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt6GenJets__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCalo__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCaloAndNonPrompt__SIM.</Branch>
+			<Branch>recoGenMETs_genMetTrue__SIM.</Branch>
+			<Branch>recoGenParticles_genParticles__SIM.</Branch>
+			<Branch>triggerTriggerEvent_hltTriggerSummaryAOD__HLT.</Branch>
+		</Branches>
+	</InputFile>
+	<InputFile>
+		<EventsRead>2196</EventsRead>
+		<Runs>{1: [199, 200, 468, 517, 671, 672, 1162, 1163, 1497, 1602, 1696, 1852, 2052, 2326, 2459, 2460, 3518, 3519, 3572, 3573, 3991, 3992]}</Runs>
+		<ModuleLabel>source</ModuleLabel>
+		<FileType>EDM</FileType>
+		<LFN>/store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/249935E2-E271-E311-8AAD-848F69FD299D.root</LFN>
+		<PFN>root://cmsxrootd.hep.wisc.edu//store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/249935E2-E271-E311-8AAD-848F69FD299D.root</PFN>
+		<MergedBySize>False</MergedBySize>
+		<Catalog/>
+		<Checksums>{}</Checksums>
+		<GUID>249935E2-E271-E311-8AAD-848F69FD299D</GUID>
+		<State Value="closed"/>
+		<Runs>
+			<Run ID="1">
+				<LumiSection ID="199"/>
+				<LumiSection ID="200"/>
+				<LumiSection ID="468"/>
+				<LumiSection ID="517"/>
+				<LumiSection ID="671"/>
+				<LumiSection ID="672"/>
+				<LumiSection ID="1162"/>
+				<LumiSection ID="1163"/>
+				<LumiSection ID="1497"/>
+				<LumiSection ID="1602"/>
+				<LumiSection ID="1696"/>
+				<LumiSection ID="1852"/>
+				<LumiSection ID="2052"/>
+				<LumiSection ID="2326"/>
+				<LumiSection ID="2459"/>
+				<LumiSection ID="2460"/>
+				<LumiSection ID="3518"/>
+				<LumiSection ID="3519"/>
+				<LumiSection ID="3572"/>
+				<LumiSection ID="3573"/>
+				<LumiSection ID="3991"/>
+				<LumiSection ID="3992"/>
+			</Run>
+		</Runs>
+		<Branches>
+			<Branch>CSCDetIdCSCComparatorDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCComparatorDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCStripDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCStripDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCWireDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCWireDigi_HLT.</Branch>
+			<Branch>CrossingFramePlaybackInfoExtended_mix__HLT.</Branch>
+			<Branch>DTLayerIdDTDigiSimLinkMuonDigiCollection_simMuonDTDigis__HLT.</Branch>
+			<Branch>EBSrFlagsSorted_simEcalDigis_ebSrFlags_HLT.</Branch>
+			<Branch>EESrFlagsSorted_simEcalDigis_eeSrFlags_HLT.</Branch>
+			<Branch>FEDRawDataCollection_rawDataCollector__HLT.</Branch>
+			<Branch>GenEventInfoProduct_generator__SIM.</Branch>
+			<Branch>HBHEDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HFDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HODataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HBHEUpgradeDigiCollection_HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HFUpgradeDigiCollection_HLT.</Branch>
+			<Branch>L1GlobalTriggerObjectMapRecord_hltL1GtObjectMap__HLT.</Branch>
+			<Branch>LHEEventProduct_source__LHEFile.</Branch>
+			<Branch>PCaloHits_g4SimHits_CaloHitsTk_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorBU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorFI_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorPL_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorTU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ChamberHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEB_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEE_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsES_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalTBH4BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_FibreHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalTB06BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_WedgeHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ZDCHITS_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_BSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_FP420SI_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonCSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonDTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonGEMHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonRPCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_PLTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsRP_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT1_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT2Gem_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBLowTof_SIM.</Branch>
+			<Branch>PileupSummaryInfos_addPileupInfo__HLT.</Branch>
+			<Branch>RPCDetIdRPCDigiMuonDigiCollection_simMuonRPCDigis__HLT.</Branch>
+			<Branch>RPCDigiSimLinkedmDetSetVector_simMuonRPCDigis_RPCDigiSimLink_HLT.</Branch>
+			<Branch>SimTracks_g4SimHits__SIM.</Branch>
+			<Branch>SimVertexs_g4SimHits__SIM.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCStripDigiSimLinks_HLT.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCWireDigiSimLinks_HLT.</Branch>
+			<Branch>ZDCDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>edmHepMCProduct_generator__SIM.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__HLT.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__SIM.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__HLT.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__SIM.</Branch>
+			<Branch>ints_genParticles__SIM.</Branch>
+			<Branch>recoGenJets_ak5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_ak8GenJets__SIM.</Branch>
+			<Branch>recoGenJets_iterativeCone5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt4GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt6GenJets__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCalo__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCaloAndNonPrompt__SIM.</Branch>
+			<Branch>recoGenMETs_genMetTrue__SIM.</Branch>
+			<Branch>recoGenParticles_genParticles__SIM.</Branch>
+			<Branch>triggerTriggerEvent_hltTriggerSummaryAOD__HLT.</Branch>
+		</Branches>
+	</InputFile>
+	<InputFile>
+		<EventsRead>138</EventsRead>
+		<Runs>{1: [457, 458]}</Runs>
+		<ModuleLabel>source</ModuleLabel>
+		<FileType>EDM</FileType>
+		<LFN>/store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/EE5ECD82-DE71-E311-98A5-00266CFADE34.root</LFN>
+		<PFN>root://cmsxrootd.hep.wisc.edu//store/mc/Fall13dr/VBF_HToTauTau_M-125_13TeV-powheg-pythia6/GEN-SIM-RAW/tsg_PU40bx25_POSTLS162_V2-v1/00000/EE5ECD82-DE71-E311-98A5-00266CFADE34.root</PFN>
+		<MergedBySize>False</MergedBySize>
+		<Catalog/>
+		<Checksums>{}</Checksums>
+		<GUID>EE5ECD82-DE71-E311-98A5-00266CFADE34</GUID>
+		<State Value="closed"/>
+		<Runs>
+			<Run ID="1">
+				<LumiSection ID="457"/>
+				<LumiSection ID="458"/>
+			</Run>
+		</Runs>
+		<Branches>
+			<Branch>CSCDetIdCSCComparatorDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCComparatorDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCStripDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCStripDigi_HLT.</Branch>
+			<Branch>CSCDetIdCSCWireDigiMuonDigiCollection_simMuonCSCDigis_MuonCSCWireDigi_HLT.</Branch>
+			<Branch>CrossingFramePlaybackInfoExtended_mix__HLT.</Branch>
+			<Branch>DTLayerIdDTDigiSimLinkMuonDigiCollection_simMuonDTDigis__HLT.</Branch>
+			<Branch>EBSrFlagsSorted_simEcalDigis_ebSrFlags_HLT.</Branch>
+			<Branch>EESrFlagsSorted_simEcalDigis_eeSrFlags_HLT.</Branch>
+			<Branch>FEDRawDataCollection_rawDataCollector__HLT.</Branch>
+			<Branch>GenEventInfoProduct_generator__SIM.</Branch>
+			<Branch>HBHEDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HFDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HODataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HBHEUpgradeDigiCollection_HLT.</Branch>
+			<Branch>HcalUpgradeDataFramesSorted_simHcalUnsuppressedDigis_HFUpgradeDigiCollection_HLT.</Branch>
+			<Branch>L1GlobalTriggerObjectMapRecord_hltL1GtObjectMap__HLT.</Branch>
+			<Branch>LHEEventProduct_source__LHEFile.</Branch>
+			<Branch>PCaloHits_g4SimHits_CaloHitsTk_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorBU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorFI_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorPL_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_CastorTU_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ChamberHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEB_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsEE_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalHitsES_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_EcalTBH4BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_FibreHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_HcalTB06BeamHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_WedgeHits_SIM.</Branch>
+			<Branch>PCaloHits_g4SimHits_ZDCHITS_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_BSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_FP420SI_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonCSCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonDTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonGEMHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_MuonRPCHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_PLTHits_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsRP_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT1_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TotemHitsT2Gem_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelBarrelLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsPixelEndcapLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTECLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIBLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTIDLowTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBHighTof_SIM.</Branch>
+			<Branch>PSimHits_g4SimHits_TrackerHitsTOBLowTof_SIM.</Branch>
+			<Branch>PileupSummaryInfos_addPileupInfo__HLT.</Branch>
+			<Branch>RPCDetIdRPCDigiMuonDigiCollection_simMuonRPCDigis__HLT.</Branch>
+			<Branch>RPCDigiSimLinkedmDetSetVector_simMuonRPCDigis_RPCDigiSimLink_HLT.</Branch>
+			<Branch>SimTracks_g4SimHits__SIM.</Branch>
+			<Branch>SimVertexs_g4SimHits__SIM.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCStripDigiSimLinks_HLT.</Branch>
+			<Branch>StripDigiSimLinkedmDetSetVector_simMuonCSCDigis_MuonCSCWireDigiSimLinks_HLT.</Branch>
+			<Branch>ZDCDataFramesSorted_simHcalUnsuppressedDigis__HLT.</Branch>
+			<Branch>edmHepMCProduct_generator__SIM.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__HLT.</Branch>
+			<Branch>edmRandomEngineStates_randomEngineStateProducer__SIM.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__HLT.</Branch>
+			<Branch>edmTriggerResults_TriggerResults__SIM.</Branch>
+			<Branch>ints_genParticles__SIM.</Branch>
+			<Branch>recoGenJets_ak5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_ak8GenJets__SIM.</Branch>
+			<Branch>recoGenJets_iterativeCone5GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt4GenJets__SIM.</Branch>
+			<Branch>recoGenJets_kt6GenJets__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCalo__SIM.</Branch>
+			<Branch>recoGenMETs_genMetCaloAndNonPrompt__SIM.</Branch>
+			<Branch>recoGenMETs_genMetTrue__SIM.</Branch>
+			<Branch>recoGenParticles_genParticles__SIM.</Branch>
+			<Branch>triggerTriggerEvent_hltTriggerSummaryAOD__HLT.</Branch>
+		</Branches>
+	</InputFile>
+	<AnalysisFile>
+		<SEName Value="polgrid4.in2p3.fr"/>
+		<LFN Value="/store/user/lcadamur/L1_trees/Stage2Trees_24Oct2014/VBFToHToTauTau/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/GEN-SIM-RAW/Trees_VBFToHTauTau_IsoEt_v0/tree_stage2_1_2_36O.root"/>
+		<PFN Value="srm://polgrid4.in2p3.fr:8446/srm/managerv2?SFN=/dpm/in2p3.fr/home/cms/trivcat/store/user/lcadamur/L1_trees/Stage2Trees_24Oct2014/VBFToHToTauTau/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/GEN-SIM-RAW/Trees_VBFToHTauTau_IsoEt_v0/tree_stage2_1_2_36O.root"/>
+		<Source Value="TFileService"/>
+		<PNN Value="T2_FR_GRIF_LLR"/>
+		<FileName>/var/condor/execute/dir_412/glide_aKNZfI/execute/dir_14454/cms_YgMrRuUalMTZ/CMSSW_7_1_0_pre8/tree_stage2.root</FileName>
+		<SurlForGrid Value="srm://polgrid4.in2p3.fr:8446/srm/managerv2?SFN=/dpm/in2p3.fr/home/cms/trivcat/store/user/lcadamur/L1_trees/Stage2Trees_24Oct2014/VBFToHToTauTau/Fall13dr-tsg_PU40bx25_POSTLS162_V2-v1/GEN-SIM-RAW/Trees_VBFToHTauTau_IsoEt_v0/tree_stage2_1_2_36O.root"/>
+	</AnalysisFile>
+	<FrameworkError ExitStatus="0" Type="WrapperExitCode"/>
+	<FrameworkError ExitStatus="0" Type="ExeExitCode"/>
+	<TimingService/>
+	<ReadBranches>
+		<Branch Name="FEDRawDataCollection_rawDataCollector__HLT." ReadCount="20000"/>
+	</ReadBranches>
+	<GeneratorInfo/>
+	<PerformanceReport>
+		<CPU/>
+		<Memory/>
+		<PerformanceSummary Metric="CrabTiming">
+			<Metric Name="ExeTime" Value="1966"/>
+			<Metric Name="WrapperTime" Value="2071"/>
+			<Metric Name="CpuTime" Value="&quot;1036.98 282.21 67%&quot;"/>
+			<Metric Name="StageoutTime" Value="50"/>
+		</PerformanceSummary>
+		<PerformanceSummary Metric="StorageStatistics">
+			<Metric Name="Timing-tstoragefile-writeActual-totalMegabytes" Value="28.7889"/>
+			<Metric Name="Timing-root-writev-totalMsecs" Value="0"/>
+			<Metric Name="Timing-root-position-numSuccessfulOperations" Value="390"/>
+			<Metric Name="ROOT-tfile-read-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-file-readv-maxMsecs" Value="0"/>
+			<Metric Name="Timing-tstoragefile-stat-numSuccessfulOperations" Value="26"/>
+			<Metric Name="Timing-tstoragefile-readActual-totalMegabytes" Value="16115.4"/>
+			<Metric Name="Timing-file-write-totalMegabytes" Value="28.7889"/>
+			<Metric Name="Timing-root-position-minMsecs" Value="0"/>
+			<Metric Name="Timing-root-close-minMsecs" Value="0.924928"/>
+			<Metric Name="Timing-root-read-maxMsecs" Value="171.269"/>
+			<Metric Name="Timing-file-position-numSuccessfulOperations" Value="6844"/>
+			<Metric Name="Timing-root-destruct-numSuccessfulOperations" Value="13"/>
+			<Metric Name="Timing-root-readv-totalMsecs" Value="732669"/>
+			<Metric Name="Timing-root-readv-numSuccessfulOperations" Value="685"/>
+			<Metric Name="Timing-file-readv-numSuccessfulOperations" Value="0"/>
+			<Metric Name="Timing-file-writev-numSuccessfulOperations" Value="0"/>
+			<Metric Name="Timing-tstoragefile-writeActual-numOperations" Value="6840"/>
+			<Metric Name="Timing-tstoragefile-write-numSuccessfulOperations" Value="6840"/>
+			<Metric Name="Timing-root-readv-totalMegabytes" Value="16102.6"/>
+			<Metric Name="Timing-root-read-numSuccessfulOperations" Value="234"/>
+			<Metric Name="Timing-tstoragefile-read-maxMsecs" Value="171.274"/>
+			<Metric Name="Timing-file-read-minMsecs" Value="0"/>
+			<Metric Name="Timing-file-construct-totalMsecs" Value="0.009472"/>
+			<Metric Name="Timing-tstoragefile-writeViaCache-totalMsecs" Value="0"/>
+			<Metric Name="Timing-file-open-numOperations" Value="1"/>
+			<Metric Name="Timing-file-writev-totalMsecs" Value="0"/>
+			<Metric Name="Timing-root-stagein-maxMsecs" Value="43.7107"/>
+			<Metric Name="Timing-file-position-numOperations" Value="6844"/>
+			<Metric Name="Timing-tstoragefile-seek-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-file-readv-totalMsecs" Value="0"/>
+			<Metric Name="Timing-root-close-numSuccessfulOperations" Value="13"/>
+			<Metric Name="Timing-file-construct-minMsecs" Value="0.009472"/>
+			<Metric Name="Timing-root-writev-minMsecs" Value="0"/>
+			<Metric Name="Timing-root-open-totalMsecs" Value="4952.21"/>
+			<Metric Name="Timing-tstoragefile-close-maxMsecs" Value="1.74106"/>
+			<Metric Name="Timing-file-read-numSuccessfulOperations" Value="0"/>
+			<Metric Name="Timing-tstoragefile-writeViaCache-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-tstoragefile-readViaCache-totalMegabytes" Value="0"/>
+			<Metric Name="ROOT-tfile-write-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-tstoragefile-readActual-numOperations" Value="919"/>
+			<Metric Name="Timing-root-position-totalMsecs" Value="0.199936"/>
+			<Metric Name="Timing-root-prefetch-minMsecs" Value="0"/>
+			<Metric Name="Timing-root-write-numSuccessfulOperations" Value="0"/>
+			<Metric Name="Timing-tstoragefile-writeActual-totalMsecs" Value="118.503"/>
+			<Metric Name="Timing-tstoragefile-flush-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-tstoragefile-readAsync-totalMsecs" Value="0"/>
+			<Metric Name="Timing-root-read-totalMsecs" Value="1433.29"/>
+			<Metric Name="Timing-tstoragefile-writeViaCache-numOperations" Value="6840"/>
+			<Metric Name="Timing-file-writev-numOperations" Value="0"/>
+			<Metric Name="Timing-tstoragefile-close-numOperations" Value="13"/>
+			<Metric Name="Timing-tstoragefile-readAsync-minMsecs" Value="0"/>
+			<Metric Name="Timing-file-open-minMsecs" Value="0.242944"/>
+			<Metric Name="Timing-root-readv-minMsecs" Value="1.59667"/>
+			<Metric Name="Timing-root-close-numOperations" Value="13"/>
+			<Metric Name="Timing-tstoragefile-readActual-maxMsecs" Value="60057.2"/>
+			<Metric Name="Timing-file-readv-numOperations" Value="0"/>
+			<Metric Name="Timing-root-construct-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-file-flush-numOperations" Value="1"/>
+			<Metric Name="Timing-file-prefetch-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-root-construct-totalMsecs" Value="0.01024"/>
+			<Metric Name="Timing-root-readv-numOperations" Value="685"/>
+			<Metric Name="Timing-root-prefetch-totalMsecs" Value="0"/>
+			<Metric Name="Timing-root-writev-maxMsecs" Value="0"/>
+			<Metric Name="Timing-tstoragefile-readActual-numSuccessfulOperations" Value="919"/>
+			<Metric Name="Timing-file-write-numOperations" Value="6840"/>
+			<Metric Name="Timing-file-open-numSuccessfulOperations" Value="1"/>
+			<Metric Name="Timing-file-position-minMsecs" Value="0.000256"/>
+			<Metric Name="Timing-file-read-maxMsecs" Value="0"/>
+			<Metric Name="Parameter-untracked-bool-prefetching" Value="false"/>
+			<Metric Name="Timing-root-construct-minMsecs" Value="0.000256"/>
+			<Metric Name="Timing-file-prefetch-minMsecs" Value="0"/>
+			<Metric Name="Timing-root-readv-maxMsecs" Value="60057.2"/>
+			<Metric Name="Timing-file-flush-maxMsecs" Value="158.51"/>
+			<Metric Name="Timing-tstoragefile-read-totalMegabytes" Value="12.8755"/>
+			<Metric Name="Timing-tstoragefile-readAsync-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-tstoragefile-close-numSuccessfulOperations" Value="13"/>
+			<Metric Name="Timing-tstoragefile-close-minMsecs" Value="0.939008"/>
+			<Metric Name="Timing-file-writev-minMsecs" Value="0"/>
+			<Metric Name="Timing-tstoragefile-read-minMsecs" Value="0.11008"/>
+			<Metric Name="Timing-root-writev-numOperations" Value="0"/>
+			<Metric Name="Timing-tstoragefile-seek-minMsecs" Value="0.000512"/>
+			<Metric Name="Timing-file-construct-numOperations" Value="1"/>
+			<Metric Name="Timing-root-close-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-tstoragefile-write-numOperations" Value="6840"/>
+			<Metric Name="Timing-root-open-numOperations" Value="13"/>
+			<Metric Name="Timing-tstoragefile-readViaCache-maxMsecs" Value="0"/>
+			<Metric Name="Timing-tstoragefile-writeViaCache-maxMsecs" Value="0"/>
+			<Metric Name="Timing-root-open-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-root-write-minMsecs" Value="0"/>
+			<Metric Name="Timing-tstoragefile-writeActual-minMsecs" Value="0.003584"/>
+			<Metric Name="Timing-file-write-minMsecs" Value="0.003328"/>
+			<Metric Name="Timing-root-read-minMsecs" Value="0.109568"/>
+			<Metric Name="Timing-tstoragefile-seek-maxMsecs" Value="0.029184"/>
+			<Metric Name="Timing-tstoragefile-readActual-minMsecs" Value="0.11008"/>
+			<Metric Name="Timing-root-prefetch-numOperations" Value="0"/>
+			<Metric Name="Timing-tstoragefile-flush-maxMsecs" Value="158.514"/>
+			<Metric Name="Timing-file-readv-minMsecs" Value="0"/>
+			<Metric Name="Timing-root-write-numOperations" Value="0"/>
+			<Metric Name="Timing-tstoragefile-readAsync-maxMsecs" Value="0"/>
+			<Metric Name="Timing-tstoragefile-stat-totalMsecs" Value="0.127488"/>
+			<Metric Name="Timing-file-writev-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-root-position-maxMsecs" Value="0.001536"/>
+			<Metric Name="Timing-file-flush-totalMsecs" Value="158.51"/>
+			<Metric Name="Timing-file-position-totalMsecs" Value="11.8083"/>
+			<Metric Name="Timing-tstoragefile-read-numOperations" Value="234"/>
+			<Metric Name="Timing-root-open-maxMsecs" Value="4124.16"/>
+			<Metric Name="Timing-root-destruct-minMsecs" Value="0.001536"/>
+			<Metric Name="Timing-root-write-maxMsecs" Value="0"/>
+			<Metric Name="Timing-file-open-maxMsecs" Value="0.242944"/>
+			<Metric Name="Timing-root-prefetch-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-tstoragefile-construct-totalMsecs" Value="7496.5"/>
+			<Metric Name="Timing-file-write-maxMsecs" Value="5.51987"/>
+			<Metric Name="Timing-tstoragefile-seek-numOperations" Value="7074"/>
+			<Metric Name="Timing-tstoragefile-readActual-totalMsecs" Value="734105"/>
+			<Metric Name="Timing-file-read-totalMegabytes" Value="0"/>
+			<Metric Name="Parameter-untracked-string-readHint" Value="read-ahead-buffered"/>
+			<Metric Name="Timing-root-stagein-numOperations" Value="13"/>
+			<Metric Name="Timing-tstoragefile-construct-numSuccessfulOperations" Value="14"/>
+			<Metric Name="Timing-tstoragefile-writeActual-maxMsecs" Value="5.5209"/>
+			<Metric Name="Timing-file-position-maxMsecs" Value="0.02688"/>
+			<Metric Name="Timing-tstoragefile-seek-totalMsecs" Value="16.9789"/>
+			<Metric Name="Timing-tstoragefile-flush-numOperations" Value="1"/>
+			<Metric Name="Timing-tstoragefile-flush-minMsecs" Value="158.514"/>
+			<Metric Name="Timing-root-writev-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-root-stagein-numSuccessfulOperations" Value="13"/>
+			<Metric Name="Timing-file-prefetch-totalMsecs" Value="0"/>
+			<Metric Name="Timing-root-read-numOperations" Value="234"/>
+			<Metric Name="Timing-tstoragefile-write-minMsecs" Value="0.004096"/>
+			<Metric Name="Timing-tstoragefile-flush-totalMsecs" Value="158.514"/>
+			<Metric Name="Timing-tstoragefile-construct-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-file-write-totalMsecs" Value="115.174"/>
+			<Metric Name="Timing-file-write-numSuccessfulOperations" Value="6840"/>
+			<Metric Name="Timing-root-prefetch-numSuccessfulOperations" Value="0"/>
+			<Metric Name="Timing-root-prefetch-maxMsecs" Value="0"/>
+			<Metric Name="Timing-file-read-totalMsecs" Value="0"/>
+			<Metric Name="Timing-tstoragefile-writeViaCache-numSuccessfulOperations" Value="0"/>
+			<Metric Name="Timing-tstoragefile-stat-numOperations" Value="26"/>
+			<Metric Name="Timing-root-stagein-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-file-read-numOperations" Value="0"/>
+			<Metric Name="Timing-root-stagein-minMsecs" Value="0.692224"/>
+			<Metric Name="Timing-tstoragefile-seek-numSuccessfulOperations" Value="7074"/>
+			<Metric Name="Timing-tstoragefile-readViaCache-numOperations" Value="13"/>
+			<Metric Name="Timing-file-position-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-root-destruct-numOperations" Value="13"/>
+			<Metric Name="Timing-root-open-numSuccessfulOperations" Value="13"/>
+			<Metric Name="Parameter-untracked-bool-enabled" Value="true"/>
+			<Metric Name="Timing-tstoragefile-readAsync-numSuccessfulOperations" Value="0"/>
+			<Metric Name="Timing-tstoragefile-writeViaCache-minMsecs" Value="0"/>
+			<Metric Name="Timing-tstoragefile-construct-maxMsecs" Value="5636.62"/>
+			<Metric Name="Timing-file-prefetch-numSuccessfulOperations" Value="0"/>
+			<Metric Name="Timing-root-construct-numSuccessfulOperations" Value="13"/>
+			<Metric Name="Timing-root-write-totalMsecs" Value="0"/>
+			<Metric Name="Timing-file-construct-maxMsecs" Value="0.009472"/>
+			<Metric Name="Timing-tstoragefile-readViaCache-minMsecs" Value="0"/>
+			<Metric Name="Timing-tstoragefile-read-totalMsecs" Value="1433.88"/>
+			<Metric Name="Timing-file-prefetch-maxMsecs" Value="0"/>
+			<Metric Name="Timing-file-construct-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-file-readv-totalMegabytes" Value="0"/>
+			<Metric Name="Parameter-untracked-string-cacheHint" Value="application-only"/>
+			<Metric Name="Timing-tstoragefile-write-totalMsecs" Value="122.576"/>
+			<Metric Name="Timing-file-writev-maxMsecs" Value="0"/>
+			<Metric Name="Timing-root-construct-maxMsecs" Value="0.001024"/>
+			<Metric Name="Timing-tstoragefile-construct-numOperations" Value="14"/>
+			<Metric Name="Parameter-untracked-bool-stats" Value="true"/>
+			<Metric Name="Timing-root-stagein-totalMsecs" Value="54.6852"/>
+			<Metric Name="Timing-root-close-totalMsecs" Value="15.3777"/>
+			<Metric Name="Timing-tstoragefile-stat-maxMsecs" Value="0.011776"/>
+			<Metric Name="Timing-tstoragefile-write-totalMegabytes" Value="28.7889"/>
+			<Metric Name="Timing-tstoragefile-readAsync-numOperations" Value="130"/>
+			<Metric Name="Timing-tstoragefile-construct-minMsecs" Value="63.7361"/>
+			<Metric Name="Timing-tstoragefile-close-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-tstoragefile-stat-minMsecs" Value="0.001536"/>
+			<Metric Name="Timing-file-open-totalMsecs" Value="0.242944"/>
+			<Metric Name="Timing-root-close-maxMsecs" Value="1.60256"/>
+			<Metric Name="Timing-tstoragefile-stat-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-root-destruct-maxMsecs" Value="0.100864"/>
+			<Metric Name="Timing-file-flush-minMsecs" Value="158.51"/>
+			<Metric Name="Timing-file-flush-numSuccessfulOperations" Value="1"/>
+			<Metric Name="Timing-tstoragefile-writeActual-numSuccessfulOperations" Value="6840"/>
+			<Metric Name="Timing-tstoragefile-readViaCache-totalMsecs" Value="0"/>
+			<Metric Name="Timing-file-prefetch-numOperations" Value="0"/>
+			<Metric Name="Timing-root-construct-numOperations" Value="13"/>
+			<Metric Name="Timing-tstoragefile-readViaCache-numSuccessfulOperations" Value="0"/>
+			<Metric Name="Timing-root-write-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-tstoragefile-flush-numSuccessfulOperations" Value="1"/>
+			<Metric Name="Timing-tstoragefile-write-maxMsecs" Value="5.52166"/>
+			<Metric Name="Timing-root-position-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-tstoragefile-read-numSuccessfulOperations" Value="234"/>
+			<Metric Name="Timing-file-open-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-root-writev-numSuccessfulOperations" Value="0"/>
+			<Metric Name="Timing-root-destruct-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-tstoragefile-close-totalMsecs" Value="15.6741"/>
+			<Metric Name="Timing-root-position-numOperations" Value="390"/>
+			<Metric Name="Timing-file-construct-numSuccessfulOperations" Value="1"/>
+			<Metric Name="Timing-root-open-minMsecs" Value="28.8965"/>
+			<Metric Name="Timing-root-destruct-totalMsecs" Value="0.122368"/>
+			<Metric Name="Timing-file-flush-totalMegabytes" Value="0"/>
+			<Metric Name="Timing-root-read-totalMegabytes" Value="12.8755"/>
+		</PerformanceSummary>
+	</PerformanceReport>
+</FrameworkJobReport>
