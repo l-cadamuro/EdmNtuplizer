@@ -34,6 +34,9 @@
 #include "DataFormats/L1Trigger/interface/Jet.h"
 #include "DataFormats/L1Trigger/interface/Muon.h"
 #include "DataFormats/L1Trigger/interface/EtSum.h"
+#include "DataFormats/L1TCalorimeter/interface/CaloTower.h"
+#include "DataFormats/L1TCalorimeter/interface/CaloCluster.h"
+#include "EventFilter/L1TRawToDigi/interface/UnpackerCollections.h"
 
 #include "CommonTools/UtilAlgos/interface/TFileService.h"
 
@@ -61,8 +64,10 @@ class Ntuplizer : public edm::EDAnalyzer {
 
   TTree *myTree;
   edm::EDGetTokenT<l1t::TauBxCollection>          _L1TauTag  ;
-  // edm::EDGetTokenT<l1t::CaloTowerBxCollection>    _L1TTTag   ;
-  // edm::EDGetTokenT<l1t::CaloClusterBxCollection>  _L1ClusTag ;
+  edm::EDGetTokenT<l1t::EGammaBxCollection>       _L1EGTag  ;
+  edm::EDGetTokenT<l1t::CaloTowerBxCollection>    _L1TTTag   ;
+  edm::EDGetTokenT<l1t::CaloClusterBxCollection>  _L1ClusTag ;
+  bool _isEmulated;
 
   // -------------------------------------
   // variables to be filled in output tree
@@ -77,29 +82,38 @@ class Ntuplizer : public edm::EDAnalyzer {
   vector<Int_t>   _L1Tau_hwiso;
   vector<Int_t>   _L1Tau_hwqual;
 
+  // eg L1 quantities
+  vector<Int_t>   _L1EG_hwpt;
+  vector<Int_t>   _L1EG_hweta;
+  vector<Int_t>   _L1EG_hwphi;
+  vector<Int_t>   _L1EG_hwiso;
+  vector<Int_t>   _L1EG_hwqual;
+
   // TT quantities
   vector<Int_t>   _L1TT_hwpt;
   vector<Int_t>   _L1TT_hweta;
   vector<Int_t>   _L1TT_hwphi;
-  vector<Int_t>   _L1TT_hwiso;
-  vector<Int_t>   _L1TT_hwqual;
+  // vector<Int_t>   _L1TT_hwiso;
+  // vector<Int_t>   _L1TT_hwqual;
 
   // cluster quantities
   vector<Int_t>   _L1clus_hwpt;
   vector<Int_t>   _L1clus_hweta;
   vector<Int_t>   _L1clus_hwphi;
-  vector<Int_t>   _L1clus_hwiso;
-  vector<Int_t>   _L1clus_hwqual;
+  // vector<Int_t>   _L1clus_hwiso;
+  // vector<Int_t>   _L1clus_hwqual;
 
 };
 
 // ----Constructor and Destructor -----
 Ntuplizer::Ntuplizer(const edm::ParameterSet& pset) : 
-  _L1TauTag         (consumes<l1t::TauBxCollection>         (pset.getParameter<edm::InputTag>("L1Tau")))
-  // _L1TTTag          (consumes<l1t::CaloTowerBxCollection>   (pset.getParameter<edm::InputTag>("L1TT"))),
-  // _L1ClusTag        (consumes<l1t::CaloClusterBxCollection> (pset.getParameter<edm::InputTag>("L1Clusters")))
+  _L1TauTag         (consumes<l1t::TauBxCollection>         (pset.getParameter<edm::InputTag>("L1Tau"))),
+  _L1EGTag          (consumes<l1t::EGammaBxCollection>      (pset.getParameter<edm::InputTag>("L1EG"))),
+  _L1TTTag          (consumes<l1t::CaloTowerBxCollection>   (pset.getParameter<edm::InputTag>("L1TT"))),
+  _L1ClusTag        (consumes<l1t::CaloClusterBxCollection> (pset.getParameter<edm::InputTag>("L1Clusters")))
 {
     Initialize();
+    _isEmulated = pset.getParameter<bool>("isEmulated");
 }
 
 Ntuplizer::~Ntuplizer()
@@ -120,19 +134,20 @@ void Ntuplizer::Initialize()
     _L1TT_hwpt.clear();
     _L1TT_hweta.clear();
     _L1TT_hwphi.clear();
-    _L1TT_hwiso.clear();
-    _L1TT_hwqual.clear();
+    // _L1TT_hwiso.clear();
+    // _L1TT_hwqual.clear();
 
     _L1clus_hwpt.clear();
     _L1clus_hweta.clear();
     _L1clus_hwphi.clear();
-    _L1clus_hwiso.clear();
-    _L1clus_hwqual.clear();
+    // _L1clus_hwiso.clear();
+    // _L1clus_hwqual.clear();
 }
 
 
 void Ntuplizer::beginJob()
 {
+
     edm::Service<TFileService> fs;
     myTree = fs->make<TTree>("L1EdmTree","L1EdmTree"); // FIXME: set name from input tag
     
@@ -147,17 +162,23 @@ void Ntuplizer::beginJob()
     myTree->Branch("L1Tau_hwiso", &_L1Tau_hwiso);
     myTree->Branch("L1Tau_hwqual", &_L1Tau_hwqual);
 
+    myTree->Branch("L1EG_hwpt", &_L1EG_hwpt);
+    myTree->Branch("L1EG_hweta", &_L1EG_hweta);
+    myTree->Branch("L1EG_hwphi", &_L1EG_hwphi);
+    myTree->Branch("L1EG_hwiso", &_L1EG_hwiso);
+    myTree->Branch("L1EG_hwqual", &_L1EG_hwqual);
+
     myTree->Branch("L1TT_hwpt", &_L1TT_hwpt);
     myTree->Branch("L1TT_hweta", &_L1TT_hweta);
     myTree->Branch("L1TT_hwphi", &_L1TT_hwphi);
-    myTree->Branch("L1TT_hwiso", &_L1TT_hwiso);
-    myTree->Branch("L1TT_hwqual", &_L1TT_hwqual);
+    // myTree->Branch("L1TT_hwiso", &_L1TT_hwiso);
+    // myTree->Branch("L1TT_hwqual", &_L1TT_hwqual);
 
     myTree->Branch("L1clus_hwpt", &_L1clus_hwpt);
     myTree->Branch("L1clus_hweta", &_L1clus_hweta);
     myTree->Branch("L1clus_hwphi", &_L1clus_hwphi);
-    myTree->Branch("L1clus_hwiso", &_L1clus_hwiso);
-    myTree->Branch("L1clus_hwqual", &_L1clus_hwqual);
+    // myTree->Branch("L1clus_hwiso", &_L1clus_hwiso);
+    // myTree->Branch("L1clus_hwqual", &_L1clus_hwqual);
 }
 
 void Ntuplizer::endJob()
@@ -174,23 +195,63 @@ void Ntuplizer::analyze(const edm::Event& event, const edm::EventSetup& eSetup)
     _runNumber = event.id().run();
     _lumi = event.luminosityBlock();
 
+    // ---------------------------------------------
     // fill all taus
-    edm::Handle<l1t::TauBxCollection>  L1TauHandle;
+    edm::Handle< BXVector<l1t::Tau> >  L1TauHandle;
     event.getByToken(_L1TauTag, L1TauHandle);
 
-    if (L1TauHandle.isValid())
+    for (l1t::TauBxCollection::const_iterator it = L1TauHandle->begin(0); it != L1TauHandle->end(0) ; it++)
     {
-        for (l1t::TauBxCollection::const_iterator it = L1TauHandle->begin(0); it != L1TauHandle->end(0) ; it++)
-        {
-            _L1Tau_hwpt.push_back(it->hwPt());
-            _L1Tau_hweta.push_back(it->hwEta());
-            _L1Tau_hwphi.push_back(it->hwPhi());
-            _L1Tau_hwiso.push_back(it->hwIso());
-            _L1Tau_hwqual.push_back(it->hwQual());
-        }
+        _L1Tau_hwpt.push_back(it->hwPt());
+        _L1Tau_hweta.push_back(it->hwEta());
+        _L1Tau_hwphi.push_back(it->hwPhi());
+        _L1Tau_hwiso.push_back(it->hwIso());
+        _L1Tau_hwqual.push_back(it->hwQual());
     }
-    else
-        edm::LogWarning("MissingProduct") << "L1Upgrade Tau not found. Branch will not be filled" << std::endl; 
+
+    // ---------------------------------------------
+    // fill all EG
+    edm::Handle< BXVector<l1t::EGamma> >  L1EGHandle;
+    event.getByToken(_L1EGTag, L1EGHandle);
+
+    for (l1t::EGammaBxCollection::const_iterator it = L1EGHandle->begin(0); it != L1EGHandle->end(0) ; it++)
+    {
+        _L1EG_hwpt.push_back(it->hwPt());
+        _L1EG_hweta.push_back(it->hwEta());
+        _L1EG_hwphi.push_back(it->hwPhi());
+        _L1EG_hwiso.push_back(it->hwIso());
+        _L1EG_hwqual.push_back(it->hwQual());
+    }
+
+    // ---------------------------------------------
+    // fill all towers
+    edm::Handle< BXVector<l1t::CaloTower> >  L1TTHandle;
+    event.getByToken(_L1TTTag, L1TTHandle);
+
+    for (l1t::CaloTowerBxCollection::const_iterator it = L1TTHandle->begin(0); it != L1TTHandle->end(0) ; it++)
+    {
+      if (it->hwPt() > 0) // only interesting TT
+      {            
+        _L1TT_hwpt.push_back(it->hwPt());
+        _L1TT_hweta.push_back(it->hwEta());
+        _L1TT_hwphi.push_back(it->hwPhi());
+      }
+    }
+
+    // ---------------------------------------------
+    // fill all clusters (emulated only)
+    if (_isEmulated)
+    {
+      edm::Handle< BXVector<l1t::CaloCluster> >  L1ClusHandle;
+      event.getByToken(_L1ClusTag, L1ClusHandle);      
+      for (l1t::CaloClusterBxCollection::const_iterator it = L1ClusHandle->begin(0); it != L1ClusHandle->end(0) ; it++)
+      {
+        _L1clus_hwpt.push_back(it->hwPt());
+        _L1clus_hweta.push_back(it->hwEta());
+        _L1clus_hwphi.push_back(it->hwPhi());
+      }
+    }
+
 
     // finally, fill tree
     myTree->Fill();
