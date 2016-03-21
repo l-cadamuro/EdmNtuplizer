@@ -68,6 +68,7 @@ class Ntuplizer : public edm::EDAnalyzer {
   edm::EDGetTokenT<l1t::CaloTowerBxCollection>    _L1TTTag   ;
   edm::EDGetTokenT<l1t::CaloClusterBxCollection>  _L1ClusTag ;
   bool _isEmulated;
+  string _treeName;
 
   // -------------------------------------
   // variables to be filled in output tree
@@ -93,8 +94,8 @@ class Ntuplizer : public edm::EDAnalyzer {
   vector<Int_t>   _L1TT_hwpt;
   vector<Int_t>   _L1TT_hweta;
   vector<Int_t>   _L1TT_hwphi;
-  // vector<Int_t>   _L1TT_hwiso;
-  // vector<Int_t>   _L1TT_hwqual;
+  vector<Int_t>   _L1TT_hwem;
+  vector<Int_t>   _L1TT_hwhad;
 
   // cluster quantities
   vector<Int_t>   _L1clus_hwpt;
@@ -114,6 +115,7 @@ Ntuplizer::Ntuplizer(const edm::ParameterSet& pset) :
 {
     Initialize();
     _isEmulated = pset.getParameter<bool>("isEmulated");
+    _treeName = pset.getParameter<string>("treeName");
 }
 
 Ntuplizer::~Ntuplizer()
@@ -134,8 +136,8 @@ void Ntuplizer::Initialize()
     _L1TT_hwpt.clear();
     _L1TT_hweta.clear();
     _L1TT_hwphi.clear();
-    // _L1TT_hwiso.clear();
-    // _L1TT_hwqual.clear();
+    _L1TT_hwem.clear();
+    _L1TT_hwhad.clear();
 
     _L1clus_hwpt.clear();
     _L1clus_hweta.clear();
@@ -155,7 +157,7 @@ void Ntuplizer::beginJob()
 {
 
     edm::Service<TFileService> fs;
-    myTree = fs->make<TTree>("L1EdmTree","L1EdmTree"); // FIXME: set name from input tag
+    myTree = fs->make<TTree>(_treeName.c_str(),_treeName.c_str());
     
     //Branches
     myTree->Branch("EventNumber",&_indexevents,"EventNumber/l");
@@ -177,8 +179,8 @@ void Ntuplizer::beginJob()
     myTree->Branch("L1TT_hwpt", &_L1TT_hwpt);
     myTree->Branch("L1TT_hweta", &_L1TT_hweta);
     myTree->Branch("L1TT_hwphi", &_L1TT_hwphi);
-    // myTree->Branch("L1TT_hwiso", &_L1TT_hwiso);
-    // myTree->Branch("L1TT_hwqual", &_L1TT_hwqual);
+    myTree->Branch("L1TT_hwem", &_L1TT_hwem);
+    myTree->Branch("L1TT_hwhad", &_L1TT_hwhad);
 
     myTree->Branch("L1clus_hwpt", &_L1clus_hwpt);
     myTree->Branch("L1clus_hweta", &_L1clus_hweta);
@@ -202,7 +204,7 @@ void Ntuplizer::analyze(const edm::Event& event, const edm::EventSetup& eSetup)
     _lumi = event.luminosityBlock();
 
 
-    cout << "** DEBUG: " << _indexevents << " " << _runNumber << " " << _lumi << endl;
+    // cout << "** DEBUG: " << _indexevents << " " << _runNumber << " " << _lumi << endl;
 
     // ---------------------------------------------
     // fill all taus
@@ -211,7 +213,7 @@ void Ntuplizer::analyze(const edm::Event& event, const edm::EventSetup& eSetup)
 
     for (l1t::TauBxCollection::const_iterator it = L1TauHandle->begin(0); it != L1TauHandle->end(0) ; it++)
     {
-        cout << "tau: " << it - L1TauHandle->begin(0) << " " << it->hwPt() << " " << it->hwEta() << " " << it->hwPhi() << endl;
+        // cout << "tau: " << it - L1TauHandle->begin(0) << " " << it->hwPt() << " " << it->hwEta() << " " << it->hwPhi() << endl;
         _L1Tau_hwpt.push_back(it->hwPt());
         _L1Tau_hweta.push_back(it->hwEta());
         _L1Tau_hwphi.push_back(it->hwPhi());
@@ -245,6 +247,8 @@ void Ntuplizer::analyze(const edm::Event& event, const edm::EventSetup& eSetup)
         _L1TT_hwpt.push_back(it->hwPt());
         _L1TT_hweta.push_back(it->hwEta());
         _L1TT_hwphi.push_back(it->hwPhi());
+        _L1TT_hwem.push_back(it->hwEtEm());
+        _L1TT_hwhad.push_back(it->hwEtHad());
       }
     }
 

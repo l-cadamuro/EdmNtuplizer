@@ -71,7 +71,6 @@ def doComparison (hData, hEmul, c1, pad1, pad2, grRatio, hRatio, tag, xtitle, le
     hData.Draw("P same")
     leg.Draw()
 
-
     c1.cd()
     pad2.cd()
 
@@ -122,6 +121,12 @@ if __name__ == "__main__":
     hData_phi = TH1F ("hData_phi", "hData_phi", 75, 0, 75)
     hEmul_phi = TH1F ("hEmul_phi", "hEmul_phi", 75, 0, 75)
 
+    hmapEtaPhiEmul = TH2F ("hmapEtaPhiEmul", "hmapEtaPhiEmul", 70, -35, 35, 75, 0, 75)
+    hmapEtaPhiData = TH2F ("hmapEtaPhiData", "hmapEtaPhiData", 70, -35, 35, 75, 0, 75)
+
+    ## TT 2d maps
+    hmapTTEtaPhiEmul = TH2F ("hmapEtaTTPhiEmul", "hmapTTEtaPhiEmul", 70, -35, 35, 75, 0, 75)
+    hmapTTEtaPhiData = TH2F ("hmapEtaTTPhiData", "hmapTTEtaPhiData", 70, -35, 35, 75, 0, 75)
 
     nData = tData.GetEntries()
     nEmul = tEmul.GetEntries() 
@@ -138,9 +143,9 @@ if __name__ == "__main__":
         if ev % 1000 == 0:
             print ev , " / " , nData
 
+        ### FIRMWARE
         tData.GetEntry(ev)
-        print " ====== EV:", ev, tData.EventNumber
-
+        # print " ====== EV:", ev, tData.EventNumber, tData.RunNumber, tData.lumi
         for i in range(0,tData.L1Tau_hwpt.size()):
             pt = tData.L1Tau_hwpt.at(i)
             if pt == 0: continue # skip dummy candidates
@@ -149,8 +154,16 @@ if __name__ == "__main__":
             hData_eta.Fill(eta)
             phi = tData.L1Tau_hwphi.at(i)
             hData_phi.Fill(phi)
-            print "TAU: " , i , pt, eta, phi
+            hmapEtaPhiData.Fill (eta, phi)
+            # print "TAU: " , i , pt, eta, phi
 
+        for i in range (0, tData.L1TT_hwpt.size()):
+            pt  = tData.L1TT_hwpt.at(i)
+            eta = tData.L1TT_hweta.at(i)
+            phi = tData.L1TT_hwphi.at(i)
+            hmapTTEtaPhiData.Fill(eta, phi)
+
+        ### EMULATOR
         tEmul.GetEntry(ev)
         for i in range(0,tEmul.L1Tau_hwpt.size()):
             pt = tEmul.L1Tau_hwpt.at(i)
@@ -159,7 +172,14 @@ if __name__ == "__main__":
             hEmul_eta.Fill(eta)
             phi = tEmul.L1Tau_hwphi.at(i)
             hEmul_phi.Fill(phi)
+            hmapEtaPhiEmul.Fill (eta, phi)
 
+        for i in range (0, tEmul.L1TT_hwpt.size()):
+            pt  = tEmul.L1TT_hwpt.at(i)
+            eta = tEmul.L1TT_hweta.at(i)
+            phi = tEmul.L1TT_hwphi.at(i)
+            print "TT:" , i, pt, eta, phi
+            hmapTTEtaPhiEmul.Fill(eta, phi)
 
     c1 = TCanvas ("c1", "c1", 800, 600)
     pad1 = TPad ("pad1", "pad1", 0, 0.251, 1, 1.0)
@@ -214,5 +234,23 @@ if __name__ == "__main__":
     grRatio_phi = makeDataOverMCRatioPlot (hData_phi, hEmul_phi, "ratio_phi")
     hRatio_phi = TH1F ("hRatio_phi", "hRatio_phi", 100, hData_phi.GetBinLowEdge(1), hData_phi.GetBinLowEdge(hData_phi.GetNbinsX()+1))
     doComparison (hData_phi, hEmul_phi, c1, pad1, pad2, grRatio_phi, hRatio_phi, "phi", "hw iphi", leg)
+
+    ######### 2d plots
+    c2 = TCanvas ("c2", "c2", 800, 600)
+    hmapEtaPhiEmul.SetTitle ("Emulator;ieta;phi")
+    hmapEtaPhiEmul.Draw("COLZ")
+    c2.Print ("mapetaphi_emul.pdf", "pdf")
+    hmapEtaPhiData.SetTitle ("Firmware;ieta;phi")
+    hmapEtaPhiData.Draw("COLZ")
+    c2.Print ("mapetaphi_data.pdf", "pdf")
+
+    hmapTTEtaPhiEmul.SetTitle ("TT - Emulator;ieta;iphi")
+    hmapTTEtaPhiEmul.Draw("COLZ")
+    c2.Print ("mapTTetaphi_emul.pdf", "pdf")
+    hmapTTEtaPhiData.SetTitle ("TT - Data;ieta;iphi")
+    hmapTTEtaPhiData.Draw("COLZ")
+    c2.Print ("mapTTetaphi_data.pdf", "pdf")
+
+
     raw_input()
 
