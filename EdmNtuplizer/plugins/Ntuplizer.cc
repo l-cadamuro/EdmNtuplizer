@@ -142,6 +142,12 @@ void Ntuplizer::Initialize()
     _L1clus_hwphi.clear();
     // _L1clus_hwiso.clear();
     // _L1clus_hwqual.clear();
+
+    _L1EG_hwpt.clear();
+    _L1EG_hweta.clear();
+    _L1EG_hwphi.clear();
+    _L1EG_hwiso.clear();
+    _L1EG_hwqual.clear();
 }
 
 
@@ -195,6 +201,9 @@ void Ntuplizer::analyze(const edm::Event& event, const edm::EventSetup& eSetup)
     _runNumber = event.id().run();
     _lumi = event.luminosityBlock();
 
+
+    cout << "** DEBUG: " << _indexevents << " " << _runNumber << " " << _lumi << endl;
+
     // ---------------------------------------------
     // fill all taus
     edm::Handle< BXVector<l1t::Tau> >  L1TauHandle;
@@ -202,6 +211,7 @@ void Ntuplizer::analyze(const edm::Event& event, const edm::EventSetup& eSetup)
 
     for (l1t::TauBxCollection::const_iterator it = L1TauHandle->begin(0); it != L1TauHandle->end(0) ; it++)
     {
+        cout << "tau: " << it - L1TauHandle->begin(0) << " " << it->hwPt() << " " << it->hwEta() << " " << it->hwPhi() << endl;
         _L1Tau_hwpt.push_back(it->hwPt());
         _L1Tau_hweta.push_back(it->hwEta());
         _L1Tau_hwphi.push_back(it->hwPhi());
