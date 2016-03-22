@@ -5,7 +5,7 @@ import os
 
 PyFilePath = os.environ['CMSSW_BASE']+"/src/EdmNtuplizer/EdmNtuplizer/"
 
-execfile(PyFilePath+"test/tools/EDM_list_emul.py")
+execfile(PyFilePath+"test/tools/EDM_list_emul_MinBias_266667.py")
 
 process = cms.Process("TEST")
 process.load("Configuration.StandardSequences.FrontierConditions_GlobalTag_cff")    
@@ -24,14 +24,14 @@ process.load("Configuration.StandardSequences.MagneticField_38T_cff")
 process.load("TrackingTools.TransientTrack.TransientTrackBuilder_cfi")
 process.options = cms.untracked.PSet( wantSummary = cms.untracked.bool(True) )
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(1000)
+    input = cms.untracked.int32(-1)
 )
 
 ## init plugin
 process.TreeData = cms.EDAnalyzer("Ntuplizer",
     L1Tau = cms.InputTag("caloStage2Digis", "MP"),
     L1EG  = cms.InputTag("caloStage2Digis", "MP"),
-    L1TT  = cms.InputTag("caloStage2Digis", ""),
+    L1TT  = cms.InputTag("caloStage2Digis", "CaloTower"),
     L1Clusters = cms.InputTag("NOTHING", ""),
     isEmulated = cms.bool(False),
     treeName = cms.string("L1EdmTreeData")
@@ -46,7 +46,7 @@ process.TreeEmul = process.TreeData.clone(
     treeName = cms.string("L1EdmTreeEmul")
 )
 
-process.TFileService=cms.Service('TFileService',fileName=cms.string('L1Ntuple.root'))
+process.TFileService=cms.Service('TFileService',fileName=cms.string('L1Ntuple_allEvts_MinBias_266667.root'))
 
 # if isEmulated:
 #     process.TFileService=cms.Service('TFileService',fileName=cms.string('L1Ntuple_emul.root'))

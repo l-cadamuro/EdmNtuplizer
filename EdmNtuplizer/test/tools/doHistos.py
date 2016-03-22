@@ -101,19 +101,24 @@ def doComparison (hData, hEmul, c1, pad1, pad2, grRatio, hRatio, tag, xtitle, le
 
 if __name__ == "__main__":
 
+    gROOT.SetBatch(True)
     gStyle.SetOptStat(0)
 
-    fData = TFile.Open ("../L1Ntuple_data.root")
-    fEmul = TFile.Open ("../L1Ntuple_emul.root")
-
-    tData = fData.Get("Tree/L1EdmTree")
-    tEmul = fEmul.Get("Tree/L1EdmTree")
+    # fData = TFile.Open ("../L1Ntuple_data.root")
+    # fEmul = TFile.Open ("../L1Ntuple_emul.root")
+    # tData = fData.Get("Tree/L1EdmTree")
+    # tEmul = fEmul.Get("Tree/L1EdmTree")
+    fIn = TFile.Open ("../L1Ntuple_allEvts_MinBias_266667.root")
+    tData = fIn.Get("TreeData/L1EdmTreeData")
+    tEmul = fIn.Get("TreeEmul/L1EdmTreeEmul")
 
     # -----------------------------------------------------
     ############ HISTOS DEFINITION
 
     hData_pt = TH1F ("hData_pt", "hData_pt", 256, 0, 256)
     hEmul_pt = TH1F ("hEmul_pt", "hEmul_pt", 256, 0, 256)
+
+    hHotStripe_pt = TH1F ("hHotStripe_pt", "hHotStripe_pt", 256, 0, 256)
 
     hData_eta = TH1F ("hData_eta", "hData_eta", 70, -35, 35)
     hEmul_eta = TH1F ("hEmul_eta", "hEmul_eta", 70, -35, 35)
@@ -124,14 +129,18 @@ if __name__ == "__main__":
     hmapEtaPhiEmul = TH2F ("hmapEtaPhiEmul", "hmapEtaPhiEmul", 70, -35, 35, 75, 0, 75)
     hmapEtaPhiData = TH2F ("hmapEtaPhiData", "hmapEtaPhiData", 70, -35, 35, 75, 0, 75)
 
+    hmapEtaPhiEmulSaturated = TH2F ("hmapEtaPhiEmulSaturated", "hmapEtaPhiEmulSaturated", 70, -35, 35, 75, 0, 75)
+
     ## TT 2d maps
     hmapTTEtaPhiEmul = TH2F ("hmapEtaTTPhiEmul", "hmapTTEtaPhiEmul", 70, -35, 35, 75, 0, 75)
+    hmapTTEtaPhiEmulECALOnly = TH2F ("hmapTTEtaPhiEmulECALOnly", "hmapTTEtaPhiEmulECALOnly", 70, -35, 35, 75, 0, 75)
+    hmapTTEtaPhiEmulHCALOnly = TH2F ("hmapTTEtaPhiEmulHCALOnly", "hmapTTEtaPhiEmulHCALOnly", 70, -35, 35, 75, 0, 75)
     hmapTTEtaPhiData = TH2F ("hmapEtaTTPhiData", "hmapTTEtaPhiData", 70, -35, 35, 75, 0, 75)
 
-    nData = tData.GetEntries()
-    nEmul = tEmul.GetEntries() 
-    # nData = 100
-    # nEmul = 100
+    # nData = tData.GetEntries()
+    # nEmul = tEmul.GetEntries() 
+    nData = 1000
+    nEmul = 1000
 
     if nData != nEmul:
         print "** ERROR: Data / Emul trees have different entries: " , nData , "/" , nEmul
@@ -157,11 +166,11 @@ if __name__ == "__main__":
             hmapEtaPhiData.Fill (eta, phi)
             # print "TAU: " , i , pt, eta, phi
 
-        for i in range (0, tData.L1TT_hwpt.size()):
-            pt  = tData.L1TT_hwpt.at(i)
-            eta = tData.L1TT_hweta.at(i)
-            phi = tData.L1TT_hwphi.at(i)
-            hmapTTEtaPhiData.Fill(eta, phi)
+        # for i in range (0, tData.L1TT_hwpt.size()):
+        #     pt  = tData.L1TT_hwpt.at(i)
+        #     eta = tData.L1TT_hweta.at(i)
+        #     phi = tData.L1TT_hwphi.at(i)
+        #     hmapTTEtaPhiData.Fill(eta, phi)
 
         ### EMULATOR
         tEmul.GetEntry(ev)
@@ -174,12 +183,29 @@ if __name__ == "__main__":
             hEmul_phi.Fill(phi)
             hmapEtaPhiEmul.Fill (eta, phi)
 
+            # if eta == 9 or eta == 12 or eta == -9 or eta == -12:
+            if phi == 6 or phi == 10:
+                hHotStripe_pt.Fill(pt)
+
+
+        ## NB: only TT in emualtor have non-zero values for hwEtEm and hwEtHad
         for i in range (0, tEmul.L1TT_hwpt.size()):
+            em = tEmul.L1TT_hwem.at(i)
+            had = tEmul.L1TT_hwhad.at(i)
+            # if had == 0: continue
             pt  = tEmul.L1TT_hwpt.at(i)
             eta = tEmul.L1TT_hweta.at(i)
             phi = tEmul.L1TT_hwphi.at(i)
-            print "TT:" , i, pt, eta, phi
+            # print "TT:" , i, pt, eta, phi
+            # if pt < 5 : continue
             hmapTTEtaPhiEmul.Fill(eta, phi)
+            if had == 0:
+                hmapTTEtaPhiEmulECALOnly.Fill (eta, phi)
+            if em == 0:
+                hmapTTEtaPhiEmulHCALOnly.Fill (eta, phi)
+
+            if pt == 255:
+                hmapEtaPhiEmulSaturated.Fill(eta, phi)
 
     c1 = TCanvas ("c1", "c1", 800, 600)
     pad1 = TPad ("pad1", "pad1", 0, 0.251, 1, 1.0)
@@ -188,6 +214,7 @@ if __name__ == "__main__":
     pad1.SetBottomMargin(0.02)
     pad1.SetTopMargin(0.1)
     pad1.Draw()
+    # pad1.SetLogy()
 
     pad2 = TPad ("pad2", "pad2", 0, 0.0, 1, 0.24)
     pad2.SetLeftMargin(0.15);
@@ -235,6 +262,8 @@ if __name__ == "__main__":
     hRatio_phi = TH1F ("hRatio_phi", "hRatio_phi", 100, hData_phi.GetBinLowEdge(1), hData_phi.GetBinLowEdge(hData_phi.GetNbinsX()+1))
     doComparison (hData_phi, hEmul_phi, c1, pad1, pad2, grRatio_phi, hRatio_phi, "phi", "hw iphi", leg)
 
+
+
     ######### 2d plots
     c2 = TCanvas ("c2", "c2", 800, 600)
     hmapEtaPhiEmul.SetTitle ("Emulator;ieta;phi")
@@ -251,6 +280,21 @@ if __name__ == "__main__":
     hmapTTEtaPhiData.Draw("COLZ")
     c2.Print ("mapTTetaphi_data.pdf", "pdf")
 
+    hmapTTEtaPhiEmulECALOnly.SetTitle ("TT - Emul ECAL only;ieta;iphi")
+    hmapTTEtaPhiEmulECALOnly.Draw("COLZ")
+    c2.Print ("mapTTetaphi_ECALonly_Emul.pdf", "pdf")
+    hmapTTEtaPhiEmulHCALOnly.SetTitle ("TT - Emul HCAL only;ieta;iphi")
+    hmapTTEtaPhiEmulHCALOnly.Draw("COLZ")
+    c2.Print ("mapTTetaphi_HCALonly_Emul.pdf", "pdf")
 
+    hmapEtaPhiEmulSaturated.Draw("COLZ")
+    c2.Print ("hmapEtaPhiEmulSaturated.pdf", "pdf")
+
+    c3 = TCanvas ("c3", "c3", 800, 600)
+    hHotStripe_pt.Draw()
+    c3.Print("hotStripes_pt.pdf", "pdf")
+
+    print "CANDIATE NUMBERS -- data:" , hData_pt.Integral() , " Emul: " , hEmul_pt.Integral()
+    print hHotStripe_pt.Integral()
     raw_input()
 
