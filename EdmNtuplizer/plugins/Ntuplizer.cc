@@ -66,6 +66,7 @@ class Ntuplizer : public edm::EDAnalyzer {
   edm::EDGetTokenT<l1t::TauBxCollection>          _L1TauTag  ;
   edm::EDGetTokenT<l1t::TauBxCollection>          _L1demuxTauTag  ;
   edm::EDGetTokenT<l1t::EGammaBxCollection>       _L1EGTag  ;
+  edm::EDGetTokenT<l1t::EGammaBxCollection>       _L1demuxEGTag  ;
   edm::EDGetTokenT<l1t::CaloTowerBxCollection>    _L1TTTag   ;
   edm::EDGetTokenT<l1t::CaloClusterBxCollection>  _L1ClusTag ;
   bool _isEmulated;
@@ -105,6 +106,13 @@ class Ntuplizer : public edm::EDAnalyzer {
   vector<Int_t>   _L1EG_hwiso;
   vector<Int_t>   _L1EG_hwqual;
 
+  // eg demux quantities
+  vector<Int_t>   _L1demuxEG_hwpt;
+  vector<Int_t>   _L1demuxEG_hweta;
+  vector<Int_t>   _L1demuxEG_hwphi;
+  vector<Int_t>   _L1demuxEG_hwiso;
+  vector<Int_t>   _L1demuxEG_hwqual;
+
   // TT quantities
   vector<Int_t>   _L1TT_hwpt;
   vector<Int_t>   _L1TT_hweta;
@@ -126,6 +134,7 @@ Ntuplizer::Ntuplizer(const edm::ParameterSet& pset) :
   _L1TauTag         (consumes<l1t::TauBxCollection>         (pset.getParameter<edm::InputTag>("L1Tau"))),
   _L1demuxTauTag    (consumes<l1t::TauBxCollection>         (pset.getParameter<edm::InputTag>("L1demuxTau"))),
   _L1EGTag          (consumes<l1t::EGammaBxCollection>      (pset.getParameter<edm::InputTag>("L1EG"))),
+  _L1demuxEGTag     (consumes<l1t::EGammaBxCollection>      (pset.getParameter<edm::InputTag>("L1demuxEG"))),
   _L1TTTag          (consumes<l1t::CaloTowerBxCollection>   (pset.getParameter<edm::InputTag>("L1TT"))),
   _L1ClusTag        (consumes<l1t::CaloClusterBxCollection> (pset.getParameter<edm::InputTag>("L1Clusters")))
 {
@@ -179,6 +188,12 @@ void Ntuplizer::Initialize()
     _L1EG_hwphi.clear();
     _L1EG_hwiso.clear();
     _L1EG_hwqual.clear();
+
+    _L1demuxEG_hwpt.clear();
+    _L1demuxEG_hweta.clear();
+    _L1demuxEG_hwphi.clear();
+    _L1demuxEG_hwiso.clear();
+    _L1demuxEG_hwqual.clear();
 }
 
 
@@ -217,6 +232,12 @@ void Ntuplizer::beginJob()
     myTree->Branch("L1EG_hwphi", &_L1EG_hwphi);
     myTree->Branch("L1EG_hwiso", &_L1EG_hwiso);
     myTree->Branch("L1EG_hwqual", &_L1EG_hwqual);
+
+    myTree->Branch("L1demuxEG_hwpt",   &_L1demuxEG_hwpt);
+    myTree->Branch("L1demuxEG_hweta",  &_L1demuxEG_hweta);
+    myTree->Branch("L1demuxEG_hwphi",  &_L1demuxEG_hwphi);
+    myTree->Branch("L1demuxEG_hwiso",  &_L1demuxEG_hwiso);
+    myTree->Branch("L1demuxEG_hwqual", &_L1demuxEG_hwqual);
 
     myTree->Branch("L1TT_hwpt", &_L1TT_hwpt);
     myTree->Branch("L1TT_hweta", &_L1TT_hweta);
@@ -308,6 +329,21 @@ void Ntuplizer::analyze(const edm::Event& event, const edm::EventSetup& eSetup)
         _L1EG_hwphi.push_back(it->hwPhi());
         _L1EG_hwiso.push_back(it->hwIso());
         _L1EG_hwqual.push_back(it->hwQual());
+    }
+
+
+    // ---------------------------------------------
+    // fill all EG demux
+    edm::Handle< BXVector<l1t::EGamma> >  L1demuxEGHandle;
+    event.getByToken(_L1demuxEGTag, L1demuxEGHandle);
+
+    for (l1t::EGammaBxCollection::const_iterator it = L1demuxEGHandle->begin(0); it != L1demuxEGHandle->end(0) ; it++)
+    {
+        _L1demuxEG_hwpt.push_back(it->hwPt());
+        _L1demuxEG_hweta.push_back(it->hwEta());
+        _L1demuxEG_hwphi.push_back(it->hwPhi());
+        _L1demuxEG_hwiso.push_back(it->hwIso());
+        _L1demuxEG_hwqual.push_back(it->hwQual());
     }
 
     // ---------------------------------------------

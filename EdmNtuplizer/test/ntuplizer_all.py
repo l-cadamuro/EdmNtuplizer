@@ -24,7 +24,7 @@ process.load("Configuration.StandardSequences.MagneticField_38T_cff")
 process.load("TrackingTools.TransientTrack.TransientTrackBuilder_cfi")
 process.options = cms.untracked.PSet( wantSummary = cms.untracked.bool(True) )
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(-1)
+    input = cms.untracked.int32(10000)
 )
 
 ## init plugin
@@ -32,6 +32,7 @@ process.TreeData = cms.EDAnalyzer("Ntuplizer",
     L1Tau = cms.InputTag("caloStage2Digis", "MP"),
     L1demuxTau = cms.InputTag("caloStage2Digis", "Tau"),
     L1EG  = cms.InputTag("caloStage2Digis", "MP"),
+    L1demuxEG  = cms.InputTag("caloStage2Digis", "EGamma"),
     L1TT  = cms.InputTag("caloStage2Digis", "CaloTower"),
     L1Clusters = cms.InputTag("NOTHING", ""),
     isEmulated = cms.bool(False),
@@ -42,14 +43,15 @@ process.TreeEmul = process.TreeData.clone(
     L1Tau = cms.InputTag("simCaloStage2Digis", "MP"),
     L1demuxTau = cms.InputTag("simCaloStage2Digis", ""),
     L1EG  = cms.InputTag("simCaloStage2Digis", "MP"),
+    L1demuxEG  = cms.InputTag("simCaloStage2Digis", ""),
     L1TT  = cms.InputTag("simCaloStage2Digis", "MP"),
     L1Clusters = cms.InputTag("simCaloStage2Digis", "MP"),
     isEmulated = cms.bool(True),
     treeName = cms.string("L1EdmTreeEmul")
 )
 
-process.TFileService=cms.Service('TFileService',fileName=cms.string('L1Ntuple_allEvts_MinBias_266667_lastEmulTag.root'))
-# process.TFileService=cms.Service('TFileService',fileName=cms.string('L1Ntuple_allEvts_MinBias_266667_testDemux.root'))
+# process.TFileService=cms.Service('TFileService',fileName=cms.string('L1Ntuple_allEvts_MinBias_266667_lastEmulTag.root'))
+process.TFileService=cms.Service('TFileService',fileName=cms.string('L1Ntuple_allEvts_MinBias_266667_testDemux.root'))
 
 # if isEmulated:
 #     process.TFileService=cms.Service('TFileService',fileName=cms.string('L1Ntuple_emul.root'))
