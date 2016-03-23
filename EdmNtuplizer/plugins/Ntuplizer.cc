@@ -64,6 +64,7 @@ class Ntuplizer : public edm::EDAnalyzer {
 
   TTree *myTree;
   edm::EDGetTokenT<l1t::TauBxCollection>          _L1TauTag  ;
+  edm::EDGetTokenT<l1t::TauBxCollection>          _L1demuxTauTag  ;
   edm::EDGetTokenT<l1t::EGammaBxCollection>       _L1EGTag  ;
   edm::EDGetTokenT<l1t::CaloTowerBxCollection>    _L1TTTag   ;
   edm::EDGetTokenT<l1t::CaloClusterBxCollection>  _L1ClusTag ;
@@ -87,6 +88,16 @@ class Ntuplizer : public edm::EDAnalyzer {
   vector<Int_t>   _L1Tau_nTT;
   vector<Bool_t>  _L1Tau_hasEM;
   vector<Bool_t>  _L1Tau_isMerged;
+
+  // tau demux
+  vector<Int_t>   _L1demuxTau_hwpt;
+  vector<Int_t>   _L1demuxTau_hweta;
+  vector<Int_t>   _L1demuxTau_hwphi;
+  vector<Int_t>   _L1demuxTau_hwiso;
+  vector<Int_t>   _L1demuxTau_hwqual;
+  vector<Int_t>   _L1demuxTau_hwrawpt;
+  vector<Int_t>   _L1demuxTau_hwisoet;
+
   // eg L1 quantities
   vector<Int_t>   _L1EG_hwpt;
   vector<Int_t>   _L1EG_hweta;
@@ -113,6 +124,7 @@ class Ntuplizer : public edm::EDAnalyzer {
 // ----Constructor and Destructor -----
 Ntuplizer::Ntuplizer(const edm::ParameterSet& pset) : 
   _L1TauTag         (consumes<l1t::TauBxCollection>         (pset.getParameter<edm::InputTag>("L1Tau"))),
+  _L1demuxTauTag    (consumes<l1t::TauBxCollection>         (pset.getParameter<edm::InputTag>("L1demuxTau"))),
   _L1EGTag          (consumes<l1t::EGammaBxCollection>      (pset.getParameter<edm::InputTag>("L1EG"))),
   _L1TTTag          (consumes<l1t::CaloTowerBxCollection>   (pset.getParameter<edm::InputTag>("L1TT"))),
   _L1ClusTag        (consumes<l1t::CaloClusterBxCollection> (pset.getParameter<edm::InputTag>("L1Clusters")))
@@ -141,6 +153,14 @@ void Ntuplizer::Initialize()
     _L1Tau_nTT.clear();
     _L1Tau_hasEM.clear();
     _L1Tau_isMerged.clear();
+
+    _L1demuxTau_hwpt.clear();
+    _L1demuxTau_hweta.clear();
+    _L1demuxTau_hwphi.clear();
+    _L1demuxTau_hwiso.clear();
+    _L1demuxTau_hwqual.clear();
+    _L1demuxTau_hwrawpt.clear();
+    _L1demuxTau_hwisoet.clear();
 
     _L1TT_hwpt.clear();
     _L1TT_hweta.clear();
@@ -183,6 +203,14 @@ void Ntuplizer::beginJob()
     myTree->Branch("L1Tau_nTT", &_L1Tau_nTT);
     myTree->Branch("L1Tau_hasEM", &_L1Tau_hasEM);
     myTree->Branch("L1Tau_isMerged", &_L1Tau_isMerged);
+
+    myTree->Branch("L1demuxTau_hwpt", &_L1demuxTau_hwpt);
+    myTree->Branch("L1demuxTau_hweta", &_L1demuxTau_hweta);
+    myTree->Branch("L1demuxTau_hwphi", &_L1demuxTau_hwphi);
+    myTree->Branch("L1demuxTau_hwiso", &_L1demuxTau_hwiso);
+    myTree->Branch("L1demuxTau_hwqual", &_L1demuxTau_hwqual);
+    myTree->Branch("L1demuxTau_hwrawpt", &_L1demuxTau_hwrawpt);
+    myTree->Branch("L1demuxTau_hwisoet", &_L1demuxTau_hwisoet);
 
     myTree->Branch("L1EG_hwpt", &_L1EG_hwpt);
     myTree->Branch("L1EG_hweta", &_L1EG_hweta);
@@ -235,12 +263,37 @@ void Ntuplizer::analyze(const edm::Event& event, const edm::EventSetup& eSetup)
         _L1Tau_hwiso.push_back(it->hwIso());
         _L1Tau_hwqual.push_back(it->hwQual());
 
+        // keeping it for compatibility, but I pushed a commit to directly use it->rawEt(), etc...
         l1t::Tau myTau (*it); // oh no! const methods :-(
         _L1Tau_hwrawpt.push_back((int) (myTau.rawEt()));
         _L1Tau_hwisoet.push_back((int) (myTau.isoEt()));
         _L1Tau_nTT.push_back((int) (myTau.nTT()));
         _L1Tau_hasEM.push_back((myTau.hasEM()));
         _L1Tau_isMerged.push_back((myTau.isMerged()));
+    }
+
+    // ---------------------------------------------
+    // fill all demux taus
+    edm::Handle< BXVector<l1t::Tau> >  L1demuxTauHandle;
+    event.getByToken(_L1demuxTauTag, L1demuxTauHandle);
+
+    for (l1t::TauBxCollection::const_iterator it = L1demuxTauHandle->begin(0); it != L1demuxTauHandle->end(0) ; it++)
+    {
+        // cout << "tau: " << it - L1TauHandle->begin(0) << " " << it->hwPt() << " " << it->hwEta() << " " << it->hwPhi() << endl;
+
+        _L1demuxTau_hwpt.push_back(it->hwPt());
+        _L1demuxTau_hweta.push_back(it->hwEta());
+        _L1demuxTau_hwphi.push_back(it->hwPhi());
+        _L1demuxTau_hwiso.push_back(it->hwIso());
+        _L1demuxTau_hwqual.push_back(it->hwQual());
+
+        // keeping it for compatibility, but I pushed a commit to directly use it->rawEt(), etc...
+        l1t::Tau myTau (*it); // oh no! const methods :-(
+        _L1demuxTau_hwrawpt.push_back((int) (myTau.rawEt()));
+        _L1demuxTau_hwisoet.push_back((int) (myTau.isoEt()));
+        // _L1Tau_nTT.push_back((int) (myTau.nTT()));
+        // _L1Tau_hasEM.push_back((myTau.hasEM()));
+        // _L1Tau_isMerged.push_back((myTau.isMerged()));
     }
 
     // ---------------------------------------------

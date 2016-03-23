@@ -5,7 +5,7 @@ import os
 
 PyFilePath = os.environ['CMSSW_BASE']+"/src/EdmNtuplizer/EdmNtuplizer/"
 
-execfile(PyFilePath+"test/tools/EDM_list_emul_MinBias_266667.py")
+execfile(PyFilePath+"test/tools/EDM_list_emul_MinBias_266667_lastEmulTag.py")
 
 process = cms.Process("TEST")
 process.load("Configuration.StandardSequences.FrontierConditions_GlobalTag_cff")    
@@ -30,6 +30,7 @@ process.maxEvents = cms.untracked.PSet(
 ## init plugin
 process.TreeData = cms.EDAnalyzer("Ntuplizer",
     L1Tau = cms.InputTag("caloStage2Digis", "MP"),
+    L1demuxTau = cms.InputTag("caloStage2Digis", "Tau"),
     L1EG  = cms.InputTag("caloStage2Digis", "MP"),
     L1TT  = cms.InputTag("caloStage2Digis", "CaloTower"),
     L1Clusters = cms.InputTag("NOTHING", ""),
@@ -39,6 +40,7 @@ process.TreeData = cms.EDAnalyzer("Ntuplizer",
 
 process.TreeEmul = process.TreeData.clone(
     L1Tau = cms.InputTag("simCaloStage2Digis", "MP"),
+    L1demuxTau = cms.InputTag("simCaloStage2Digis", ""),
     L1EG  = cms.InputTag("simCaloStage2Digis", "MP"),
     L1TT  = cms.InputTag("simCaloStage2Digis", "MP"),
     L1Clusters = cms.InputTag("simCaloStage2Digis", "MP"),
@@ -46,7 +48,8 @@ process.TreeEmul = process.TreeData.clone(
     treeName = cms.string("L1EdmTreeEmul")
 )
 
-process.TFileService=cms.Service('TFileService',fileName=cms.string('L1Ntuple_allEvts_MinBias_266667.root'))
+process.TFileService=cms.Service('TFileService',fileName=cms.string('L1Ntuple_allEvts_MinBias_266667_lastEmulTag.root'))
+# process.TFileService=cms.Service('TFileService',fileName=cms.string('L1Ntuple_allEvts_MinBias_266667_testDemux.root'))
 
 # if isEmulated:
 #     process.TFileService=cms.Service('TFileService',fileName=cms.string('L1Ntuple_emul.root'))
