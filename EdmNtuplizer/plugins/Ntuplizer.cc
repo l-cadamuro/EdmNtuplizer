@@ -82,7 +82,11 @@ class Ntuplizer : public edm::EDAnalyzer {
   vector<Int_t>   _L1Tau_hwphi;
   vector<Int_t>   _L1Tau_hwiso;
   vector<Int_t>   _L1Tau_hwqual;
-
+  vector<Int_t>   _L1Tau_hwrawpt;
+  vector<Int_t>   _L1Tau_hwisoet;
+  vector<Int_t>   _L1Tau_nTT;
+  vector<Bool_t>  _L1Tau_hasEM;
+  vector<Bool_t>  _L1Tau_isMerged;
   // eg L1 quantities
   vector<Int_t>   _L1EG_hwpt;
   vector<Int_t>   _L1EG_hweta;
@@ -132,6 +136,11 @@ void Ntuplizer::Initialize()
     _L1Tau_hwphi.clear();
     _L1Tau_hwiso.clear();
     _L1Tau_hwqual.clear();
+    _L1Tau_hwrawpt.clear();
+    _L1Tau_hwisoet.clear();
+    _L1Tau_nTT.clear();
+    _L1Tau_hasEM.clear();
+    _L1Tau_isMerged.clear();
 
     _L1TT_hwpt.clear();
     _L1TT_hweta.clear();
@@ -169,6 +178,11 @@ void Ntuplizer::beginJob()
     myTree->Branch("L1Tau_hwphi", &_L1Tau_hwphi);
     myTree->Branch("L1Tau_hwiso", &_L1Tau_hwiso);
     myTree->Branch("L1Tau_hwqual", &_L1Tau_hwqual);
+    myTree->Branch("L1Tau_hwrawpt", &_L1Tau_hwrawpt);
+    myTree->Branch("L1Tau_hwisoet", &_L1Tau_hwisoet);
+    myTree->Branch("L1Tau_nTT", &_L1Tau_nTT);
+    myTree->Branch("L1Tau_hasEM", &_L1Tau_hasEM);
+    myTree->Branch("L1Tau_isMerged", &_L1Tau_isMerged);
 
     myTree->Branch("L1EG_hwpt", &_L1EG_hwpt);
     myTree->Branch("L1EG_hweta", &_L1EG_hweta);
@@ -214,11 +228,19 @@ void Ntuplizer::analyze(const edm::Event& event, const edm::EventSetup& eSetup)
     for (l1t::TauBxCollection::const_iterator it = L1TauHandle->begin(0); it != L1TauHandle->end(0) ; it++)
     {
         // cout << "tau: " << it - L1TauHandle->begin(0) << " " << it->hwPt() << " " << it->hwEta() << " " << it->hwPhi() << endl;
+
         _L1Tau_hwpt.push_back(it->hwPt());
         _L1Tau_hweta.push_back(it->hwEta());
         _L1Tau_hwphi.push_back(it->hwPhi());
         _L1Tau_hwiso.push_back(it->hwIso());
         _L1Tau_hwqual.push_back(it->hwQual());
+
+        l1t::Tau myTau (*it); // oh no! const methods :-(
+        _L1Tau_hwrawpt.push_back((int) (myTau.rawEt()));
+        _L1Tau_hwisoet.push_back((int) (myTau.isoEt()));
+        _L1Tau_nTT.push_back((int) (myTau.nTT()));
+        _L1Tau_hasEM.push_back((myTau.hasEM()));
+        _L1Tau_isMerged.push_back((myTau.isMerged()));
     }
 
     // ---------------------------------------------
