@@ -118,37 +118,71 @@ void printMapOnTerminal (std::ostream& out, TTree* mtree, int ev, int EType = 0)
 void makeMap(int ev = 0)
 {
     //TFile* f = new TFile ("/home/llr/cms/cadamuro/Stage2TauEGamma/comparisons/pattern-SingleElec-1000evt_screen_ComparisonTree.root");
-    TFile* f = new TFile ("../L1Ntuple_allEvts_MinBias_266667_lastEmulTag.root");
+    // TFile* f = new TFile ("../L1Ntuple_allEvts_MinBias_267593_fixUnpack.root");
+    TFile* f = new TFile ("../L1Ntuple_Sudan2Mag.root");
     //TFile* f = new TFile ("/home/llr/cms/cadamuro/Stage2TauEGamma/comparisons/pattern-H2Tau-1000evt_screen_fixTrimLut_29Ott2015_ComparisonTree.root");    
-    TTree* t = (TTree*) f->Get("TreeEmul/L1EdmTreeEmul");
+    TTree* tEmul = (TTree*) f->Get("TreeEmul/L1EdmTreeEmul");
+    TTree* tData = (TTree*) f->Get("TreeData/L1EdmTreeData");
 
     // mergedTree* mtree = new mergedTree(t);
 
-    cout << t->GetEntries() << endl;
+
+    // --------------------------------------------------------
+    // DATA
+    std::vector<int>     *data_L1Tau_hwpt = 0;
+    std::vector<int>     *data_L1Tau_hweta = 0;
+    std::vector<int>     *data_L1Tau_hwphi = 0;
+    tData->SetBranchAddress("L1Tau_hwpt", &data_L1Tau_hwpt);
+    tData->SetBranchAddress("L1Tau_hweta", &data_L1Tau_hweta);
+    tData->SetBranchAddress("L1Tau_hwphi", &data_L1Tau_hwphi);
+
+    // EMUL
+    std::vector<int>     *emul_L1Tau_hwpt = 0;
+    std::vector<int>     *emul_L1Tau_hweta = 0;
+    std::vector<int>     *emul_L1Tau_hwphi = 0;
+    tEmul->SetBranchAddress("L1Tau_hwpt", &emul_L1Tau_hwpt);
+    tEmul->SetBranchAddress("L1Tau_hweta", &emul_L1Tau_hweta);
+    tEmul->SetBranchAddress("L1Tau_hwphi", &emul_L1Tau_hwphi);
+
+    // --------------------------------------------------------
+
+
+    cout << tData->GetEntries() << endl;
     
-    t->GetEntry(ev);
+    tData->GetEntry(ev);
+    tEmul->GetEntry(ev);
     
-    // cout << "L1 candidates (emul): (Et -- hwEt, ieta, iphi)" << endl;
-    // for (int i = 0; i < mtree->tau_ieta_emul->size(); i++)
-    // {
-    //    if (abs(mtree->tau_ieta_emul->at(i)) >= 29) continue; 
-    //    cout << i << " - " << mtree->tau_ET_emul->at(i) << " -- " << mtree->tau_hwPt_emul->at(i) <<  " , " << mtree->tau_ieta_emul->at(i) << " , " << mtree->tau_iphi_emul->at(i) << endl;
-    // }
+    cout << "L1 candidates (emul): (hwEt, ieta, iphi)" << endl;
+    for (int i = 0; i < emul_L1Tau_hweta->size(); i++)
+    {
+       // if (abs(L1Tau_hweta->at(i)) >= 29) continue; 
+       // cout << i << " - " << tau_ET_emul->at(i) << " -- " << tau_hwPt_emul->at(i) <<  " , " << tau_ieta_emul->at(i) << " , " << tau_iphi_emul->at(i) << endl;
+       cout << i << " -- " << emul_L1Tau_hwpt->at(i) <<  " , " << emul_L1Tau_hweta->at(i) << " , " << emul_L1Tau_hwphi->at(i) << endl;
 
-    // cout << endl << " --------------------------------------- " << endl;
+    }
 
-    // cout << "L1 candidates (firm): (Et , ieta, iphi)" << endl;
-    // for (int i = 0; i < mtree->tau_ieta_fw->size(); i++)
-    // {
-    //     cout << i << " - " << mtree->tau_ET_fw->at(i) << " , " << mtree->tau_ieta_fw->at(i) << " , " << mtree->tau_iphi_fw->at(i) << endl;
-    // }
+    cout << endl << " --------------------------------------- " << endl;
 
-    // cout << endl << " --------------------------------------- " << endl;
+    cout << "L1 candidates (firm): (Et , ieta, iphi)" << endl;
+    for (int i = 0; i < data_L1Tau_hweta->size(); i++)
+    {
+        if (data_L1Tau_hwpt->at(i) == 0) continue;
+       // if (abs(L1Tau_hweta->at(i)) >= 29) continue; 
+       // cout << i << " - " << tau_ET_emul->at(i) << " -- " << tau_hwPt_emul->at(i) <<  " , " << tau_ieta_emul->at(i) << " , " << tau_iphi_emul->at(i) << endl;
+       cout << i << " -- " << data_L1Tau_hwpt->at(i) <<  " , " << data_L1Tau_hweta->at(i) << " , " << data_L1Tau_hwphi->at(i) << endl;
+
+    }
+
+    cout << endl << " --------------------------------------- " << endl;
 
     // cout << endl << endl;
     
     ofstream outFileMap (Form("map_%i_Emul.txt", ev));
-    printMapOnTerminal(outFileMap, t, ev);
+    printMapOnTerminal(outFileMap, tEmul, ev);
+
+    ofstream outFileMapData (Form("map_%i_Data.txt", ev));
+    printMapOnTerminal(outFileMapData, tData, ev);
+
 
     //TH2D* TTMap = FillTTMap (mtree, ev);
     //TTMap->Draw("COLZ");
