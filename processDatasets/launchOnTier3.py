@@ -1,20 +1,22 @@
 import os, sys
 
-inputList = "fileList_MinimumBias_Commissioning2016_v1_run266667_resub.txt"
-outputPath = "/data_CMS/cms/cadamuro/test_submit_to_tier3/Stage2_Commissioning_MinBias_Run266667_resub"
+inputList = "fileList_MinimumBias_Commissioning2016_v1_run269160.txt"
+outputPath = "/data_CMS/cms/cadamuro/test_submit_to_tier3/Stage2_Commissioning_MinBias_Run269160"
 
-jobfolder = "./MinimumBias_run266667_resubUnpack"
+jobfolder = "./MinimumBias_run269160"
 os.system("mkdir %s"%jobfolder)
+os.system("mkdir %s"%outputPath)
 
 inpt = open(inputList)
 
 pwd = os.environ['CMSSW_BASE']+"/src/EdmNtuplizer/processDatasets/"
+srcpwd = os.environ['CMSSW_BASE']+"/src/"
 
 # source tier 3
 os.system("source /opt/exp_soft/cms/t3/t3setup")
 
 standardT3 = [
-"cd /home/llr/cms/cadamuro/MWGR2016_Analysis_Stage2/CMSSW_8_0_2/src/",
+"cd %s" % srcpwd,
 "export SCRAM_ARCH=slc6_amd64_gcc493",
 "source /opt/exp_soft/cms/cmsset_default.sh",
 "eval `scramv1 runtime -sh`",
