@@ -87,8 +87,11 @@ class Ntuplizer : public edm::EDAnalyzer {
   vector<Int_t>   _L1Tau_hwrawpt;
   vector<Int_t>   _L1Tau_hwisoet;
   vector<Int_t>   _L1Tau_nTT;
-  vector<Bool_t>  _L1Tau_hasEM;
-  vector<Bool_t>  _L1Tau_isMerged;
+  vector<Int_t>  _L1Tau_hasEM;
+  vector<Int_t>  _L1Tau_isMerged;
+  vector<Float_t> _L1Tau_pt;
+  vector<Float_t> _L1Tau_eta;
+  vector<Float_t> _L1Tau_phi;
 
   // tau demux
   vector<Int_t>   _L1demuxTau_hwpt;
@@ -162,6 +165,9 @@ void Ntuplizer::Initialize()
     _L1Tau_nTT.clear();
     _L1Tau_hasEM.clear();
     _L1Tau_isMerged.clear();
+    _L1Tau_pt.clear();
+    _L1Tau_eta.clear();
+    _L1Tau_phi.clear();
 
     _L1demuxTau_hwpt.clear();
     _L1demuxTau_hweta.clear();
@@ -218,6 +224,9 @@ void Ntuplizer::beginJob()
     myTree->Branch("L1Tau_nTT", &_L1Tau_nTT);
     myTree->Branch("L1Tau_hasEM", &_L1Tau_hasEM);
     myTree->Branch("L1Tau_isMerged", &_L1Tau_isMerged);
+    myTree->Branch("L1Tau_pt", &_L1Tau_pt);
+    myTree->Branch("L1Tau_eta", &_L1Tau_eta);
+    myTree->Branch("L1Tau_phi", &_L1Tau_phi);
 
     myTree->Branch("L1demuxTau_hwpt", &_L1demuxTau_hwpt);
     myTree->Branch("L1demuxTau_hweta", &_L1demuxTau_hweta);
@@ -289,8 +298,12 @@ void Ntuplizer::analyze(const edm::Event& event, const edm::EventSetup& eSetup)
         _L1Tau_hwrawpt.push_back((int) (myTau.rawEt()));
         _L1Tau_hwisoet.push_back((int) (myTau.isoEt()));
         _L1Tau_nTT.push_back((int) (myTau.nTT()));
-        _L1Tau_hasEM.push_back((myTau.hasEM()));
-        _L1Tau_isMerged.push_back((myTau.isMerged()));
+        _L1Tau_hasEM.push_back((myTau.hasEM()) ? 1 : 0);
+        _L1Tau_isMerged.push_back((myTau.isMerged()) ? 1 : 0);
+
+        _L1Tau_pt.push_back (it->pt());
+        _L1Tau_eta.push_back (it->eta());
+        _L1Tau_phi.push_back (it->phi());
     }
 
     // ---------------------------------------------
